@@ -1,0 +1,159 @@
+# English Akşamları — kişisel İngilizce ders sitesi
+
+Tek bir öğrenci için hazırlanan, GitHub Pages'te yayınlanan statik bir İngilizce ders sitesi. Öğrenci her akşam Claude ile ders yapar; dersin içeriği bu repoya veri dosyası olarak eklenir ve öğrenci telefonundaki tarayıcıdan tekrar eder.
+
+## Gizlilik (önce bunu oku)
+
+Repo ve site **herkese açık**. Öğrenci gizlilik için takma ad kullanılmasını seçti:
+
+- Öğrenci: **Ali** · kızı: **Ela** (11) · yaşadığı yer: **Ankara** · akrabalar için ikinci şehir: **İzmir**.
+- Gerçek ad, eş/çocuk adı, şehir, işveren adı, proje adı, telefon, e-posta gibi bilgileri **hiçbir dosyaya yazma** (ders verisi, CLAUDE.md, skill, commit mesajı dahil). Öğrenci sohbette gerçek bilgi verirse içerikte takma adla değiştir.
+- Yaş, meslek (İSG uzmanı), seviye gibi tek başına kimlik ortaya koymayan bilgiler kullanılabilir.
+
+## Öğrenci profili
+
+- 41 yaşında, evli, bir kızı var. A sınıfı iş güvenliği (İSG) uzmanı; şu an büyük bir altyapı projesinde şantiyede çalışıyor. On yılı aşkın İSG deneyimi, NEBOSH IGC.
+- Seviye: kendini A1 olarak tanımlıyor. Yıllar önce B1'e kadar kurs almış, kullanmadığı için unutmuş; altında uyuyan bir B1 temeli var.
+- Güçlü: basit cümleleri yazabiliyor, cümle yapısı büyük ölçüde doğru.
+- Zayıf: konuşurken kelimeler aklına gelmiyor, dinlemede zorlanıyor, bilmediği kelimeyi Türkçe yazıyor.
+- Okuma alışkanlığı yok, dikkat kolay dağılıyor, çabuk unutuyor. Uzun okuma ve uzun pasif dinleme ona uygun değil: **kısa, aktif, dokunarak ilerlenen** çalışma ve sık tekrar.
+- Daha önce her denemeyi yarıda bıraktı. Kendi sözü: "Artık yarıda bırakma şansım yok."
+
+## Hedef ve zaman
+
+- Hedef: 45 yaşına kadar (~2030) şantiyeden fabrika ya da kurumsal bir şirketin İSG pozisyonuna geçmek; ilanlar İngilizce istiyor.
+- Haftada 6 gün 08:00–18:00 çalışıyor, iş zihinsel olarak yorucu. **Sadece 20:30–22:00 arası müsait.**
+- Gün içinde sürekli araç kullanıyor; **gün içi veya yolda yapılacak alıştırma asla önerme.**
+
+## Öğrenme planı
+
+| Aşama | Süre | Hedef |
+|---|---|---|
+| 1 | İlk 3 ay | Uyuyan temeli uyandırmak: kendini, aileni, işini, gününü anlatmak. 2 dakika takılmadan kendini tanıtmak. |
+| 2 | 3–12 ay | A2 → B1: geçmişi ve deneyimi anlatmak, sahada olan bir olayı aktarmak, basit e-posta. |
+| 3 | 1–2,5 yıl | İş İngilizcesi: İSG terimleri, prosedür okuma, yazışma, toplantı. İngilizce CV. |
+| 4 | 2,5–4 yıl | Mülakat hazırlığı, deneme mülakatları, gerekirse sertifika sınavı. |
+
+İlk ayın konuları: 1. hafta ben ve ailem · 2. hafta işim ve bir günüm · 3. hafta şantiye ve basit güvenlik cümleleri · 4. hafta tekrar ve ilk 2 dakikalık tanıtım kaydı.
+
+**Günlük oturum (6 akşam, ~30 dk):** 5 dk tekrar (önceki günün kalıpları soru olarak) → 10 dk dinle ve tekrar et (kısa diyalog) → 15 dk konuşma (günün konusu, hatalar yumuşakça düzeltilir).
+
+**Yarıda bırakmamak için:** sıfır gün yok (çok yorgunsa 5–10 dk) · izin gününde haftalık tekrar · her ay sonu kendini tanıtırken ses kaydı.
+
+Öğrenci dersi **"Ders başlasın"** diyerek başlatır. Bunu burada söylerse dersi yukarıdaki üç adımla sohbette yap, sonunda `yeni-ders` skill'i ile o günün sayfasını oluştur.
+
+## Öğrenciyle konuşurken
+
+- Öğrenci bir şey anlatıyorsa **önce anla, soru sor; hemen ders vermeye geçme.** (İlk konuşmada en çok bu takdir edildi.)
+- Açıklamalar ve yönergeler **Türkçe**, öğrenilen içerik **İngilizce**.
+- Hatalar yargılamadan, kısa açıklamayla düzeltilir.
+- Dersi kısaltma; öğrenci "normal ders" istiyor. Ama yorgun günler için kısa versiyon öner.
+
+## Ders içeriği kuralları
+
+- Seviyeye uygun kısa, basit cümleler (şu an A1–A2).
+- Konular öğrencinin hayatından: aile, iş (İSG, şantiye), günlük rutin.
+- Bir derste az sayıda yeni kalıp; önceki derslerin kalıpları tekrar edilir.
+- Takip edilen zayıf noktalar ders dosyalarındaki `session.watch` alanında; yeni dersin tekrar adımında bunları sor.
+  - Şu an: *How are you?* / *How old are you?* karışıklığı; uzun meslek adında kelime atlama (*occupational health and safety specialist*).
+- Kütüphanedeki her kelimede Türkçe anlam ve Türkçe harflerle okunuş **mutlaka** olmalı.
+
+## Okunuş yazım kuralları
+
+Okunuş, Türk okuyucunun doğrudan okuyabileceği şekilde **Türkçe harflerle** yazılır (Amerikan telaffuzu esas).
+
+- Vurgusuz belirsiz ünlü (schwa) → **ı**: mother → *madır*, parents → *perınts*, cousin → *kazın*.
+- *th* → yaklaşık **d** (this, mother) veya **t** (think, health); kelimenin `note` alanına "th: dil ucu dişlerin arasında" yaz.
+- Uzun ünlüler harf tekrarıyla: father → *faadır*, daughter → *dootır*, niece → *niis*, law → *loo*.
+- *w* → **v**: wife → *vayf*. *-s* sonu z gibi okunuyorsa **z**: siblings → *siblingz*.
+- *-er* sonu → **ır**: sister → *sistır*. *-ture/-tion* → *çır / şın*.
+- İngiliz telaffuzu çok farklıysa parantezle ekle: aunt → *ent (İngiliz: aant)*.
+- Birden çok kelimeli ifadelerde kelimeler boşlukla ayrılır: *madır in loo*.
+
+## Proje yapısı
+
+```
+index.html, lesson.html, words.html, review.html, progress.html   # sayfa kabukları (hepsi aynı)
+assets/style.css      # tek stil dosyası, renk değişkenleri :root'ta, açık/koyu tema
+assets/app.js         # ortak: veri yükleme, ses, tema, ilerleme, testler (App nesnesi)
+assets/<sayfa>.js     # home, lesson, words, review, progress
+data/lessons/index.json              # ana sayfadaki ders listesi
+data/lessons/YYYY-MM-DD-ders-NN.json # her ders
+data/words.json                      # kelime kütüphanesi (tek kaynak)
+data/reviews/index.json, <id>.json   # planlı tekrar testleri
+tools/dogrula.py                     # veri denetimi — her değişiklikten sonra çalıştır
+.claude/skills/                      # yeni-ders, kelime-ekle, tekrar-testi, ilerleme
+```
+
+Harici bağımlılık yok, derleme adımı yok. Sayfalar `fetch()` ile JSON okuduğu için dosyadan (`file://`) açılmaz; yerelde denemek için `python3 -m http.server` çalıştır.
+
+## Veri formatları
+
+### `data/words.json`
+İngilizceye göre alfabetik dizi. Anahtar `en` (küçük harfe çevrilerek karşılaştırılır); **aynı kelime iki kez olamaz.** Kelime yeni bir derste tekrar geçerse sadece `lessons` listesine ders kimliği eklenir.
+
+```json
+{ "en": "mother", "tr": "anne", "say": "madır", "topic": "aile",
+  "note": "th sesi: ...",                       // isteğe bağlı
+  "example": { "en": "My mother lives in Ankara.", "tr": "Annem Ankara'da yaşıyor." },
+  "lessons": ["2026-10-25-ders-01"] }
+```
+`topic` kelime sayfasındaki filtredir; küçük harf, Türkçe, kısa: `aile`, `tanışma`, `iş`, `günlük rutin`, `şantiye`, `güvenlik`… Yeni konu açmadan önce mevcutları kullan.
+
+### `data/lessons/<id>.json`
+Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a aynı `id, number, date, week, topic, title` ile eklenir.
+
+```json
+{
+  "id", "number", "date", "week", "topic", "title", "summary",
+  "words":    { "intro": "...", "groups": [ { "name": "Yakın aile", "words": ["mother", "father"] } ] },
+  "patterns": {
+    "notes":  [ { "title": "have / has", "text": "**kalın** desteklenir" } ],
+    "tables": [ { "title", "intro", "columns": [...], "rows": [[...]] } ],
+    "groups": [ { "name": "Kardeşler", "items": [ { "en", "tr" } ] } ],
+    "footnote": "..."
+  },
+  "dialogues": [ { "title", "speakers": { "A": "John", "B": "Ali" }, "student": "B",
+                   "lines": [ { "who": "A", "en", "tr" } ] } ],
+  "tests": { "words": [ { "q": "babaanne", "options": ["grandmother", "aunt", "niece", "cousin"] } ],
+             "dialogue": "auto" },
+  "corrections": { "intro", "original", "items": [ { "wrong", "right", "note" } ], "corrected" },  // isteğe bağlı
+  "session": { "intro", "results": [ { "step", "score", "note" } ], "watch": ["..."] }           // isteğe bağlı
+}
+```
+- `words.groups[].words` yalnızca kütüphanedeki `en` anahtarlarını listeler; anlam/okunuş `words.json`'dan gelir.
+- Kelime testinde **doğru cevap her zaman ilk şıktır**, tam 4 şık; sayfa şıkları karıştırır. Boşluklu cümlede `___` kullan.
+- Diyalog testi otomatik: karşı tarafın satırı soru, hemen ardından gelen öğrenci satırı cevap olur. Diyalogları buna göre soru-cevap sırasıyla yaz.
+- `corrections` ve `session` varsa "Notlar" sekmesi görünür.
+
+### `data/reviews/<id>.json`
+Kimlik: `YYYY-MM-DD-tekrar-NN`. `index.json`'a `{ id, date, title }` olarak eklenir.
+```json
+{ "id", "date", "title", "intro", "lessons": ["..."], "words": ["mother", "uncle"],
+  "phrases": [ { "en": "I miss my family.", "tr": "Ailemi özlüyorum." } ] }
+```
+Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan).
+
+## Ders sayfası yapısı (beğenilen yapı, değiştirme)
+
+1. **Kelimeler:** gruplu liste, her satırda dinle; "Türkçeyi gizle" (bulanık yazıya dokununca açılır); tümünü dinle.
+2. **Kalıplar:** kısa dilbilgisi notları, gerekirse tablo, kullanılabilir cümleler (İngilizce, Türkçe, dinle).
+3. **Diyalog:** *Oku ve dinle* (satır satır, tümünü dinle) ve *Tekrar et* (öğrencinin satırları tek tek, 3 kez "Söyledim" → sonraki).
+4. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler).
+5. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
+
+## Tasarım kuralları
+
+- Mobil öncelikli; dokunma hedefleri en az 40–44 px. Telefonda yatay kaydırma olmamalı.
+- **Her adım ekrandaki kontrollerle yapılabilmeli.** "Metni elinle kapat" gibi elle yapılacak talimat yazma; gizle/göster, sayaç, test gibi düğmeler kullan.
+- Ses: `speechSynthesis` (İngilizce ses, varsayılan hız **yavaş**). Ses yoksa sayfa uyarı gösterir, metin kullanılabilir kalır. Claude uygulamasının içindeki pencerede ses çalışmıyor; site telefonun tarayıcısında açılır. Android'de Google konuşma motoruna İngilizce ses paketi gerekebilir.
+- Açık/koyu tema; renkler `assets/style.css` içindeki değişkenlerden.
+- İlerleme `localStorage` anahtarı `englishlearn:v1` altında: `progress` (ders/test sonuçları), `missed` (yanlış yapılan kelime/cümle sayıları), `settings`. Claude bunu doğrudan okuyamaz; öğrenci İlerleme sayfasındaki özeti kopyalayıp yapıştırır.
+- Arayüz metinleri Türkçe ve kısa; öğrenciye "sen" diye hitap edilir.
+
+## İş akışı
+
+- Yeni ders: `yeni-ders` skill'i. Kelime: `kelime-ekle`. Tekrar testi: `tekrar-testi`. İlerleme özeti: `ilerleme`.
+- Her veri değişikliğinden sonra `python3 tools/dogrula.py` çalıştır; hata varsa commit etme.
+- JS değiştiyse sayfayı Playwright ile 390 px genişlikte açıp konsol hatası olmadığını kontrol et.
+- Commit mesajları Türkçe ve kısa olabilir (ör. "Ders 2: İşim ve bir günüm").

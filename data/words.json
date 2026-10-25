@@ -1,0 +1,533 @@
+[
+  {
+    "en": "alive",
+    "tr": "hayatta, yaşıyor",
+    "say": "ılayv",
+    "topic": "tanışma",
+    "example": {
+      "en": "My mother is alive.",
+      "tr": "Annem hayatta."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "\"Annem yaşıyor\" demek için: My mother is alive."
+  },
+  {
+    "en": "aunt",
+    "tr": "hala, teyze, yenge",
+    "say": "ent (İngiliz: aant)",
+    "topic": "aile",
+    "example": {
+      "en": "My aunt lives in Ankara.",
+      "tr": "Teyzem Ankara'da yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "brother",
+    "tr": "erkek kardeş",
+    "say": "bradır",
+    "topic": "aile",
+    "example": {
+      "en": "I have one brother.",
+      "tr": "Bir erkek kardeşim var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "th sesi: dil ucu üst dişlerin arasında söylenir; Türkçede yaklaşık d ile yazıldı."
+  },
+  {
+    "en": "brother-in-law",
+    "tr": "kayınbirader, enişte",
+    "say": "bradır in loo",
+    "topic": "aile",
+    "example": {
+      "en": "My brother-in-law is a driver.",
+      "tr": "Kayınbiraderim şoför."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "child",
+    "tr": "çocuk",
+    "say": "çayld",
+    "topic": "aile",
+    "example": {
+      "en": "I have one child.",
+      "tr": "Bir çocuğum var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "children",
+    "tr": "çocuklar",
+    "say": "çildrın",
+    "topic": "aile",
+    "example": {
+      "en": "Do they have children?",
+      "tr": "Onların çocukları var mı?"
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "child kelimesinin çoğulu; -s almaz."
+  },
+  {
+    "en": "cousin",
+    "tr": "kuzen",
+    "say": "kazın",
+    "topic": "aile",
+    "example": {
+      "en": "I have many cousins.",
+      "tr": "Çok kuzenim var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "daughter",
+    "tr": "kız evlat",
+    "say": "dootır",
+    "topic": "aile",
+    "example": {
+      "en": "I have a daughter.",
+      "tr": "Bir kızım var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "father",
+    "tr": "baba",
+    "say": "faadır",
+    "topic": "aile",
+    "example": {
+      "en": "My father passed away.",
+      "tr": "Babam vefat etti."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "th sesi: dil ucu üst dişlerin arasında söylenir; Türkçede yaklaşık d ile yazıldı."
+  },
+  {
+    "en": "father-in-law",
+    "tr": "kayınpeder",
+    "say": "faadır in loo",
+    "topic": "aile",
+    "example": {
+      "en": "My wife's father is my father-in-law.",
+      "tr": "Eşimin babası benim kayınpederim."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "grandchild",
+    "tr": "torun",
+    "say": "grençayld",
+    "topic": "aile",
+    "example": {
+      "en": "I don't have any grandchildren.",
+      "tr": "Hiç torunum yok."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Çoğulu: grandchildren (grençildrın)."
+  },
+  {
+    "en": "granddaughter",
+    "tr": "kız torun",
+    "say": "grendootır",
+    "topic": "aile",
+    "example": {
+      "en": "My son's daughter is my granddaughter.",
+      "tr": "Oğlumun kızı benim kız torunum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "grandfather",
+    "tr": "dede",
+    "say": "grenfaadır",
+    "topic": "aile",
+    "example": {
+      "en": "My grandfather passed away.",
+      "tr": "Dedem vefat etti."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "grandmother",
+    "tr": "babaanne, anneanne",
+    "say": "grenmadır",
+    "topic": "aile",
+    "example": {
+      "en": "My mother's mother is my grandmother.",
+      "tr": "Annemin annesi benim anneannem."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "İngilizce baba ve anne tarafını ayırmaz."
+  },
+  {
+    "en": "grandparents",
+    "tr": "büyükanne ve büyükbabalar",
+    "say": "grenperınts",
+    "topic": "aile",
+    "example": {
+      "en": "My grandparents passed away.",
+      "tr": "Büyükannem ve büyükbabam vefat etti."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "grandson",
+    "tr": "erkek torun",
+    "say": "grensan",
+    "topic": "aile",
+    "example": {
+      "en": "My mother has a grandson.",
+      "tr": "Annemin bir erkek torunu var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "husband",
+    "tr": "eş (erkek), koca",
+    "say": "hazbınd",
+    "topic": "aile",
+    "example": {
+      "en": "My sister's husband is a teacher.",
+      "tr": "Kız kardeşimin kocası öğretmen."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "in-laws",
+    "tr": "eşin ailesi",
+    "say": "in looz",
+    "topic": "aile",
+    "example": {
+      "en": "My in-laws live in İzmir.",
+      "tr": "Eşimin ailesi İzmir'de yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "live",
+    "tr": "yaşamak, oturmak",
+    "say": "liv",
+    "topic": "tanışma",
+    "example": {
+      "en": "I live in Ankara.",
+      "tr": "Ankara'da yaşıyorum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "I live ama my family lives (tek kişi/şey için -s)."
+  },
+  {
+    "en": "married",
+    "tr": "evli",
+    "say": "merid",
+    "topic": "tanışma",
+    "example": {
+      "en": "I am married.",
+      "tr": "Evliyim."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "miss",
+    "tr": "özlemek",
+    "say": "mis",
+    "topic": "tanışma",
+    "example": {
+      "en": "I miss my family.",
+      "tr": "Ailemi özlüyorum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "mother",
+    "tr": "anne",
+    "say": "madır",
+    "topic": "aile",
+    "example": {
+      "en": "My mother lives in Ankara.",
+      "tr": "Annem Ankara'da yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "th sesi: dil ucu üst dişlerin arasında söylenir; Türkçede yaklaşık d ile yazıldı."
+  },
+  {
+    "en": "mother-in-law",
+    "tr": "kayınvalide",
+    "say": "madır in loo",
+    "topic": "aile",
+    "example": {
+      "en": "My mother-in-law lives with us.",
+      "tr": "Kayınvalidem bizimle yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "nephew",
+    "tr": "erkek yeğen",
+    "say": "nefyu",
+    "topic": "aile",
+    "example": {
+      "en": "My nephew is a student.",
+      "tr": "Erkek yeğenim öğrenci."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "niece",
+    "tr": "kız yeğen",
+    "say": "niis",
+    "topic": "aile",
+    "example": {
+      "en": "I have a nephew and a niece.",
+      "tr": "Bir erkek ve bir kız yeğenim var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "occupational health and safety",
+    "tr": "iş sağlığı ve güvenliği (İSG)",
+    "say": "okyupeyşınıl helt end seyfti",
+    "topic": "iş",
+    "example": {
+      "en": "I am an occupational health and safety specialist.",
+      "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Uzun ifade: health kelimesini atlamamaya dikkat."
+  },
+  {
+    "en": "older brother",
+    "tr": "ağabey",
+    "say": "oldır bradır",
+    "topic": "aile",
+    "example": {
+      "en": "My older brother lives in İzmir.",
+      "tr": "Ağabeyim İzmir'de yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "older sister",
+    "tr": "abla",
+    "say": "oldır sistır",
+    "topic": "aile",
+    "example": {
+      "en": "I don't have an older sister.",
+      "tr": "Ablam yok."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "parents",
+    "tr": "anne ve baba",
+    "say": "perınts",
+    "topic": "aile",
+    "example": {
+      "en": "My parents live in Ankara.",
+      "tr": "Annemle babam Ankara'da yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "pass away",
+    "tr": "vefat etmek",
+    "say": "pes ıvey",
+    "topic": "tanışma",
+    "example": {
+      "en": "My father passed away.",
+      "tr": "Babam vefat etti."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Geçmiş hâli: passed away (pest ıvey)."
+  },
+  {
+    "en": "relatives",
+    "tr": "akrabalar",
+    "say": "relıtivz",
+    "topic": "aile",
+    "example": {
+      "en": "My relatives live in Ankara.",
+      "tr": "Akrabalarım Ankara'da yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "siblings",
+    "tr": "kardeşler",
+    "say": "siblingz",
+    "topic": "aile",
+    "example": {
+      "en": "I have two siblings.",
+      "tr": "İki kardeşim var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "sister",
+    "tr": "kız kardeş",
+    "say": "sistır",
+    "topic": "aile",
+    "example": {
+      "en": "I have one sister.",
+      "tr": "Bir kız kardeşim var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "sister-in-law",
+    "tr": "baldız, görümce, yenge",
+    "say": "sistır in loo",
+    "topic": "aile",
+    "example": {
+      "en": "My sister-in-law has a daughter.",
+      "tr": "Baldızımın bir kızı var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "son",
+    "tr": "oğul",
+    "say": "san",
+    "topic": "aile",
+    "example": {
+      "en": "My sister has a son.",
+      "tr": "Kız kardeşimin bir oğlu var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "specialist",
+    "tr": "uzman",
+    "say": "speşılist",
+    "topic": "iş",
+    "example": {
+      "en": "I am a safety specialist.",
+      "tr": "Ben bir güvenlik uzmanıyım."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "uncle",
+    "tr": "amca, dayı, enişte",
+    "say": "ankıl",
+    "topic": "aile",
+    "example": {
+      "en": "My uncle lives in İzmir.",
+      "tr": "Amcam İzmir'de yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Amca ve dayı için aynı kelime: on my father's side / on my mother's side ile ayrılır."
+  },
+  {
+    "en": "wife",
+    "tr": "eş (kadın)",
+    "say": "vayf",
+    "topic": "aile",
+    "example": {
+      "en": "I love my wife.",
+      "tr": "Eşimi seviyorum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "younger brother",
+    "tr": "küçük erkek kardeş",
+    "say": "yangır bradır",
+    "topic": "aile",
+    "example": {
+      "en": "My younger brother is a student.",
+      "tr": "Küçük erkek kardeşim öğrenci."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "younger sister",
+    "tr": "küçük kız kardeş",
+    "say": "yangır sistır",
+    "topic": "aile",
+    "example": {
+      "en": "My younger sister has two children.",
+      "tr": "Küçük kız kardeşimin iki çocuğu var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  }
+]
