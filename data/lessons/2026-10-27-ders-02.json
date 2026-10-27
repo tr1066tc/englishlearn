@@ -7,7 +7,7 @@
   "title": "İşim: nerede, ne iş, hangi saatler",
   "summary": "Nerede çalıştığını, ne iş yaptığını ve hangi saatlerde çalıştığını anlatma. Sonunda işin hakkındaki düşüncelerin ve hedefin: kurumsal bir şirkette çalışmak.",
   "words": {
-    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 23 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 24 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
     "groups": [
       {
         "name": "İş ve işyeri",
@@ -51,8 +51,9 @@
         ]
       },
       {
-        "name": "Bağlaçlar",
+        "name": "Neden? Çünkü",
         "words": [
+          "why",
           "because",
           "so"
         ]
@@ -87,8 +88,8 @@
         "text": "**people are** (çoğul) · **there is** a safety culture (tek şey) · workers **follow** (çoğul, -s yok) · the manager follow**s** (tek kişi, -s var)."
       },
       {
-        "title": "because · so",
-        "text": "Cevap sorudan fazlasını söylüyorsa ikisini bağla. **because** = çünkü (sebep): My job is difficult, **because** dealing with people is difficult. · **so** = bu yüzden (sonuç): Workers follow the rules, **so** I can do my job well."
+        "title": "Why? · because · so",
+        "text": "Cevap yalnızca sorulanı söyler. Sebebi merak eden ayrıca sorar: **Why?** (Neden?) → **Because** … (Çünkü …): Is your job difficult? — Yes, it is. · Why? — **Because** dealing with people is difficult. Kendi cümlende sonucu bağlamak için **so** (bu yüzden): Workers follow the rules, **so** I can do my job well."
       }
     ],
     "tables": [
@@ -142,8 +143,8 @@
             "tr": "Ailem Ankara'da yaşıyor."
           },
           {
-            "en": "I miss my family.",
-            "tr": "Ailemi özlüyorum."
+            "en": "I live with my wife and my daughter.",
+            "tr": "Eşim ve kızımla yaşıyorum."
           }
         ]
       },
@@ -188,8 +189,16 @@
             "tr": "Haftada kaç gün çalışıyorsun?"
           },
           {
+            "en": "What time do you finish?",
+            "tr": "Saat kaçta bitiriyorsun?"
+          },
+          {
             "en": "What time do you start?",
             "tr": "Saat kaçta başlıyorsun?"
+          },
+          {
+            "en": "Why is it difficult?",
+            "tr": "Neden zor?"
           }
         ]
       },
@@ -306,8 +315,18 @@
         },
         {
           "who": "B",
-          "en": "I start at eight and finish at six.",
-          "tr": "Sekizde başlıyorum, altıda bitiriyorum."
+          "en": "I start at eight.",
+          "tr": "Sekizde başlıyorum."
+        },
+        {
+          "who": "A",
+          "en": "What time do you finish?",
+          "tr": "Saat kaçta bitiriyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I finish at six.",
+          "tr": "Altıda bitiriyorum."
         },
         {
           "who": "A",
@@ -316,8 +335,8 @@
         },
         {
           "who": "B",
-          "en": "My family lives in Ankara. I miss my family.",
-          "tr": "Ailem Ankara'da yaşıyor. Ailemi özlüyorum."
+          "en": "My family lives in Ankara.",
+          "tr": "Ailem Ankara'da yaşıyor."
         }
       ]
     },
@@ -336,8 +355,18 @@
         },
         {
           "who": "B",
-          "en": "Yes, it is, because dealing with people is difficult.",
-          "tr": "Evet, zor, çünkü insanlarla uğraşmak zor."
+          "en": "Yes, it is.",
+          "tr": "Evet, zor."
+        },
+        {
+          "who": "A",
+          "en": "Why is it difficult?",
+          "tr": "Neden zor?"
+        },
+        {
+          "who": "B",
+          "en": "Because dealing with people is difficult.",
+          "tr": "Çünkü insanlarla uğraşmak zor."
         },
         {
           "who": "A",
@@ -346,8 +375,8 @@
         },
         {
           "who": "B",
-          "en": "No, they don't. So not every workplace is good.",
-          "tr": "Hayır, uymuyor. Bu yüzden her işyeri iyi değil."
+          "en": "No, they don't.",
+          "tr": "Hayır, uymuyor."
         },
         {
           "who": "A",
@@ -356,18 +385,28 @@
         },
         {
           "who": "B",
-          "en": "I want to work in a big company, because there is a safety culture there.",
-          "tr": "Büyük bir şirkette çalışmak istiyorum, çünkü orada güvenlik kültürü var."
+          "en": "I want to work in a big company.",
+          "tr": "Büyük bir şirkette çalışmak istiyorum."
         },
         {
           "who": "A",
-          "en": "Do workers and managers follow the rules there?",
-          "tr": "İşçiler ve idareciler orada kurallara uyuyor mu?"
+          "en": "Why?",
+          "tr": "Neden?"
         },
         {
           "who": "B",
-          "en": "Yes, they do. So I can do my job well.",
-          "tr": "Evet, uyuyor. Bu yüzden işimi iyi yapabilirim."
+          "en": "Because there is a safety culture in a big company.",
+          "tr": "Çünkü büyük bir şirkette güvenlik kültürü var."
+        },
+        {
+          "who": "A",
+          "en": "Can you do your job well there?",
+          "tr": "Orada işini iyi yapabilir misin?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, I can.",
+          "tr": "Evet, yapabilirim."
         },
         {
           "who": "A",
@@ -376,8 +415,8 @@
         },
         {
           "who": "B",
-          "en": "Yes, I do. I want to be happy at work and like my job.",
-          "tr": "Evet, istiyorum. İşte mutlu olmak ve işimi sevmek istiyorum."
+          "en": "Yes, I do.",
+          "tr": "Evet, istiyorum."
         }
       ]
     }
@@ -410,15 +449,15 @@
         "tr": "Akşam yorgun ama İngilizce çalışıyor."
       },
       {
-        "en": "His family lives in Ankara. He misses his family.",
-        "tr": "Ailesi Ankara'da yaşıyor. Ailesini özlüyor."
+        "en": "He lives in Ankara with his wife and his daughter.",
+        "tr": "Eşi ve kızıyla Ankara'da yaşıyor."
       },
       {
         "en": "He wants to work in a big company with a safety culture.",
         "tr": "Güvenlik kültürü olan büyük bir şirkette çalışmak istiyor."
       }
     ],
-    "note": "Tek kişiden (Ali, he) bahsederken fiile **-s** gelir: he **works**, he **starts**, he **wants**. Fiil -sh, -ss, -ch ile bitiyorsa **-es**: finish → he **finishes**, miss → he **misses**. study → he **studies** (y → ies). Kendinden bahsederken ek yok: I **work**, I **finish**, I **study**.",
+    "note": "Tek kişiden (Ali, he) bahsederken fiile **-s** gelir: he **works**, he **starts**, he **wants**. Fiil -sh, -ss, -ch ile bitiyorsa **-es**: finish → he **finishes**, miss → he **misses**. study → he **studies** (y → ies). Kendinden bahsederken ek yok: I **work**, I **finish**, I **study**, I **live**.",
     "gist": {
       "q": "Metin ne hakkında?",
       "options": [
@@ -452,10 +491,10 @@
         "answer": true
       },
       {
-        "en": "His family lives in İzmir.",
-        "tr": "Ailesi İzmir'de yaşıyor.",
+        "en": "Ali lives in İzmir.",
+        "tr": "Ali İzmir'de yaşıyor.",
         "answer": false,
-        "fix": "His family lives in Ankara."
+        "fix": "He lives in Ankara with his wife and his daughter."
       }
     ],
     "blanks": [
@@ -464,11 +503,11 @@
       "finishes",
       "tired",
       "lives",
-      "misses"
+      "wants"
     ],
     "rewrite": {
       "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He works → I work, he finishes → I finish, his → my.",
-      "model": "I am forty-one years old. I am an occupational health and safety specialist. I work for a big company on a construction site. I work six days a week. I start at eight and finish at six. In the evening I am tired, but I study English. My family lives in Ankara. I miss my family. I want to work in a big company with a safety culture."
+      "model": "I am forty-one years old. I am an occupational health and safety specialist. I work for a big company on a construction site. I work six days a week. I start at eight and finish at six. In the evening I am tired, but I study English. I live in Ankara with my wife and my daughter. I want to work in a big company with a safety culture."
     }
   },
   "tests": {

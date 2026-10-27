@@ -290,8 +290,8 @@
             "tr": "Amcam İzmir'de yaşıyor."
           },
           {
-            "en": "I miss my family.",
-            "tr": "Ailemi özlüyorum."
+            "en": "I miss my uncle.",
+            "tr": "Amcamı özlüyorum."
           }
         ]
       }
@@ -344,8 +344,18 @@
         },
         {
           "who": "B",
-          "en": "Yes, I am. I have a daughter.",
-          "tr": "Evet, evliyim. Bir kızım var."
+          "en": "Yes, I am.",
+          "tr": "Evet, evliyim."
+        },
+        {
+          "who": "A",
+          "en": "Do you have any children?",
+          "tr": "Çocuğun var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, I have a daughter.",
+          "tr": "Evet, bir kızım var."
         },
         {
           "who": "A",
@@ -394,8 +404,8 @@
         },
         {
           "who": "B",
-          "en": "Yes. My sister has a son and a daughter.",
-          "tr": "Evet. Kız kardeşimin bir oğlu ve bir kızı var."
+          "en": "My sister has a son and a daughter.",
+          "tr": "Kız kardeşimin bir oğlu ve bir kızı var."
         },
         {
           "who": "A",
@@ -404,8 +414,8 @@
         },
         {
           "who": "B",
-          "en": "That's right. My nephew and my niece are students.",
-          "tr": "Doğru. Erkek ve kız yeğenim öğrenci."
+          "en": "That's right.",
+          "tr": "Doğru."
         },
         {
           "who": "A",
@@ -434,8 +444,8 @@
         },
         {
           "who": "B",
-          "en": "My mother lives in Ankara. I miss her.",
-          "tr": "Annem Ankara'da yaşıyor. Onu özlüyorum."
+          "en": "My mother lives in Ankara.",
+          "tr": "Annem Ankara'da yaşıyor."
         }
       ]
     }
@@ -476,11 +486,11 @@
         "tr": "Annesi Ankara'da yaşıyor. Babası vefat etti."
       },
       {
-        "en": "Ali misses his family.",
-        "tr": "Ali ailesini özlüyor."
+        "en": "Ali lives in Ankara with his wife and his daughter.",
+        "tr": "Ali, eşi ve kızıyla Ankara'da yaşıyor."
       }
     ],
-    "note": "Metin Ali'yi anlatıyor, bu yüzden **he / his** (o / onun) kullanılıyor. Tek kişiden bahsederken fiile **-s** gelir: Ali **has**, his mother **lives**, Ali **misses**. Kendinden bahsederken **I have, I live, I miss** dersin.",
+    "note": "Metin Ali'yi anlatıyor, bu yüzden **he / his** (o / onun) kullanılıyor. Tek kişiden bahsederken fiile **-s** gelir: Ali **has**, his mother **lives**, Ali **lives**. Kendinden bahsederken **I have, I live** dersin.",
     "gist": {
       "q": "Metin ne hakkında?",
       "options": [
@@ -525,12 +535,12 @@
       "brother",
       "older",
       "nephew",
-      "lives",
-      "misses"
+      "passed",
+      "wife"
     ],
     "rewrite": {
-      "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He is → I am, he has → I have, his → my, Ali misses → I miss.",
-      "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I miss my family."
+      "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He is → I am, he has → I have, his → my, Ali lives → I live.",
+      "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I live in Ankara with my wife and my daughter."
     }
   },
   "tests": {

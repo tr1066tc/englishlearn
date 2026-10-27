@@ -34,8 +34,13 @@
     },
     {
       "q": "Is your job difficult?",
-      "a": "Yes, it is, because some people are difficult.",
-      "tr": "Evet, zor, çünkü bazı insanlar zor. (people → are; sebebi because ile bağla)"
+      "a": "Yes, it is.",
+      "tr": "Evet, zor. (Yalnızca sorulanı cevapla.)"
+    },
+    {
+      "q": "Why is it difficult?",
+      "a": "Because some people are difficult.",
+      "tr": "Çünkü bazı insanlar zor. (people → are)"
     }
   ],
   "words": {
@@ -263,12 +268,16 @@
             "tr": "Saat kaçta uyanıyorsun?"
           },
           {
+            "en": "How do you go to work?",
+            "tr": "İşe nasıl gidiyorsun?"
+          },
+          {
             "en": "What time do you go to bed?",
             "tr": "Saat kaçta yatıyorsun?"
           },
           {
-            "en": "When is your day off?",
-            "tr": "İzin günün ne zaman?"
+            "en": "Which days do you work?",
+            "tr": "Hangi günler çalışıyorsun?"
           },
           {
             "en": "What do you do on Sunday?",
@@ -277,7 +286,7 @@
         ]
       }
     ],
-    "footnote": "Saatler örnek; kendi gününe göre değiştirerek söyle. Dikkat: \"What do you do?\" tek başına \"Ne iş yapıyorsun?\" demek; \"What do you do on Sunday?\" ise \"Pazar günü ne yapıyorsun?\"."
+    "footnote": "Saatler örnek; kendi gününe göre değiştirerek söyle. Dikkat: \"What do you do?\" tek başına \"Ne iş yapıyorsun?\" demek; \"What do you do on Sunday?\" ise \"Pazar günü ne yapıyorsun?\". Cevap yalnızca sorulanı söyler: \"What time do you start?\" → \"I start at eight.\" Bitiş saatini merak eden ayrıca sorar."
   },
   "dialogues": [
     {
@@ -300,13 +309,13 @@
         },
         {
           "who": "A",
-          "en": "Do you have breakfast?",
-          "tr": "Kahvaltı yapıyor musun?"
+          "en": "What time do you have breakfast?",
+          "tr": "Saat kaçta kahvaltı yapıyorsun?"
         },
         {
           "who": "B",
-          "en": "Yes, I have breakfast at half past six.",
-          "tr": "Evet, altı buçukta kahvaltı yapıyorum."
+          "en": "I have breakfast at half past six.",
+          "tr": "Altı buçukta kahvaltı yapıyorum."
         },
         {
           "who": "A",
@@ -315,8 +324,18 @@
         },
         {
           "who": "B",
-          "en": "I leave home at seven. I drive to the construction site.",
-          "tr": "Yedide evden çıkıyorum. Arabayla şantiyeye gidiyorum."
+          "en": "I leave home at seven.",
+          "tr": "Yedide evden çıkıyorum."
+        },
+        {
+          "who": "A",
+          "en": "How do you go to work?",
+          "tr": "İşe nasıl gidiyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I drive to the construction site.",
+          "tr": "Arabayla şantiyeye gidiyorum."
         },
         {
           "who": "A",
@@ -325,8 +344,18 @@
         },
         {
           "who": "B",
-          "en": "I start at eight and finish at six.",
-          "tr": "Sekizde başlıyorum, altıda bitiriyorum."
+          "en": "I start at eight.",
+          "tr": "Sekizde başlıyorum."
+        },
+        {
+          "who": "A",
+          "en": "What time do you finish?",
+          "tr": "Saat kaçta bitiriyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I finish at six.",
+          "tr": "Altıda bitiriyorum."
         },
         {
           "who": "A",
@@ -335,8 +364,8 @@
         },
         {
           "who": "B",
-          "en": "I come home at seven. I have dinner with my family.",
-          "tr": "Yedide eve geliyorum. Ailemle akşam yemeği yiyorum."
+          "en": "I come home at seven and have dinner with my family.",
+          "tr": "Yedide eve geliyorum ve ailemle akşam yemeği yiyorum."
         },
         {
           "who": "A",
@@ -345,8 +374,18 @@
         },
         {
           "who": "B",
-          "en": "I study English at half past eight. Then I go to bed at ten.",
-          "tr": "Sekiz buçukta İngilizce çalışıyorum. Sonra onda yatıyorum."
+          "en": "I study English at half past eight.",
+          "tr": "Sekiz buçukta İngilizce çalışıyorum."
+        },
+        {
+          "who": "A",
+          "en": "What time do you go to bed?",
+          "tr": "Saat kaçta yatıyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I go to bed at ten.",
+          "tr": "Onda yatıyorum."
         }
       ]
     },
@@ -365,8 +404,18 @@
         },
         {
           "who": "B",
-          "en": "I work six days a week, from Monday to Saturday.",
-          "tr": "Haftada altı gün, pazartesiden cumartesiye çalışıyorum."
+          "en": "I work six days a week.",
+          "tr": "Haftada altı gün çalışıyorum."
+        },
+        {
+          "who": "A",
+          "en": "Which days do you work?",
+          "tr": "Hangi günler çalışıyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I work from Monday to Saturday.",
+          "tr": "Pazartesiden cumartesiye çalışıyorum."
         },
         {
           "who": "A",
@@ -385,8 +434,8 @@
         },
         {
           "who": "B",
-          "en": "I am with my family. I study English too.",
-          "tr": "Ailemle oluyorum. İngilizce de çalışıyorum."
+          "en": "I am with my family and I study English.",
+          "tr": "Ailemle oluyorum ve İngilizce çalışıyorum."
         },
         {
           "who": "A",
@@ -395,8 +444,28 @@
         },
         {
           "who": "B",
-          "en": "Yes, I am. But on Sunday I am happy, because I am with my family.",
-          "tr": "Evet. Ama pazar günü mutluyum, çünkü ailemleyim."
+          "en": "Yes, I am.",
+          "tr": "Evet, oluyorum."
+        },
+        {
+          "who": "A",
+          "en": "How do you feel on Sunday?",
+          "tr": "Pazar günü kendini nasıl hissediyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I feel happy.",
+          "tr": "Mutlu hissediyorum."
+        },
+        {
+          "who": "A",
+          "en": "Why?",
+          "tr": "Neden?"
+        },
+        {
+          "who": "B",
+          "en": "Because I am with my family.",
+          "tr": "Çünkü ailemleyim."
         }
       ]
     }

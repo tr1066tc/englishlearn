@@ -384,8 +384,8 @@
     "say": "grendootır",
     "topic": "aile",
     "example": {
-      "en": "My son's daughter is my granddaughter.",
-      "tr": "Oğlumun kızı benim kız torunum."
+      "en": "My mother has two granddaughters.",
+      "tr": "Annemin iki kız torunu var."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -649,8 +649,8 @@
     "say": "mis",
     "topic": "tanışma",
     "example": {
-      "en": "I miss my family.",
-      "tr": "Ailemi özlüyorum."
+      "en": "I miss my uncle. He lives in İzmir.",
+      "tr": "Amcamı özlüyorum. O İzmir'de yaşıyor."
     },
     "lessons": [
       "2026-10-25-ders-01",
@@ -705,8 +705,8 @@
     "say": "madır in loo",
     "topic": "aile",
     "example": {
-      "en": "My mother-in-law lives with us.",
-      "tr": "Kayınvalidem bizimle yaşıyor."
+      "en": "My mother-in-law lives in İzmir.",
+      "tr": "Kayınvalidem İzmir'de yaşıyor."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -787,8 +787,8 @@
     "say": "oldır bradır",
     "topic": "aile",
     "example": {
-      "en": "My older brother lives in İzmir.",
-      "tr": "Ağabeyim İzmir'de yaşıyor."
+      "en": "My older brother lives in Ankara.",
+      "tr": "Ağabeyim Ankara'da yaşıyor."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -813,8 +813,8 @@
     "say": "perınts",
     "topic": "aile",
     "example": {
-      "en": "My parents live in Ankara.",
-      "tr": "Annemle babam Ankara'da yaşıyor."
+      "en": "My wife's parents live in İzmir.",
+      "tr": "Eşimin annesi ve babası İzmir'de yaşıyor."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -1133,6 +1133,20 @@
     "note": "a week = haftada."
   },
   {
+    "en": "why",
+    "tr": "neden, niçin",
+    "say": "vay",
+    "topic": "bağlaç",
+    "example": {
+      "en": "Why is your job difficult?",
+      "tr": "İşin neden zor?"
+    },
+    "note": "Why? sorusunun cevabı because ile başlar: Because …",
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "wife",
     "tr": "eş (kadın)",
     "say": "vayf",
@@ -1191,8 +1205,8 @@
     "say": "yangır bradır",
     "topic": "aile",
     "example": {
-      "en": "My younger brother is a student.",
-      "tr": "Küçük erkek kardeşim öğrenci."
+      "en": "I don't have a younger brother.",
+      "tr": "Küçük erkek kardeşim yok."
     },
     "lessons": [
       "2026-10-25-ders-01"

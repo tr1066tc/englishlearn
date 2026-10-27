@@ -30,6 +30,7 @@ Format `CLAUDE.md` → "Veri formatları". İçerik ölçüsü (A1–A2):
 - **reading:** 6–10 kısa cümlelik paragraf; Ali'yi üçüncü şahısla anlatır ve o günün kelime/kalıplarını önceki derslerinkilerle birleştirir (en fazla 1–2 yeni kelime). `gist` (metni görmeden dinleyince 1 soru, 4 şık, doğru ilk), `truefalse` (4–5 cümle, yanlışlara `fix`), `blanks` (paragraftan 5–6 farklı kelime; o dersin yeni kelimeleri ve -s/-es fiiller iyi aday), `rewrite` (`prompt` + aynı paragrafın I/my ile hâli `model`). Sohbette öğrenci kendini anlattıysa paragraf onun anlattıklarından (takma adlarla) yazılsın. Format `CLAUDE.md` → "Okuma".
 - **tests.words:** 12–18 soru, tam 4 şık, **doğru cevap ilk şık**. Yarısı Türkçe kelime → İngilizce, yarısı `___` boşluklu cümle. En az bir soru `session.watch` zayıf noktasını hedeflesin.
 - **corrections / session:** sohbette yazılan metin, düzeltmeler ve adım sonuçları varsa ekle; `session.watch` listesine yeni ve süren zayıf noktaları yaz.
+- **Her soru–cevap çiftini tek tek kontrol et:** cevap yalnızca sorulanı mı söylüyor? Sorulmayan bilgi varsa onu ayrı bir soruya çevir (*Why? → Because …*). Cümleler `CLAUDE.md`'deki "Ali'nin hayatı" bilgileriyle çelişmesin.
 - Okunuşları `CLAUDE.md` → "Okunuş yazım kuralları"na göre yaz.
 - Gerçek ad, şehir, işveren adı geçmeyecek — takma adlar: Ali, Ela, Ankara, İzmir.
 
