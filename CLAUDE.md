@@ -157,3 +157,4 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 - Her veri değişikliğinden sonra `python3 tools/dogrula.py` çalıştır; hata varsa commit etme.
 - JS değiştiyse sayfayı Playwright ile 390 px genişlikte açıp konsol hatası olmadığını kontrol et.
 - Commit mesajları Türkçe ve kısa olabilir (ör. "Ders 2: İşim ve bir günüm").
+- Site `main` dalından yayınlanır. Öğrenci ders eklendikçe `main`'in de güncellenmesine izin verdi: ders/tekrar/kelime veri değişikliklerini doğrulamadan sonra çalışma dalına push et, ardından `git push origin <çalışma-dalı>:refs/heads/main` ile `main`'i ileri sar (yalnızca fast-forward; force yok). Bu izin sadece içerik güncellemeleri içindir; site kodundaki (assets/, *.html) büyük değişiklikleri önce öğrenciye söyle.

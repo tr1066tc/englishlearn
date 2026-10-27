@@ -44,7 +44,7 @@ Her kelime için `kelime-ekle` skill'indeki kuralları uygula:
 ```bash
 python3 tools/dogrula.py
 ```
-Hata kalmayana kadar düzelt. İstersen `python3 -m http.server` ile açıp Playwright'la 390 px genişlikte ders sayfasına bak (konsol hatası olmamalı). Sonra commit et ("Ders N: <başlık>") ve çalışılan dala push et.
+Hata kalmayana kadar düzelt. İstersen `python3 -m http.server` ile açıp Playwright'la 390 px genişlikte ders sayfasına bak (konsol hatası olmamalı). Sonra commit et ("Ders N: <başlık>") ve çalışılan dala push et. Öğrenci izin verdiği için aynı commit'i `git push origin <çalışma-dalı>:refs/heads/main` ile `main`'e de gönder (fast-forward), yoksa ders sitede görünmez.
 
 ## 6. Öğrenciye kısa özet
 
