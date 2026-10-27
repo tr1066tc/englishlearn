@@ -92,6 +92,9 @@ for entry in index:
             if not (line.get("en") and line.get("tr")):
                 errors.append(f"{lid}: '{d.get('title')}' satır {n + 1}: en/tr eksik")
 
+    for n, q in enumerate(lesson.get("warmup", [])):
+        if not (q.get("q") and q.get("a")):
+            errors.append(f"{lid}: ısınma sorusu {n + 1}: q/a eksik")
     r = lesson.get("reading")
     if not r:
         warnings.append(f"{lid}: okuma paragrafı (reading) yok")

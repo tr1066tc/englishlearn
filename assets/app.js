@@ -426,7 +426,7 @@ const App = (() => {
 
   // ---------- Test adları (ana sayfa ve ilerleme için) ----------
   const TEST_NAMES = {
-    words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi',
+    warmup: 'Isınma', words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi',
     tf: 'Okuma: doğru/yanlış', cloze: 'Okuma: boşluk', match: 'Eşleştir', order: 'Cümle sırala', spell: 'Yaz',
   };
   const testLabel = n => TEST_NAMES[n] || n;

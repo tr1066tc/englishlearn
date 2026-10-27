@@ -1,5 +1,19 @@
 [
   {
+    "en": "afternoon",
+    "tr": "öğleden sonra",
+    "say": "eftırnuun",
+    "topic": "zaman",
+    "example": {
+      "en": "I check the site in the afternoon.",
+      "tr": "Öğleden sonra sahayı kontrol ediyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "in the afternoon = öğleden sonra"
+  },
+  {
     "en": "alive",
     "tr": "hayatta, yaşıyor",
     "say": "ılayv",
@@ -12,6 +26,19 @@
       "2026-10-25-ders-01"
     ],
     "note": "\"Annem yaşıyor\" demek için: My mother is alive."
+  },
+  {
+    "en": "arrive",
+    "tr": "varmak, ulaşmak",
+    "say": "ırayv",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I arrive at the site at eight.",
+      "tr": "Sekizde sahaya varıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
   },
   {
     "en": "aunt",
@@ -54,6 +81,33 @@
     ]
   },
   {
+    "en": "call",
+    "tr": "aramak (telefonla)",
+    "say": "kool",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I call my mother on Sunday.",
+      "tr": "Pazar günü annemi arıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "check",
+    "tr": "kontrol etmek",
+    "say": "çek",
+    "topic": "iş",
+    "example": {
+      "en": "I check the site every day.",
+      "tr": "Her gün sahayı kontrol ediyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Ali'den bahsederken: he checks."
+  },
+  {
     "en": "child",
     "tr": "çocuk",
     "say": "çayld",
@@ -79,6 +133,19 @@
       "2026-10-25-ders-01"
     ],
     "note": "child kelimesinin çoğulu; -s almaz."
+  },
+  {
+    "en": "come home",
+    "tr": "eve gelmek",
+    "say": "kam houm",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I come home at seven.",
+      "tr": "Yedide eve geliyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
   },
   {
     "en": "company",
@@ -147,6 +214,19 @@
     ]
   },
   {
+    "en": "day off",
+    "tr": "izin günü",
+    "say": "dey oof",
+    "topic": "zaman",
+    "example": {
+      "en": "Sunday is my day off.",
+      "tr": "Pazar benim izin günüm."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
     "en": "difficult",
     "tr": "zor",
     "say": "difikılt",
@@ -161,6 +241,19 @@
     "note": "Yazılışı: difficult (iki f)."
   },
   {
+    "en": "drive",
+    "tr": "araba kullanmak, arabayla gitmek",
+    "say": "drayv",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I drive to the construction site.",
+      "tr": "Arabayla şantiyeye gidiyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
     "en": "evening",
     "tr": "akşam",
     "say": "iivnin",
@@ -170,7 +263,8 @@
       "tr": "Her akşam İngilizce çalışıyorum."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-28-ders-03"
     ]
   },
   {
@@ -210,7 +304,8 @@
       "tr": "Altıda bitiriyorum."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-28-ders-03"
     ],
     "note": "Saat için at: finish at six."
   },
@@ -227,6 +322,33 @@
       "2026-10-27-ders-02"
     ],
     "note": "Tek kişide -s: the manager follows the rules."
+  },
+  {
+    "en": "Friday",
+    "tr": "cuma",
+    "say": "fraydey",
+    "topic": "zaman",
+    "example": {
+      "en": "On Friday I am tired.",
+      "tr": "Cuma günü yorgunum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "go to bed",
+    "tr": "yatmak",
+    "say": "gou tı bed",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I go to bed at ten.",
+      "tr": "Onda yatıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Ali'den bahsederken: he goes to bed (go → goes)."
   },
   {
     "en": "grandchild",
@@ -309,6 +431,20 @@
     ]
   },
   {
+    "en": "half past",
+    "tr": "buçuk",
+    "say": "hef pest",
+    "topic": "zaman",
+    "example": {
+      "en": "I study English at half past eight.",
+      "tr": "Sekiz buçukta İngilizce çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "half past eight = 8:30 (sekizi yarım geçe)."
+  },
+  {
     "en": "happy",
     "tr": "mutlu",
     "say": "hepi",
@@ -319,6 +455,46 @@
     },
     "lessons": [
       "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "have breakfast",
+    "tr": "kahvaltı yapmak",
+    "say": "hev brekfıst",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I have breakfast at half past six.",
+      "tr": "Altı buçukta kahvaltı yapıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Ali'den bahsederken: he has breakfast (have → has)."
+  },
+  {
+    "en": "have dinner",
+    "tr": "akşam yemeği yemek",
+    "say": "hev dinır",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I have dinner with my family.",
+      "tr": "Ailemle akşam yemeği yiyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "have lunch",
+    "tr": "öğle yemeği yemek",
+    "say": "hev lanç",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I have lunch at twelve o'clock.",
+      "tr": "Saat on ikide öğle yemeği yiyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
     ]
   },
   {
@@ -371,6 +547,19 @@
     },
     "lessons": [
       "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "leave home",
+    "tr": "evden çıkmak",
+    "say": "liiv houm",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I leave home at seven.",
+      "tr": "Yedide evden çıkıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
     ]
   },
   {
@@ -428,6 +617,19 @@
     ]
   },
   {
+    "en": "meeting",
+    "tr": "toplantı",
+    "say": "miiting",
+    "topic": "iş",
+    "example": {
+      "en": "We have a safety meeting on Monday.",
+      "tr": "Pazartesi güvenlik toplantımız var."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
     "en": "miss",
     "tr": "özlemek",
     "say": "mis",
@@ -440,6 +642,34 @@
       "2026-10-25-ders-01",
       "2026-10-27-ders-02"
     ]
+  },
+  {
+    "en": "Monday",
+    "tr": "pazartesi",
+    "say": "mandey",
+    "topic": "zaman",
+    "example": {
+      "en": "I work from Monday to Saturday.",
+      "tr": "Pazartesiden cumartesiye çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Günler büyük harfle yazılır."
+  },
+  {
+    "en": "morning",
+    "tr": "sabah",
+    "say": "moorning",
+    "topic": "zaman",
+    "example": {
+      "en": "I wake up early in the morning.",
+      "tr": "Sabah erken uyanıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "in the morning = sabahleyin"
   },
   {
     "en": "mother",
@@ -493,6 +723,34 @@
     "lessons": [
       "2026-10-25-ders-01"
     ]
+  },
+  {
+    "en": "night",
+    "tr": "gece",
+    "say": "nayt",
+    "topic": "zaman",
+    "example": {
+      "en": "I sleep at night.",
+      "tr": "Geceleri uyuyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Dikkat: at night (in değil)."
+  },
+  {
+    "en": "o'clock",
+    "tr": "saat (tam saat)",
+    "say": "ıklaak",
+    "topic": "zaman",
+    "example": {
+      "en": "I wake up at six o'clock.",
+      "tr": "Saat altıda uyanıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Sadece tam saatlerde: six o'clock. Söylemesen de olur: at six."
   },
   {
     "en": "occupational health and safety",
@@ -615,6 +873,19 @@
     ]
   },
   {
+    "en": "Saturday",
+    "tr": "cumartesi",
+    "say": "setırdey",
+    "topic": "zaman",
+    "example": {
+      "en": "I work on Saturday too.",
+      "tr": "Cumartesi de çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
     "en": "siblings",
     "tr": "kardeşler",
     "say": "siblingz",
@@ -690,9 +961,51 @@
       "tr": "Sekizde başlıyorum."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-28-ders-03"
     ],
     "note": "Saat için at: start at eight."
+  },
+  {
+    "en": "study",
+    "tr": "çalışmak (ders), okumak",
+    "say": "stadi",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I study English at half past eight.",
+      "tr": "Sekiz buçukta İngilizce çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "İşte çalışmak work; ders çalışmak study. Ali'den bahsederken: he studies."
+  },
+  {
+    "en": "Sunday",
+    "tr": "pazar",
+    "say": "sandey",
+    "topic": "zaman",
+    "example": {
+      "en": "On Sunday I am with my family.",
+      "tr": "Pazar günü ailemleyim."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "Thursday",
+    "tr": "perşembe",
+    "say": "törzdey",
+    "topic": "zaman",
+    "example": {
+      "en": "On Thursday I check the machines.",
+      "tr": "Perşembe günü makineleri kontrol ediyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "th: dil ucu üst dişlerin arasında söylenir; burada yaklaşık t ile yazıldı."
   },
   {
     "en": "tired",
@@ -704,7 +1017,21 @@
       "tr": "Akşamları yorgunum."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "Tuesday",
+    "tr": "salı",
+    "say": "tuuzdey",
+    "topic": "zaman",
+    "example": {
+      "en": "On Tuesday I have a meeting.",
+      "tr": "Salı günü toplantım var."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
     ]
   },
   {
@@ -720,6 +1047,34 @@
       "2026-10-25-ders-01"
     ],
     "note": "Amca ve dayı için aynı kelime: on my father's side / on my mother's side ile ayrılır."
+  },
+  {
+    "en": "wake up",
+    "tr": "uyanmak",
+    "say": "veyk ap",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I wake up at six o'clock.",
+      "tr": "Saat altıda uyanıyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Ali'den bahsederken: he wakes up."
+  },
+  {
+    "en": "Wednesday",
+    "tr": "çarşamba",
+    "say": "venzdey",
+    "topic": "zaman",
+    "example": {
+      "en": "Today is Wednesday.",
+      "tr": "Bugün çarşamba."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Yazılışta d var ama okunmaz: Wed-nes-day → venzdey."
   },
   {
     "en": "week",

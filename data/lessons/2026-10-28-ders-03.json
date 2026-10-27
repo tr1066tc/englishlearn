@@ -1,0 +1,193 @@
+{
+  "id": "2026-10-28-ders-03",
+  "number": 3,
+  "date": "2026-10-28",
+  "week": 2,
+  "topic": "İşim ve bir günüm",
+  "title": "Bir günüm: sabahtan akşama",
+  "summary": "Gününü sabahtan akşama anlatma: uyanmak, işe gitmek, eve gelmek, İngilizce çalışmak. Saat söyleme (at six o'clock, at half past eight) ve haftanın günleri.",
+  "warmup": [
+    { "q": "How old are you?", "a": "I'm forty-one years old.", "tr": "Kırk bir yaşındayım. (forty: u yok)" },
+    { "q": "What do you do?", "a": "I'm an occupational health and safety specialist.", "tr": "İş sağlığı ve güvenliği uzmanıyım. (health'i atlama)" },
+    { "q": "Where do you work?", "a": "I work on a construction site.", "tr": "Bir şantiyede çalışıyorum. (site'ı atlama)" },
+    { "q": "What time do you finish?", "a": "I finish at six.", "tr": "Altıda bitiriyorum. (saat için at)" },
+    { "q": "Where does your family live?", "a": "My family lives in Ankara.", "tr": "Ailem Ankara'da yaşıyor. (family → lives)" },
+    { "q": "Is your job difficult?", "a": "Yes, it is. Some people are difficult.", "tr": "Evet, zor. Bazı insanlar zor. (people → are)" }
+  ],
+  "words": {
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 26 yeni kelime var; Ders 2'den dört kelime tekrar için en altta.",
+    "groups": [
+      { "name": "Sabah", "words": ["wake up", "have breakfast", "leave home", "drive", "morning"] },
+      { "name": "İşte", "words": ["arrive", "check", "meeting", "have lunch", "afternoon"] },
+      { "name": "Akşam", "words": ["come home", "have dinner", "call", "study", "go to bed", "night"] },
+      { "name": "Saat ve günler", "words": ["o'clock", "half past", "day off", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] },
+      { "name": "Ders 2'den tekrar", "words": ["start", "finish", "tired", "evening"] }
+    ]
+  },
+  "patterns": {
+    "notes": [
+      { "title": "Saat söyleme", "text": "at six **o'clock** = saat altıda · at **half past** six = altı buçukta · at seven = yedide (o'clock söylemesen de olur). Saatten önce hep **at**." },
+      { "title": "Günün bölümleri", "text": "**in** the morning (sabah) · **in** the afternoon (öğleden sonra) · **in** the evening (akşam) · ama **at** night (gece)." },
+      { "title": "Günler", "text": "Günler hep büyük harfle yazılır: **Monday**, **Sunday**. Günden önce **on**: **on** Sunday = pazar günü. **from** Monday **to** Saturday = pazartesiden cumartesiye." },
+      { "title": "Ali'yi anlatırken: -s, -es, has, goes", "text": "I wake up → he wake**s** up · I finish → he finish**es** · I study → he stud**ies** · düzensiz: I **have** → he **has**, I **go** → he **goes**." }
+    ],
+    "tables": [
+      {
+        "title": "Haftanın günleri",
+        "intro": "Sen pazartesiden cumartesiye çalışıyorsun; pazar izin günün.",
+        "columns": ["Türkçe", "Okunuş", "İngilizce"],
+        "rows": [
+          ["Pazartesi", "mandey", "Monday"],
+          ["Salı", "tuuzdey", "Tuesday"],
+          ["Çarşamba", "venzdey", "Wednesday"],
+          ["Perşembe", "törzdey", "Thursday"],
+          ["Cuma", "fraydey", "Friday"],
+          ["Cumartesi", "setırdey", "Saturday"],
+          ["Pazar", "sandey", "Sunday"]
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "Sabah",
+        "items": [
+          { "en": "I wake up at six o'clock.", "tr": "Saat altıda uyanıyorum." },
+          { "en": "I have breakfast at half past six.", "tr": "Altı buçukta kahvaltı yapıyorum." },
+          { "en": "I leave home at seven.", "tr": "Yedide evden çıkıyorum." },
+          { "en": "I drive to the construction site.", "tr": "Arabayla şantiyeye gidiyorum." }
+        ]
+      },
+      {
+        "name": "İşte",
+        "items": [
+          { "en": "I start work at eight.", "tr": "Sekizde işe başlıyorum." },
+          { "en": "I check the site every day.", "tr": "Her gün sahayı kontrol ediyorum." },
+          { "en": "I have lunch at twelve o'clock.", "tr": "Saat on ikide öğle yemeği yiyorum." },
+          { "en": "I finish work at six.", "tr": "Altıda işi bitiriyorum." }
+        ]
+      },
+      {
+        "name": "Akşam",
+        "items": [
+          { "en": "I come home at seven.", "tr": "Yedide eve geliyorum." },
+          { "en": "I have dinner with my family.", "tr": "Ailemle akşam yemeği yiyorum." },
+          { "en": "I study English at half past eight.", "tr": "Sekiz buçukta İngilizce çalışıyorum." },
+          { "en": "I go to bed at ten.", "tr": "Onda yatıyorum." }
+        ]
+      },
+      {
+        "name": "Hafta",
+        "items": [
+          { "en": "I work from Monday to Saturday.", "tr": "Pazartesiden cumartesiye çalışıyorum." },
+          { "en": "Sunday is my day off.", "tr": "Pazar benim izin günüm." },
+          { "en": "On Sunday I am with my family.", "tr": "Pazar günü ailemleyim." },
+          { "en": "I am tired in the evening.", "tr": "Akşamları yorgunum." }
+        ]
+      },
+      {
+        "name": "Soru sorma",
+        "items": [
+          { "en": "What time do you wake up?", "tr": "Saat kaçta uyanıyorsun?" },
+          { "en": "What time do you go to bed?", "tr": "Saat kaçta yatıyorsun?" },
+          { "en": "When is your day off?", "tr": "İzin günün ne zaman?" },
+          { "en": "What do you do on Sunday?", "tr": "Pazar günü ne yapıyorsun?" }
+        ]
+      }
+    ],
+    "footnote": "Saatler örnek; kendi gününe göre değiştirerek söyle. Dikkat: \"What do you do?\" tek başına \"Ne iş yapıyorsun?\" demek; \"What do you do on Sunday?\" ise \"Pazar günü ne yapıyorsun?\"."
+  },
+  "dialogues": [
+    {
+      "title": "Bir günüm",
+      "speakers": { "A": "John", "B": "Ali" },
+      "student": "B",
+      "lines": [
+        { "who": "A", "en": "What time do you wake up?", "tr": "Saat kaçta uyanıyorsun?" },
+        { "who": "B", "en": "I wake up at six o'clock.", "tr": "Saat altıda uyanıyorum." },
+        { "who": "A", "en": "Do you have breakfast?", "tr": "Kahvaltı yapıyor musun?" },
+        { "who": "B", "en": "Yes, I have breakfast at half past six.", "tr": "Evet, altı buçukta kahvaltı yapıyorum." },
+        { "who": "A", "en": "What time do you leave home?", "tr": "Saat kaçta evden çıkıyorsun?" },
+        { "who": "B", "en": "I leave home at seven. I drive to the construction site.", "tr": "Yedide evden çıkıyorum. Arabayla şantiyeye gidiyorum." },
+        { "who": "A", "en": "What time do you start work?", "tr": "Saat kaçta işe başlıyorsun?" },
+        { "who": "B", "en": "I start at eight and finish at six.", "tr": "Sekizde başlıyorum, altıda bitiriyorum." },
+        { "who": "A", "en": "What do you do in the evening?", "tr": "Akşam ne yapıyorsun?" },
+        { "who": "B", "en": "I come home at seven. I have dinner with my family.", "tr": "Yedide eve geliyorum. Ailemle akşam yemeği yiyorum." },
+        { "who": "A", "en": "When do you study English?", "tr": "Ne zaman İngilizce çalışıyorsun?" },
+        { "who": "B", "en": "I study English at half past eight. I go to bed at ten.", "tr": "Sekiz buçukta İngilizce çalışıyorum. Onda yatıyorum." }
+      ]
+    },
+    {
+      "title": "İzin günüm",
+      "speakers": { "A": "John", "B": "Ali" },
+      "student": "B",
+      "lines": [
+        { "who": "A", "en": "How many days a week do you work?", "tr": "Haftada kaç gün çalışıyorsun?" },
+        { "who": "B", "en": "I work six days a week, from Monday to Saturday.", "tr": "Haftada altı gün, pazartesiden cumartesiye çalışıyorum." },
+        { "who": "A", "en": "When is your day off?", "tr": "İzin günün ne zaman?" },
+        { "who": "B", "en": "Sunday is my day off.", "tr": "Pazar benim izin günüm." },
+        { "who": "A", "en": "What do you do on Sunday?", "tr": "Pazar günü ne yapıyorsun?" },
+        { "who": "B", "en": "I am with my family. I study English too.", "tr": "Ailemle oluyorum. İngilizce de çalışıyorum." },
+        { "who": "A", "en": "Are you tired on Saturday evening?", "tr": "Cumartesi akşamı yorgun oluyor musun?" },
+        { "who": "B", "en": "Yes, I am. But I am happy on Sunday.", "tr": "Evet. Ama pazar günü mutluyum." }
+      ]
+    }
+  ],
+  "reading": {
+    "title": "Ali's day",
+    "sentences": [
+      { "en": "Ali wakes up at six o'clock.", "tr": "Ali saat altıda uyanıyor." },
+      { "en": "He has breakfast at half past six.", "tr": "Altı buçukta kahvaltı yapıyor." },
+      { "en": "He leaves home at seven and drives to the construction site.", "tr": "Yedide evden çıkıyor ve arabayla şantiyeye gidiyor." },
+      { "en": "He starts work at eight.", "tr": "Sekizde işe başlıyor." },
+      { "en": "He checks the site every day.", "tr": "Her gün sahayı kontrol ediyor." },
+      { "en": "He has lunch at twelve o'clock.", "tr": "Saat on ikide öğle yemeği yiyor." },
+      { "en": "He finishes work at six and comes home at seven.", "tr": "Altıda işi bitiriyor, yedide eve geliyor." },
+      { "en": "He has dinner with his family.", "tr": "Ailesiyle akşam yemeği yiyor." },
+      { "en": "At half past eight he studies English.", "tr": "Sekiz buçukta İngilizce çalışıyor." },
+      { "en": "He goes to bed at ten. Sunday is his day off.", "tr": "Onda yatıyor. Pazar onun izin günü." }
+    ],
+    "note": "Ali'den bahsederken fiile **-s** gelir: he **wakes**, he **leaves**, he **checks**. -sh ile bitince **-es**: he **finishes**. y → ies: he **studies**. Düzensizler: have → **has**, go → **goes**. Kendinden bahsederken ek yok: I **wake** up, I **have** breakfast, I **go** to bed.",
+    "gist": { "q": "Metin ne hakkında?", "options": ["Ali'nin bir günü", "Ali'nin ailesi", "Ali'nin tatili", "Ali'nin şirketi"] },
+    "truefalse": [
+      { "en": "Ali wakes up at seven o'clock.", "tr": "Ali saat yedide uyanıyor.", "answer": false, "fix": "Ali wakes up at six o'clock." },
+      { "en": "He drives to the construction site.", "tr": "Arabayla şantiyeye gidiyor.", "answer": true },
+      { "en": "He has lunch at one o'clock.", "tr": "Saat birde öğle yemeği yiyor.", "answer": false, "fix": "He has lunch at twelve o'clock." },
+      { "en": "He studies English at half past eight.", "tr": "Sekiz buçukta İngilizce çalışıyor.", "answer": true },
+      { "en": "Saturday is his day off.", "tr": "Cumartesi onun izin günü.", "answer": false, "fix": "Sunday is his day off." }
+    ],
+    "blanks": ["wakes", "leaves", "checks", "comes", "studies", "goes"],
+    "rewrite": {
+      "prompt": "Metni kendi ağzından, kendi saatlerinle yeniden yaz: Ali wakes up → I wake up, he has → I have, he goes → I go, his → my.",
+      "model": "I wake up at six o'clock. I have breakfast at half past six. I leave home at seven and drive to the construction site. I start work at eight. I check the site every day. I have lunch at twelve o'clock. I finish work at six and come home at seven. I have dinner with my family. At half past eight I study English. I go to bed at ten. Sunday is my day off."
+    }
+  },
+  "exercises": {
+    "write": {
+      "title": "Benim günüm",
+      "models": ["I wake up at six o'clock.", "I start work at eight.", "I study English at half past eight."]
+    }
+  },
+  "tests": {
+    "words": [
+      { "q": "uyanmak", "options": ["wake up", "go to bed", "leave home", "come home"] },
+      { "q": "kahvaltı yapmak", "options": ["have breakfast", "have lunch", "have dinner", "drive"] },
+      { "q": "öğle yemeği yemek", "options": ["have lunch", "have dinner", "have breakfast", "meeting"] },
+      { "q": "eve gelmek", "options": ["come home", "leave home", "go to bed", "arrive"] },
+      { "q": "yatmak", "options": ["go to bed", "wake up", "come home", "study"] },
+      { "q": "izin günü", "options": ["day off", "night", "Sunday", "meeting"] },
+      { "q": "çarşamba", "options": ["Wednesday", "Tuesday", "Thursday", "Monday"] },
+      { "q": "perşembe", "options": ["Thursday", "Tuesday", "Wednesday", "Friday"] },
+      { "q": "öğleden sonra", "options": ["afternoon", "morning", "evening", "night"] },
+      { "q": "I wake up ___ six o'clock.", "options": ["at", "in", "on", "from"] },
+      { "q": "I have breakfast at ___ past six.", "options": ["half", "hour", "middle", "part"] },
+      { "q": "I study English ___ the evening.", "options": ["in", "at", "on", "to"] },
+      { "q": "I sleep ___ night.", "options": ["at", "in", "on", "the"] },
+      { "q": "I work from Monday ___ Saturday.", "options": ["to", "at", "in", "on"] },
+      { "q": "He drives to the construction ___.", "options": ["site", "side", "city", "sight"] },
+      { "q": "Ali ___ English at half past eight.", "options": ["studies", "study", "studys", "studying"] },
+      { "q": "He ___ to bed at ten.", "options": ["goes", "go", "gos", "going"] },
+      { "q": "He ___ breakfast at half past six.", "options": ["has", "have", "haves", "having"] }
+    ],
+    "dialogue": "auto"
+  }
+}

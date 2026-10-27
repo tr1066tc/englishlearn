@@ -392,6 +392,17 @@
     return out;
   }
 
+  // ---------- Isınma: önceki derslerden kısa tekrar (sohbetteki 5 dakikalık tekrarın yerine) ----------
+  function warmupCard() {
+    const items = (lesson.warmup || []).map(x => ({ q: x.q, a: x.a, aTr: x.tr }));
+    if (!items.length) return null;
+    const root = h('div');
+    App.recallQuiz(root, items, { key, title, testName: 'warmup', keepOrder: true, intro: 'Önce bunlarla ısın: soruyu dinle, cevabını yüksek sesle söyle, sonra cevabı aç.' });
+    return h('details', { class: 'card warmup', open: !App.readState().progress[key]?.tests?.warmup },
+      h('summary', {}, `🔁 Isınma (5 dk): önceki derslerden ${items.length} soru`),
+      root);
+  }
+
   // ---------- Sayfa ----------
   const sections = [
     ['kelimeler', 'Kelimeler', wordsSection],
@@ -430,6 +441,7 @@
     h('p', { class: 'muted small' }, App.formatDate(lesson.date), ` · ${lesson.week}. hafta: ${lesson.topic}`),
     h('h1', {}, title),
     lesson.summary ? h('p', { class: 'muted' }, lesson.summary) : null,
+    warmupCard(),
     tabBar, view,
     h('div', { class: 'row', style: 'margin-top:24px' }, doneBtn,
       h('a', { class: 'btn', href: `exercises/${encodeURIComponent(lesson.id)}-alistirma.pdf`, target: '_blank', rel: 'noopener' }, '🖨 Alıştırma kağıdı (PDF)')));

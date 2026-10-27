@@ -40,7 +40,29 @@ Repo ve site **herkese açık**. Öğrenci gizlilik için takma ad kullanılmas�
 
 **Yarıda bırakmamak için:** sıfır gün yok (çok yorgunsa 5–10 dk) · izin gününde haftalık tekrar · her ay sonu kendini tanıtırken ses kaydı.
 
-Öğrenci dersi **"Ders başlasın"** diyerek başlatır. Bunu burada söylerse dersi yukarıdaki üç adımla sohbette yap, sonunda `yeni-ders` skill'i ile o günün sayfasını oluştur.
+## Ders akışı: dersleri Claude hazırlar
+
+Öğrencinin isteğiyle (27 Ekim 2026) dersler artık **önceden Claude tarafından hazırlanır**; öğrenci akşam dersi sitede, telefonunda çalışır. Günlük oturumun üç adımı sitede karşılanır: **5 dk tekrar** → ders sayfasının başındaki *Isınma* (`warmup`), **10 dk dinle ve tekrar et** → *Diyalog* ("Tekrar et") ve *Okuma*, **15 dk konuşma/üretim** → *Okuma → Kendi paragrafın*, *Ekranda alıştırma* ve kelime desteleri.
+
+- Öğrenci "yeni ders", "Ders N'yi hazırla" derse: `yeni-ders` skill'i ile aşağıdaki **Ders sırası**ndaki bir sonraki dersi hazırla, `main`'e gönder, kısa özet ver.
+- Öğrenci İlerleme sayfasındaki özeti yapıştırırsa (test puanları, en çok yanlış yapılanlar, yazdığı paragraf ve cümleler): yazdıklarını düzelt ve bu düzeltmeleri **bir sonraki dersin `corrections`** alanına koy; yanlış yaptıklarını bir sonraki dersin `warmup` ve testlerine kat; aşağıdaki zayıf noktalar listesini güncelle.
+- Öğrenci **"Ders başlasın"** derse: sitede hazır bir ders varsa o dersin konuşma bölümünü sohbette yap (ısınma soruları, diyaloğu rol yaparak, kendi gününü/işini anlatma; hatalar yumuşakça düzeltilir), sonuçları o dersin `session` ve `corrections` alanlarına işle. Hazır ders yoksa önce hazırla.
+- Ders tarihi: dersin çalışılacağı akşam (bugün 20:30 geçmişse veya bugünün dersi zaten varsa ertesi gün). Haftada 6 ders; pazar izin günü haftalık tekrar (`tekrar-testi`).
+
+### Ders sırası
+
+| Ders | Hafta | Konu | Durum |
+|---|---|---|---|
+| 1 | 1 | Ben ve ailem: kendini tanıtma, geniş aile | ✅ 25 Ekim |
+| 2 | 2 | İşim: nerede, ne iş, hangi saatler | ✅ 27 Ekim |
+| 3 | 2 | Bir günüm: sabahtan akşama, saat söyleme, günler | ✅ 28 Ekim (hazır) |
+| 4 | 3 | Şantiyem: şantiyedeki kişiler ve yerler (worker, engineer, foreman, office, gate…), there is / there are | sıradaki |
+| 5 | 3 | Basit güvenlik cümleleri: emir kipi (Wear your helmet. Don't run. Be careful.), KKD kelimeleri | |
+| 6 | 3 | Şantiyede bir sorun: can / can't, must / mustn't, uyarı vermek | |
+| 7 | 4 | Hafta tekrarı + 2 dakikalık tanıtım metnini birleştirme (okuma paragraflarının I hâlleri) | |
+| 8 | 4 | Tanıtım kaydı: metni sesli okuma ve ezberden söyleme (ay sonu ses kaydı) | |
+
+Her ders önceki derslerin kalıplarını tekrar eder; yeni ders hazırlanınca tabloyu güncelle.
 
 ## Öğrenciyle konuşurken
 
@@ -117,6 +139,7 @@ Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a ay
     "groups": [ { "name": "Kardeşler", "items": [ { "en", "tr" } ] } ],
     "footnote": "..."
   },
+  "warmup": [ { "q": "What time do you finish?", "a": "I finish at six.", "tr": "Altıda bitiriyorum. (saat için at)" } ],
   "dialogues": [ { "title", "speakers": { "A": "John", "B": "Ali" }, "student": "B",
                    "lines": [ { "who": "A", "en", "tr" } ] } ],
   "reading": { "title", "sentences": [ { "en", "tr" } ], "note": "**kalın** desteklenir",
@@ -134,6 +157,7 @@ Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a ay
 - Kelime testinde **doğru cevap her zaman ilk şıktır**, tam 4 şık; sayfa şıkları karıştırır. Boşluklu cümlede `___` kullan.
 - Diyalog testi otomatik: karşı tarafın satırı soru, hemen ardından gelen öğrenci satırı cevap olur. Diyalogları buna göre soru-cevap sırasıyla yaz.
 - `corrections` ve `session` varsa "Notlar" sekmesi görünür.
+- **Isınma (`warmup`):** 5–6 soru-cevap; önceki derslerin kalıplarından ve zayıf noktalardan (aşağıdaki "Şu an" listesi). `tr` alanı cevabın Türkçesi + parantezde kısa ipucu. Ders sayfasının en üstünde açılır kart olarak görünür (sekme değil); yapılınca kapanmış gelir.
 - **Okuma (`reading`):** 6–10 kısa cümlelik paragraf, Ali'yi **üçüncü şahısla** anlatır (*he works, his family*), yalnızca o derste ve önceki derslerde geçen kelime/kalıplarla (en fazla 1–2 yeni kelime). `gist` metni görmeden dinleyince sorulan tek soru (4 şık, doğru ilk). `truefalse` 4–5 cümle; yanlışların `fix` alanı metindeki doğru cümle. `blanks` paragrafta geçen 5–6 kelime (her biri metindeki ilk geçtiği yerde boşluk olur, tekrar etmesin). `rewrite.model` aynı paragrafın birinci şahısla (I / my) hâli: öğrenci kendi bilgileriyle yeniden yazar; haftalar ilerledikçe bunlar 2 dakikalık tanıtım metnine dönüşür.
 
 ### `data/reviews/<id>.json`
@@ -146,6 +170,7 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 
 ## Ders sayfası yapısı (beğenilen yapı, değiştirme)
 
+0. **Isınma** (sekmelerin üstünde kart, `warmup` varsa): soruyu dinle → söyle → cevabı göster → Bildim / Bilemedim.
 1. **Kelimeler:** gruplu liste, her satırda dinle; "Türkçeyi gizle" (bulanık yazıya dokununca açılır); tümünü dinle.
 2. **Kalıplar:** kısa dilbilgisi notları, gerekirse tablo, kullanılabilir cümleler (İngilizce, Türkçe, dinle).
 3. **Diyalog:** *Oku ve dinle* (satır satır, tümünü dinle) ve *Tekrar et* (öğrencinin satırları tek tek, 3 kez "Söyledim" → sonraki).
@@ -186,7 +211,7 @@ Ders verisinden otomatik, her açılışta karışık: **Eşleştir** (6 kelime,
 
 ## İş akışı
 
-- Yeni ders: `yeni-ders` skill'i (PDF üretimi dahil). Kelime: `kelime-ekle`. Tekrar testi: `tekrar-testi`. İlerleme özeti: `ilerleme`.
+- Yeni ders: `yeni-ders` skill'i (Claude hazırlar; PDF üretimi dahil). Kelime: `kelime-ekle`. Tekrar testi: `tekrar-testi`. İlerleme özeti: `ilerleme`.
 - Her veri değişikliğinden sonra `python3 tools/dogrula.py` çalıştır; hata varsa commit etme.
 - JS değiştiyse sayfayı Playwright ile 390 px genişlikte açıp konsol hatası olmadığını kontrol et.
 - Commit mesajları Türkçe ve kısa olabilir (ör. "Ders 2: İşim ve bir günüm").
