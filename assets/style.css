@@ -80,13 +80,13 @@ p { margin: 6px 0; }
 
 /* Üst menü */
 #top { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
-#top .bar, #top .nav { max-width: 720px; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; gap: 8px; }
+#top .bar, #top .nav { max-width: 720px; margin: 0 auto; padding: 0 16px; display: flex; align-items: center; gap: 6px; }
 #top .bar { justify-content: space-between; padding-top: 8px; }
 .brand { font-weight: 700; text-decoration: none; color: var(--text); font-size: 1.05rem; }
 .brand span { color: var(--accent); }
 .tools { display: flex; gap: 6px; }
 .nav { overflow-x: auto; scrollbar-width: none; }
-.nav a { padding: 10px 6px; text-decoration: none; color: var(--muted); font-weight: 600; white-space: nowrap; border-bottom: 3px solid transparent; }
+.nav a { padding: 10px 5px; font-size: .93rem; text-decoration: none; color: var(--muted); font-weight: 600; white-space: nowrap; border-bottom: 3px solid transparent; }
 .nav a.active { color: var(--text); border-color: var(--accent); }
 
 /* Düğmeler */
@@ -202,3 +202,8 @@ th { color: var(--muted); font-weight: 600; font-size: .85rem; }
 .stat b { display: block; font-size: 1.5rem; }
 details summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
 textarea { width: 100%; min-height: 160px; font: .9rem/1.4 ui-monospace, monospace; background: var(--surface-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+
+/* Bağlantı düğmesi (PDF indirme vb.) */
+a.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; }
+a.btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+a.btn.disabled { opacity: .5; pointer-events: none; }

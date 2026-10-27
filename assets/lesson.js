@@ -243,7 +243,8 @@
     h('h1', {}, title),
     lesson.summary ? h('p', { class: 'muted' }, lesson.summary) : null,
     tabBar, view,
-    h('div', { class: 'row', style: 'margin-top:24px' }, doneBtn));
+    h('div', { class: 'row', style: 'margin-top:24px' }, doneBtn,
+      h('a', { class: 'btn', href: `exercises/${encodeURIComponent(lesson.id)}-alistirma.pdf`, target: '_blank', rel: 'noopener' }, '🖨 Alıştırma kağıdı (PDF)')));
   const top = document.getElementById('top');
   const fixTabs = () => { tabBar.style.top = top.offsetHeight + 'px'; };
   fixTabs();

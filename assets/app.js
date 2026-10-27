@@ -230,6 +230,7 @@ const App = (() => {
         link('index.html', 'Dersler', 'home'),
         link('words.html', 'Kelimeler', 'words'),
         link('review.html', 'Tekrar', 'review'),
+        link('exercises.html', 'Alıştırma', 'exercises'),
         link('progress.html', 'İlerleme', 'progress')),
     );
     el.after(voiceWarning());

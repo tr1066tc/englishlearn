@@ -73,14 +73,17 @@ Okunuş, Türk okuyucunun doğrudan okuyabileceği şekilde **Türkçe harflerle
 ## Proje yapısı
 
 ```
-index.html, lesson.html, words.html, review.html, progress.html   # sayfa kabukları (hepsi aynı)
+index.html, lesson.html, words.html, review.html, exercises.html, progress.html   # sayfa kabukları (hepsi aynı)
 assets/style.css      # tek stil dosyası, renk değişkenleri :root'ta, açık/koyu tema
 assets/app.js         # ortak: veri yükleme, ses, tema, ilerleme, testler (App nesnesi)
-assets/<sayfa>.js     # home, lesson, words, review, progress
+assets/<sayfa>.js     # home, lesson, words, review, exercises, progress
 data/lessons/index.json              # ana sayfadaki ders listesi
 data/lessons/YYYY-MM-DD-ders-NN.json # her ders
 data/words.json                      # kelime kütüphanesi (tek kaynak)
 data/reviews/index.json, <id>.json   # planlı tekrar testleri
+exercises/<ders-id>-alistirma.pdf    # yazıcıdan çıktı alınacak alıştırma kağıdı (araçla üretilir)
+exercises/<ders-id>-cevaplar.pdf     # cevap anahtarı
+tools/alistirma.js                   # ders verisinden iki PDF üretir (Playwright/Chromium gerekir)
 tools/dogrula.py                     # veri denetimi — her değişiklikten sonra çalıştır
 .claude/skills/                      # yeni-ders, kelime-ekle, tekrar-testi, ilerleme
 ```
@@ -142,6 +145,14 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 4. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler).
 5. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
 
+## Alıştırma kağıtları (PDF)
+
+`exercises.html` sayfası her ders için yazıcıdan çıktı alınabilir bir **alıştırma kağıdı** ve ayrı bir **cevap anahtarı** sunar. İkisi de ders JSON'undan `node tools/alistirma.js <ders-id>` ile üretilir (A4, kalemle çözülür; eşleştir, şık seç, ilk harf ipuçlu yaz, cümle sırala, diyaloğu tamamla, 3 kez söyleme çizelgesi, kendi cümlelerin). Aynı ders için her seferinde aynı sorular çıkar.
+
+- Kelime, kalıp, test ve diyalog verisi değişirse PDF'leri yeniden üret ve commit et. `dogrula.py` PDF'i olmayan dersi hata sayar.
+- İsteğe bağlı: ders JSON'una `"exercises": { "write": { "title": "...", "models": ["...", "..."] } }` eklenirse "Kendi cümlelerin" bölümünde o örnekler kullanılır; yoksa ikinci kalıp grubunun ilk 3 cümlesi alınır.
+- Kağıtta gerçek ad yoktur ("Ali" takma adı kullanılır); Tarih/Süre/Puan boş bırakılır.
+
 ## Tasarım kuralları
 
 - Mobil öncelikli; dokunma hedefleri en az 40–44 px. Telefonda yatay kaydırma olmamalı.
@@ -153,7 +164,7 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 
 ## İş akışı
 
-- Yeni ders: `yeni-ders` skill'i. Kelime: `kelime-ekle`. Tekrar testi: `tekrar-testi`. İlerleme özeti: `ilerleme`.
+- Yeni ders: `yeni-ders` skill'i (PDF üretimi dahil). Kelime: `kelime-ekle`. Tekrar testi: `tekrar-testi`. İlerleme özeti: `ilerleme`.
 - Her veri değişikliğinden sonra `python3 tools/dogrula.py` çalıştır; hata varsa commit etme.
 - JS değiştiyse sayfayı Playwright ile 390 px genişlikte açıp konsol hatası olmadığını kontrol et.
 - Commit mesajları Türkçe ve kısa olabilir (ör. "Ders 2: İşim ve bir günüm").

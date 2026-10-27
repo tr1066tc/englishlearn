@@ -39,11 +39,13 @@ Her kelime için `kelime-ekle` skill'indeki kuralları uygula:
 
 `data/lessons/index.json` dizisine `{ id, number, date, week, topic, title }` ekle (ders dosyasıyla birebir aynı değerler).
 
-## 5. Denetle ve gönder
+## 5. Alıştırma kağıdını üret, denetle ve gönder
 
 ```bash
-python3 tools/dogrula.py
+node tools/alistirma.js <ders-id>   # exercises/<id>-alistirma.pdf ve -cevaplar.pdf
+python3 tools/dogrula.py            # PDF'i olmayan ders hata verir
 ```
+PDF'lerin sayfa sayısına bak (`pdfinfo`, 5 sayfayı aşmasın); gerekirse `pdftoppm -r 60 -png` ile bir sayfaya göz at. PDF'ler de commit'e girer.
 Hata kalmayana kadar düzelt. İstersen `python3 -m http.server` ile açıp Playwright'la 390 px genişlikte ders sayfasına bak (konsol hatası olmamalı). Sonra commit et ("Ders N: <başlık>") ve çalışılan dala push et. Öğrenci izin verdiği için aynı commit'i `git push origin <çalışma-dalı>:refs/heads/main` ile `main`'e de gönder (fast-forward), yoksa ders sitede görünmez.
 
 ## 6. Öğrenciye kısa özet

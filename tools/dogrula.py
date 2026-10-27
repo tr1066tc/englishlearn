@@ -60,6 +60,9 @@ for entry in index:
     for field in ("id", "number", "date", "week", "topic", "title"):
         if lesson.get(field) != entry.get(field):
             errors.append(f"{lid}: '{field}' index.json ile aynı değil")
+    for kind in ("alistirma", "cevaplar"):
+        if not (ROOT / "exercises" / f"{lid}-{kind}.pdf").exists():
+            errors.append(f"{lid}: exercises/{lid}-{kind}.pdf yok (node tools/alistirma.js {lid})")
     if not lid.startswith(lesson.get("date", "")):
         errors.append(f"{lid}: dosya adı tarihle başlamıyor")
 
