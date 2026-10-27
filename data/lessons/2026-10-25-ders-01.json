@@ -404,8 +404,8 @@
         },
         {
           "who": "B",
-          "en": "That's right. They are students.",
-          "tr": "Doğru. Onlar öğrenci."
+          "en": "That's right. My nephew and my niece are students.",
+          "tr": "Doğru. Erkek ve kız yeğenim öğrenci."
         },
         {
           "who": "A",
@@ -414,8 +414,18 @@
         },
         {
           "who": "B",
-          "en": "No, they passed away. But I have many cousins.",
-          "tr": "Hayır, vefat ettiler. Ama çok kuzenim var."
+          "en": "No, they passed away.",
+          "tr": "Hayır, vefat ettiler."
+        },
+        {
+          "who": "A",
+          "en": "Do you have any cousins?",
+          "tr": "Hiç kuzenin var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, I have many cousins.",
+          "tr": "Evet, çok kuzenim var."
         },
         {
           "who": "A",

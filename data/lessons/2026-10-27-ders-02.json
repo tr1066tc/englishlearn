@@ -7,7 +7,7 @@
   "title": "İşim: nerede, ne iş, hangi saatler",
   "summary": "Nerede çalıştığını, ne iş yaptığını ve hangi saatlerde çalıştığını anlatma. Sonunda işin hakkındaki düşüncelerin ve hedefin: kurumsal bir şirkette çalışmak.",
   "words": {
-    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 21 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 23 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
     "groups": [
       {
         "name": "İş ve işyeri",
@@ -51,6 +51,13 @@
         ]
       },
       {
+        "name": "Bağlaçlar",
+        "words": [
+          "because",
+          "so"
+        ]
+      },
+      {
         "name": "Ders 1'den tekrar",
         "words": [
           "specialist",
@@ -78,6 +85,10 @@
       {
         "title": "is · are · -s",
         "text": "**people are** (çoğul) · **there is** a safety culture (tek şey) · workers **follow** (çoğul, -s yok) · the manager follow**s** (tek kişi, -s var)."
+      },
+      {
+        "title": "because · so",
+        "text": "Cevap sorudan fazlasını söylüyorsa ikisini bağla. **because** = çünkü (sebep): My job is difficult, **because** dealing with people is difficult. · **so** = bu yüzden (sonuç): Workers follow the rules, **so** I can do my job well."
       }
     ],
     "tables": [
@@ -186,6 +197,10 @@
         "name": "İşim hakkında ne düşünüyorum?",
         "items": [
           {
+            "en": "My job is difficult, because dealing with people is difficult.",
+            "tr": "İşim zor, çünkü insanlarla uğraşmak zor."
+          },
+          {
             "en": "My job is important.",
             "tr": "İşim önemli."
           },
@@ -223,8 +238,8 @@
             "tr": "İşçiler ve idareciler kurallara uyar."
           },
           {
-            "en": "Then I can do my job well.",
-            "tr": "O zaman işimi iyi yapabilirim."
+            "en": "So I can do my job well.",
+            "tr": "Bu yüzden işimi iyi yapabilirim."
           },
           {
             "en": "I want to be happy at work and like my job.",
@@ -321,8 +336,8 @@
         },
         {
           "who": "B",
-          "en": "Yes, it is. Dealing with people is difficult.",
-          "tr": "Evet, zor. İnsanlarla uğraşmak zor."
+          "en": "Yes, it is, because dealing with people is difficult.",
+          "tr": "Evet, zor, çünkü insanlarla uğraşmak zor."
         },
         {
           "who": "A",
@@ -331,8 +346,8 @@
         },
         {
           "who": "B",
-          "en": "No, they don't. Not every workplace is good.",
-          "tr": "Hayır, uymuyor. Her işyeri iyi değil."
+          "en": "No, they don't. So not every workplace is good.",
+          "tr": "Hayır, uymuyor. Bu yüzden her işyeri iyi değil."
         },
         {
           "who": "A",
@@ -341,8 +356,8 @@
         },
         {
           "who": "B",
-          "en": "I want to work in a big company. In a big company, there is a safety culture.",
-          "tr": "Büyük bir şirkette çalışmak istiyorum. Büyük bir şirkette güvenlik kültürü vardır."
+          "en": "I want to work in a big company, because there is a safety culture there.",
+          "tr": "Büyük bir şirkette çalışmak istiyorum, çünkü orada güvenlik kültürü var."
         },
         {
           "who": "A",
@@ -351,8 +366,8 @@
         },
         {
           "who": "B",
-          "en": "Yes, they do. Then I can do my job well.",
-          "tr": "Evet, uyuyor. O zaman işimi iyi yapabilirim."
+          "en": "Yes, they do. So I can do my job well.",
+          "tr": "Evet, uyuyor. Bu yüzden işimi iyi yapabilirim."
         },
         {
           "who": "A",

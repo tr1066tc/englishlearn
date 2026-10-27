@@ -54,6 +54,20 @@
     ]
   },
   {
+    "en": "because",
+    "tr": "çünkü",
+    "say": "bikooz",
+    "topic": "bağlaç",
+    "example": {
+      "en": "My job is difficult, because dealing with people is difficult.",
+      "tr": "İşim zor, çünkü insanlarla uğraşmak zor."
+    },
+    "note": "Sebep söyler. Cevap sorudan fazlasını anlatıyorsa because ile bağla.",
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "brother",
     "tr": "erkek kardeş",
     "say": "bradır",
@@ -925,6 +939,20 @@
     ]
   },
   {
+    "en": "so",
+    "tr": "bu yüzden, o yüzden",
+    "say": "sou",
+    "topic": "bağlaç",
+    "example": {
+      "en": "Workers follow the rules, so I can do my job well.",
+      "tr": "İşçiler kurallara uyuyor, bu yüzden işimi iyi yapabilirim."
+    },
+    "note": "Sonuç söyler: sebep, so, sonuç.",
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "son",
     "tr": "oğul",
     "say": "san",
@@ -989,6 +1017,20 @@
       "en": "On Sunday I am with my family.",
       "tr": "Pazar günü ailemleyim."
     },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "then",
+    "tr": "sonra",
+    "say": "den",
+    "topic": "bağlaç",
+    "example": {
+      "en": "I study English. Then I go to bed.",
+      "tr": "İngilizce çalışıyorum. Sonra yatıyorum."
+    },
+    "note": "th: dil ucu üst dişlerin arasında söylenir; burada yaklaşık d ile yazıldı.",
     "lessons": [
       "2026-10-28-ders-03"
     ]
