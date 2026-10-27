@@ -22,6 +22,7 @@ Format `CLAUDE.md` → "Veri formatları". İçerik ölçüsü (A1–A2):
 - **words:** 15–30 kelime, 3–6 grup. Önceki derslerde geçen 3–5 kelimeyi de gruba koyabilirsin (tekrar).
 - **patterns:** 2–4 kısa not (Türkçe açıklama, `**kalın**` ile vurgu), 3–5 grup × 3–5 cümle. Yeni kalıp sayısı az olsun; önceki dersin 1–2 kalıbını tekrar et. Cümleler öğrencinin hayatından (aile, İSG, şantiye, akşam rutini) ve takma adlarla.
 - **dialogues:** 1–2 diyalog, 8–12 satır, karşı taraf soru sorar → öğrenci cevaplar sırasıyla (diyalog testi buna göre otomatik çıkar). Karşı taraf genelde "John"; öğrenci "Ali".
+- **reading:** 6–10 kısa cümlelik paragraf; Ali'yi üçüncü şahısla anlatır ve o günün kelime/kalıplarını önceki derslerinkilerle birleştirir (en fazla 1–2 yeni kelime). `gist` (metni görmeden dinleyince 1 soru, 4 şık, doğru ilk), `truefalse` (4–5 cümle, yanlışlara `fix`), `blanks` (paragraftan 5–6 farklı kelime; o dersin yeni kelimeleri ve -s/-es fiiller iyi aday), `rewrite` (`prompt` + aynı paragrafın I/my ile hâli `model`). Sohbette öğrenci kendini anlattıysa paragraf onun anlattıklarından (takma adlarla) yazılsın. Format `CLAUDE.md` → "Okuma".
 - **tests.words:** 12–18 soru, tam 4 şık, **doğru cevap ilk şık**. Yarısı Türkçe kelime → İngilizce, yarısı `___` boşluklu cümle. En az bir soru `session.watch` zayıf noktasını hedeflesin.
 - **corrections / session:** sohbette yazılan metin, düzeltmeler ve adım sonuçları varsa ekle; `session.watch` listesine yeni ve süren zayıf noktaları yaz.
 - Okunuşları `CLAUDE.md` → "Okunuş yazım kuralları"na göre yaz.

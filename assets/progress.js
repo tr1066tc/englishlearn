@@ -10,7 +10,7 @@
 
   const s = App.readState();
   const P = s.progress;
-  const testName = n => ({ words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi' })[n] || n;
+  const testName = App.testLabel;
   const day = iso => iso ? new Date(iso).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' }) : '';
 
   const doneLessons = lessons.filter(l => P['lesson:' + l.id]?.completed);
@@ -32,6 +32,16 @@
     }
     lines.push('', `Kelime kartları: ${k.seen} kart görüldü (${k.learning} öğreniliyor, ${k.young} genç, ${k.mature} olgun = 21+ gün). Bugün ${k.today.n} kart çalışıldı, ${k.dueToday} tekrar kartının sırası geldi.`);
     if (k.hard.length) lines.push('Kartlarda çok unutulanlar: ' + k.hard.slice(0, 15).map(x => `${x.word} (${dirName(x.dir)}, ${x.lapses} kez)`).join(', '));
+    const writing = App.readState().writing || {};
+    const wkeys = Object.keys(writing).sort();
+    if (wkeys.length) {
+      lines.push('', 'Yazdıkların (Claude düzeltsin):');
+      for (const k of wkeys) {
+        const [lid, kind] = k.split(':');
+        const l = lessons.find(x => x.id === lid);
+        lines.push(`[${l ? 'Ders ' + l.number : lid} ${kind === 'okuma' ? 'okuma paragrafı' : 'kendi cümlelerim'}]`, writing[k].trim());
+      }
+    }
     lines.push('', 'En çok yanlış yapılanlar:');
     lines.push(...(missed.length ? missed.slice(0, 25).map(([t, n]) => `- ${t} (${n})`) : ['- yok']));
     return lines.join('\n');

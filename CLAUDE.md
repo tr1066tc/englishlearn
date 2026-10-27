@@ -73,11 +73,11 @@ Okunuş, Türk okuyucunun doğrudan okuyabileceği şekilde **Türkçe harflerle
 ## Proje yapısı
 
 ```
-index.html, lesson.html, words.html, review.html, exercises.html, progress.html   # sayfa kabukları (hepsi aynı)
+index.html, lesson.html, words.html, review.html, exercises.html, practice.html, progress.html   # sayfa kabukları (hepsi aynı)
 assets/style.css      # tek stil dosyası, renk değişkenleri :root'ta, açık/koyu tema
 assets/app.js         # ortak: veri yükleme, ses, tema, ilerleme, testler (App nesnesi)
 assets/srs.js         # Anki benzeri aralıklı tekrar motoru (kelime desteleri)
-assets/<sayfa>.js     # home, lesson, words, review, exercises, progress
+assets/<sayfa>.js     # home, lesson, words, review, exercises, practice, progress
 data/lessons/index.json              # ana sayfadaki ders listesi
 data/lessons/YYYY-MM-DD-ders-NN.json # her ders
 data/words.json                      # kelime kütüphanesi (tek kaynak)
@@ -119,6 +119,11 @@ Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a ay
   },
   "dialogues": [ { "title", "speakers": { "A": "John", "B": "Ali" }, "student": "B",
                    "lines": [ { "who": "A", "en", "tr" } ] } ],
+  "reading": { "title", "sentences": [ { "en", "tr" } ], "note": "**kalın** desteklenir",
+               "gist": { "q": "Metin ne hakkında?", "options": [doğru, ...3 yanlış] },
+               "truefalse": [ { "en", "tr", "answer": true|false, "fix": "yanlışsa metindeki doğrusu" } ],
+               "blanks": ["works", "starts"],
+               "rewrite": { "prompt", "model" } },
   "tests": { "words": [ { "q": "babaanne", "options": ["grandmother", "aunt", "niece", "cousin"] } ],
              "dialogue": "auto" },
   "corrections": { "intro", "original", "items": [ { "wrong", "right", "note" } ], "corrected" },  // isteğe bağlı
@@ -129,6 +134,7 @@ Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a ay
 - Kelime testinde **doğru cevap her zaman ilk şıktır**, tam 4 şık; sayfa şıkları karıştırır. Boşluklu cümlede `___` kullan.
 - Diyalog testi otomatik: karşı tarafın satırı soru, hemen ardından gelen öğrenci satırı cevap olur. Diyalogları buna göre soru-cevap sırasıyla yaz.
 - `corrections` ve `session` varsa "Notlar" sekmesi görünür.
+- **Okuma (`reading`):** 6–10 kısa cümlelik paragraf, Ali'yi **üçüncü şahısla** anlatır (*he works, his family*), yalnızca o derste ve önceki derslerde geçen kelime/kalıplarla (en fazla 1–2 yeni kelime). `gist` metni görmeden dinleyince sorulan tek soru (4 şık, doğru ilk). `truefalse` 4–5 cümle; yanlışların `fix` alanı metindeki doğru cümle. `blanks` paragrafta geçen 5–6 kelime (her biri metindeki ilk geçtiği yerde boşluk olur, tekrar etmesin). `rewrite.model` aynı paragrafın birinci şahısla (I / my) hâli: öğrenci kendi bilgileriyle yeniden yazar; haftalar ilerledikçe bunlar 2 dakikalık tanıtım metnine dönüşür.
 
 ### `data/reviews/<id>.json`
 Kimlik: `YYYY-MM-DD-tekrar-NN`. `index.json`'a `{ id, date, title }` olarak eklenir.
@@ -143,8 +149,9 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 1. **Kelimeler:** gruplu liste, her satırda dinle; "Türkçeyi gizle" (bulanık yazıya dokununca açılır); tümünü dinle.
 2. **Kalıplar:** kısa dilbilgisi notları, gerekirse tablo, kullanılabilir cümleler (İngilizce, Türkçe, dinle).
 3. **Diyalog:** *Oku ve dinle* (satır satır, tümünü dinle) ve *Tekrar et* (öğrencinin satırları tek tek, 3 kez "Söyledim" → sonraki).
-4. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler).
-5. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
+4. **Okuma** (öğrenci onayıyla eklendi; `reading` yoksa sekme görünmez): 1) önce dinle (metin gizli, `gist` sorusu cevaplanınca açılır), 2) oku ve dinle (okunan cümle vurgulanır, cümleye dokununca Türkçesi), 3) doğru/yanlış, 4) boşluk doldur (kelime kutucukları), 5) kendi paragrafın (yazı kutusu + "Claude'a kopyala").
+5. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler). Altında "Ekranda alıştırma çöz" bağlantısı.
+6. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
 
 ## Kelime desteleri (Anki benzeri aralıklı tekrar)
 
@@ -155,6 +162,10 @@ Kelimeler sayfasının varsayılan sekmesi **Desteler**: her ders bir deste, der
 - Ayarlar: günlük yeni kart sınırı (5/10/20/30) ve kart yönü (İng→Tür, Tür→İng, ikisi de). Kart kimliği `<yön>:<kelime>`.
 - Durum `localStorage` → `englishlearn:v1` → `srs` (`cards`, `days`, `settings`, `collapsed`, `undo`). "Yeniden" cevabı `missed` sayacına da eklenir. İlerleme sayfası özetinde kart istatistikleri ve çok unutulan kelimeler yer alır; `tekrar-testi` ve `ilerleme` bunları kullanabilir.
 - Yeni ders eklemek için ek iş gerekmez: dersin `words.groups` listesi otomatik olarak yeni deste olur.
+
+## Ekranda alıştırma (`practice.html?id=<ders-id>`)
+
+Ders verisinden otomatik, her açılışta karışık: **Eşleştir** (6 kelime, Türkçe ↔ İngilizce dokunarak), **Cümle sırala** (kalıp ve okuma cümlelerinden 5 tane, kelime kutucuklarıyla), **Kelimeyi yaz** (8 kelime, ilk harf + harf sayısı ipucu; büyük/küçük harf ve noktalama sayılmaz, tek harf hatası "neredeyse" der ama yanlış sayılır), **Kendi cümlelerin** (yazı kutusu; örnekler `exercises.write.models` ya da ikinci kalıp grubu). Sonuçlar ders kaydına (`match`, `order`, `spell`; okuma için `tf`, `cloze`) ve yanlışlar `missed` listesine işlenir. Öğrencinin yazdıkları `localStorage` → `writing["<ders-id>:okuma" | "<ders-id>:cumleler"]`; İlerleme özetine metin olarak girer, Claude bir sonraki derste düzeltir. Ek veri gerekmez.
 
 ## Alıştırma kağıtları (PDF)
 
@@ -170,7 +181,7 @@ Kelimeler sayfasının varsayılan sekmesi **Desteler**: her ders bir deste, der
 - **Her adım ekrandaki kontrollerle yapılabilmeli.** "Metni elinle kapat" gibi elle yapılacak talimat yazma; gizle/göster, sayaç, test gibi düğmeler kullan.
 - Ses: `speechSynthesis` (İngilizce ses, varsayılan hız **yavaş**). Ses yoksa sayfa uyarı gösterir, metin kullanılabilir kalır. Claude uygulamasının içindeki pencerede ses çalışmıyor; site telefonun tarayıcısında açılır. Android'de Google konuşma motoruna İngilizce ses paketi gerekebilir.
 - Açık/koyu tema; renkler `assets/style.css` içindeki değişkenlerden.
-- İlerleme `localStorage` anahtarı `englishlearn:v1` altında: `progress` (ders/test sonuçları), `missed` (yanlış yapılan kelime/cümle sayıları), `srs` (kelime kartları), `settings`. Claude bunu doğrudan okuyamaz; öğrenci İlerleme sayfasındaki özeti kopyalayıp yapıştırır.
+- İlerleme `localStorage` anahtarı `englishlearn:v1` altında: `progress` (ders/test sonuçları), `missed` (yanlış yapılan kelime/cümle sayıları), `srs` (kelime kartları), `writing` (öğrencinin yazdıkları), `settings`. Claude bunu doğrudan okuyamaz; öğrenci İlerleme sayfasındaki özeti kopyalayıp yapıştırır.
 - Arayüz metinleri Türkçe ve kısa; öğrenciye "sen" diye hitap edilir.
 
 ## İş akışı

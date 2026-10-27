@@ -11,12 +11,13 @@
   const url = (id, kind) => `exercises/${encodeURIComponent(id)}-${kind}.pdf`;
 
   const cards = sorted.map(l => {
-    const sheet = h('a', { class: 'btn primary', href: url(l.id, 'alistirma'), target: '_blank', rel: 'noopener' }, '📄 Alıştırma kağıdı');
+    const sheet = h('a', { class: 'btn', href: url(l.id, 'alistirma'), target: '_blank', rel: 'noopener' }, '📄 Alıştırma kağıdı');
     const key = h('a', { class: 'btn', href: url(l.id, 'cevaplar'), target: '_blank', rel: 'noopener' }, '✓ Cevap anahtarı');
     const card = h('div', { class: 'card' },
       h('div', { class: 'date muted small' }, App.formatDate(l.date)),
       h('div', { style: 'font-weight:700;font-size:1.08rem;margin:2px 0' }, `Ders ${l.number}: ${l.title}`),
       h('div', { class: 'muted small' }, `${l.week}. hafta · ${l.topic}`),
+      h('div', { class: 'row' }, h('a', { class: 'btn primary', href: 'practice.html?id=' + encodeURIComponent(l.id) }, '✍ Ekranda çöz')),
       h('div', { class: 'row' }, sheet, key),
       h('a', { class: 'small', href: 'lesson.html?id=' + encodeURIComponent(l.id) }, 'Dersi aç →'));
     // Dosya henüz üretilmediyse düğmeleri kapat
@@ -31,7 +32,7 @@
 
   App.fill(main,
     h('h1', {}, 'Alıştırmalar'),
-    h('p', { class: 'muted' }, 'Her ders için yazıcıdan çıktı alıp kalemle çözebileceğin bir alıştırma kağıdı. Cevap anahtarı ayrı dosyada; önce kendin yap, sonra kontrol et.'),
+    h('p', { class: 'muted' }, 'Her ders için iki yol: ekranda çözülen kısa alıştırmalar (eşleştir, cümle sırala, kelimeyi yaz, kendi cümlelerin) ya da yazıcıdan çıktı alıp kalemle çözeceğin kağıt. Kağıdın cevap anahtarı ayrı dosyada.'),
     h('details', { class: 'card' },
       h('summary', {}, 'Kağıtta neler var?'),
       h('ol', {},

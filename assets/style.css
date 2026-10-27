@@ -245,3 +245,31 @@ a.btn.disabled { opacity: .5; pointer-events: none; }
 .answer-bar .good { color: var(--c-rev); border-color: var(--c-rev); background: var(--surface); flex: initial; }
 .answer-bar .easy { color: var(--c-new); border-color: var(--c-new); }
 .done .big { font-size: 1.15rem; font-weight: 700; }
+
+/* Okuma sekmesi */
+.reading-text { font-size: 1.12rem; line-height: 2.1; margin: 8px 0; }
+.rs { cursor: pointer; border-radius: 6px; padding: 2px 0; -webkit-tap-highlight-color: transparent; }
+.rs.sel, .rs.playing { background: var(--accent-soft); box-shadow: 0 0 0 3px var(--accent-soft); }
+.slot { display: inline-block; min-width: 72px; min-height: 36px; padding: 2px 10px; margin: 0 2px; vertical-align: middle; border: 2px dashed var(--line); border-radius: 8px; background: var(--surface-2); font-weight: 600; line-height: 1.4; }
+.slot.filled { border-style: solid; border-color: var(--accent); background: var(--accent-soft); }
+.slot.right { border-color: var(--good); background: var(--good-soft); color: var(--good); }
+.slot.wrong { border-color: var(--bad); background: var(--bad-soft); color: var(--bad); }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.word-chip { min-height: 44px; padding: 8px 14px; font-size: 1rem; font-weight: 600; background: var(--surface); border: 1.5px solid var(--line); }
+.word-chip:disabled { opacity: .35; }
+.options.two { grid-template-columns: 1fr 1fr; }
+
+/* Ekranda alıştırma */
+.match-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.option.match { min-height: 52px; text-align: center; padding: 8px; font-size: .98rem; }
+.option.match.picked { border-color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+.option.match.right { opacity: .55; }
+.answer-line { min-height: 60px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 8px; border: 2px dashed var(--line); border-radius: 10px; }
+.answer-line.right { border-color: var(--good); background: var(--good-soft); }
+.answer-line.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.hint-letters { font-family: ui-monospace, monospace; font-size: 1.2rem; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; }
+input.spell { font-size: 1.15rem; }
+input.spell.right { border-color: var(--good); background: var(--good-soft); }
+input.spell.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.write-box { width: 100%; min-height: 150px; font: 1rem/1.5 inherit; font-family: inherit; background: var(--surface); }
+.models { background: var(--surface-2); border-radius: 10px; padding: 8px 12px; margin: 8px 0; }

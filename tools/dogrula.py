@@ -11,6 +11,7 @@ Kontroller:
 - data/reviews: kelimeler kütüphanede var mı, dersler mevcut mu
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -90,6 +91,31 @@ for entry in index:
                 errors.append(f"{lid}: '{d.get('title')}' satır {n + 1}: konuşmacı tanımsız")
             if not (line.get("en") and line.get("tr")):
                 errors.append(f"{lid}: '{d.get('title')}' satır {n + 1}: en/tr eksik")
+
+    r = lesson.get("reading")
+    if not r:
+        warnings.append(f"{lid}: okuma paragrafı (reading) yok")
+    else:
+        sents = r.get("sentences", [])
+        if not (4 <= len(sents) <= 12):
+            warnings.append(f"{lid}: okuma {len(sents)} cümle (4–12 olmalı)")
+        for n, x in enumerate(sents):
+            if not (x.get("en") and x.get("tr")):
+                errors.append(f"{lid}: okuma cümle {n + 1}: en/tr eksik")
+        text = " ".join(x.get("en", "") for x in sents)
+        for w in r.get("blanks", []):
+            if not re.search(rf"(^|[^A-Za-z']){re.escape(w)}(?=[^A-Za-z']|$)", text):
+                errors.append(f"{lid}: okuma boşluğu '{w}' metinde geçmiyor")
+        if len(set(r.get("blanks", []))) != len(r.get("blanks", [])):
+            errors.append(f"{lid}: okuma boşluklarında aynı kelime iki kez var")
+        for q in r.get("truefalse", []):
+            if not isinstance(q.get("answer"), bool) or not q.get("en"):
+                errors.append(f"{lid}: doğru/yanlış sorusu eksik: {q.get('en')!r}")
+            if q.get("answer") is False and not q.get("fix"):
+                warnings.append(f"{lid}: yanlış cümle için 'fix' (metindeki doğrusu) yok: {q.get('en')!r}")
+        g = r.get("gist")
+        if g and len(g.get("options", [])) != 4:
+            errors.append(f"{lid}: okuma 'gist' sorusunda 4 şık olmalı")
 
 for path in sorted((DATA / "lessons").glob("*.json")):
     if path.name != "index.json" and path.stem not in ids:

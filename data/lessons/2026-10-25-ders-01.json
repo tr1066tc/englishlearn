@@ -9,40 +9,171 @@
   "words": {
     "intro": "Okunuşlar Türkçe harflerle yazıldı. mother, father, brother kelimelerindeki th sesi dil ucu dişlerin arasındayken söylenir; burada yaklaşık d ile yazıldı.",
     "groups": [
-      { "name": "Yakın aile", "words": ["mother", "father", "parents", "wife", "husband", "daughter", "son", "child", "children"] },
-      { "name": "Kardeşler", "words": ["brother", "sister", "older brother", "older sister", "younger brother", "younger sister", "siblings"] },
-      { "name": "Büyükler ve torunlar", "words": ["grandmother", "grandfather", "grandparents", "grandchild", "grandson", "granddaughter"] },
-      { "name": "Yeğenler ve geniş aile", "words": ["nephew", "niece", "uncle", "aunt", "cousin", "relatives"] },
-      { "name": "Evlilikle gelen aile", "words": ["mother-in-law", "father-in-law", "brother-in-law", "sister-in-law", "in-laws"] },
-      { "name": "Tanışma ve iş", "words": ["married", "alive", "pass away", "live", "miss", "specialist", "occupational health and safety"] }
+      {
+        "name": "Yakın aile",
+        "words": [
+          "mother",
+          "father",
+          "parents",
+          "wife",
+          "husband",
+          "daughter",
+          "son",
+          "child",
+          "children"
+        ]
+      },
+      {
+        "name": "Kardeşler",
+        "words": [
+          "brother",
+          "sister",
+          "older brother",
+          "older sister",
+          "younger brother",
+          "younger sister",
+          "siblings"
+        ]
+      },
+      {
+        "name": "Büyükler ve torunlar",
+        "words": [
+          "grandmother",
+          "grandfather",
+          "grandparents",
+          "grandchild",
+          "grandson",
+          "granddaughter"
+        ]
+      },
+      {
+        "name": "Yeğenler ve geniş aile",
+        "words": [
+          "nephew",
+          "niece",
+          "uncle",
+          "aunt",
+          "cousin",
+          "relatives"
+        ]
+      },
+      {
+        "name": "Evlilikle gelen aile",
+        "words": [
+          "mother-in-law",
+          "father-in-law",
+          "brother-in-law",
+          "sister-in-law",
+          "in-laws"
+        ]
+      },
+      {
+        "name": "Tanışma ve iş",
+        "words": [
+          "married",
+          "alive",
+          "pass away",
+          "live",
+          "miss",
+          "specialist",
+          "occupational health and safety"
+        ]
+      }
     ]
   },
   "patterns": {
     "notes": [
-      { "title": "'s eki = -ın, -in", "text": "my brother**'s** son = ağabey**imin** oğlu · my mother**'s** mother = ann**emin** annesi" },
-      { "title": "have / has", "text": "I / you / we / they **have** · he / she / tek kişi **has** → my sister **has** a son." },
-      { "title": "I live · my family lives", "text": "Tek kişi ya da tek şey için fiile **-s** gelir: I live in Ankara. · My family live**s** in Ankara. · My mother live**s** in Ankara." },
-      { "title": "older / younger than me", "text": "benden büyük / benden küçük. Kısaca **My sister is younger.** de denir." },
-      { "title": "a / an", "text": "**an** sadece sesli harfle başlayan kelimeden önce: **an** occupational health and safety specialist · **a** house · **a** car" }
+      {
+        "title": "'s eki = -ın, -in",
+        "text": "my brother**'s** son = ağabey**imin** oğlu · my mother**'s** mother = ann**emin** annesi"
+      },
+      {
+        "title": "have / has",
+        "text": "I / you / we / they **have** · he / she / tek kişi **has** → my sister **has** a son."
+      },
+      {
+        "title": "I live · my family lives",
+        "text": "Tek kişi ya da tek şey için fiile **-s** gelir: I live in Ankara. · My family live**s** in Ankara. · My mother live**s** in Ankara."
+      },
+      {
+        "title": "older / younger than me",
+        "text": "benden büyük / benden küçük. Kısaca **My sister is younger.** de denir."
+      },
+      {
+        "title": "a / an",
+        "text": "**an** sadece sesli harfle başlayan kelimeden önce: **an** occupational health and safety specialist · **a** house · **a** car"
+      }
     ],
     "tables": [
       {
         "title": "Türkçede ayrı, İngilizcede tek kelime",
         "intro": "İngilizce baba ve anne tarafını ayırmaz. Ayırmak için **on my father's side** (baba tarafından) / **on my mother's side** (anne tarafından) denir.",
-        "columns": ["Türkçe", "Kelime kelime", "İngilizce"],
+        "columns": [
+          "Türkçe",
+          "Kelime kelime",
+          "İngilizce"
+        ],
         "rows": [
-          ["Babaanne", "my father's mother", "grandmother"],
-          ["Anneanne", "my mother's mother", "grandmother"],
-          ["Dede (baba tarafı)", "my father's father", "grandfather"],
-          ["Dede (anne tarafı)", "my mother's father", "grandfather"],
-          ["Amca", "my father's brother", "uncle"],
-          ["Dayı", "my mother's brother", "uncle"],
-          ["Hala", "my father's sister", "aunt"],
-          ["Teyze", "my mother's sister", "aunt"],
-          ["Erkek yeğen", "my brother's or sister's son", "nephew"],
-          ["Kız yeğen", "my brother's or sister's daughter", "niece"],
-          ["Kuzen", "my uncle's or aunt's child", "cousin"],
-          ["Torun", "my son's or daughter's child", "grandchild"]
+          [
+            "Babaanne",
+            "my father's mother",
+            "grandmother"
+          ],
+          [
+            "Anneanne",
+            "my mother's mother",
+            "grandmother"
+          ],
+          [
+            "Dede (baba tarafı)",
+            "my father's father",
+            "grandfather"
+          ],
+          [
+            "Dede (anne tarafı)",
+            "my mother's father",
+            "grandfather"
+          ],
+          [
+            "Amca",
+            "my father's brother",
+            "uncle"
+          ],
+          [
+            "Dayı",
+            "my mother's brother",
+            "uncle"
+          ],
+          [
+            "Hala",
+            "my father's sister",
+            "aunt"
+          ],
+          [
+            "Teyze",
+            "my mother's sister",
+            "aunt"
+          ],
+          [
+            "Erkek yeğen",
+            "my brother's or sister's son",
+            "nephew"
+          ],
+          [
+            "Kız yeğen",
+            "my brother's or sister's daughter",
+            "niece"
+          ],
+          [
+            "Kuzen",
+            "my uncle's or aunt's child",
+            "cousin"
+          ],
+          [
+            "Torun",
+            "my son's or daughter's child",
+            "grandchild"
+          ]
         ]
       }
     ],
@@ -50,49 +181,118 @@
       {
         "name": "Kendimi tanıtıyorum",
         "items": [
-          { "en": "My name is Ali.", "tr": "Benim adım Ali." },
-          { "en": "I am forty-one years old.", "tr": "Kırk bir yaşındayım." },
-          { "en": "I am married and I have a daughter.", "tr": "Evliyim ve bir kızım var." },
-          { "en": "I graduated from university.", "tr": "Üniversiteden mezun oldum." },
-          { "en": "I am an occupational health and safety specialist.", "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım." },
-          { "en": "My mother is alive, but my father passed away.", "tr": "Annem hayatta ama babam vefat etti." }
+          {
+            "en": "My name is Ali.",
+            "tr": "Benim adım Ali."
+          },
+          {
+            "en": "I am forty-one years old.",
+            "tr": "Kırk bir yaşındayım."
+          },
+          {
+            "en": "I am married and I have a daughter.",
+            "tr": "Evliyim ve bir kızım var."
+          },
+          {
+            "en": "I graduated from university.",
+            "tr": "Üniversiteden mezun oldum."
+          },
+          {
+            "en": "I am an occupational health and safety specialist.",
+            "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım."
+          },
+          {
+            "en": "My mother is alive, but my father passed away.",
+            "tr": "Annem hayatta ama babam vefat etti."
+          }
         ]
       },
       {
         "name": "Kardeşler",
         "items": [
-          { "en": "I have one brother and one sister.", "tr": "Bir erkek, bir kız kardeşim var." },
-          { "en": "I don't have any brothers.", "tr": "Hiç erkek kardeşim yok." },
-          { "en": "My brother is older than me.", "tr": "Ağabeyim benden büyük." },
-          { "en": "My sister is younger than me.", "tr": "Kız kardeşim benden küçük." }
+          {
+            "en": "I have one brother and one sister.",
+            "tr": "Bir erkek, bir kız kardeşim var."
+          },
+          {
+            "en": "I don't have any brothers.",
+            "tr": "Hiç erkek kardeşim yok."
+          },
+          {
+            "en": "My brother is older than me.",
+            "tr": "Ağabeyim benden büyük."
+          },
+          {
+            "en": "My sister is younger than me.",
+            "tr": "Kız kardeşim benden küçük."
+          }
         ]
       },
       {
         "name": "Yeğenler",
         "items": [
-          { "en": "My sister has a son and a daughter.", "tr": "Kız kardeşimin bir oğlu ve bir kızı var." },
-          { "en": "So I have a nephew and a niece.", "tr": "Yani bir erkek ve bir kız yeğenim var." },
-          { "en": "My nephew is a student.", "tr": "Erkek yeğenim öğrenci." },
-          { "en": "My brother's son is my nephew.", "tr": "Ağabeyimin oğlu benim yeğenim." }
+          {
+            "en": "My sister has a son and a daughter.",
+            "tr": "Kız kardeşimin bir oğlu ve bir kızı var."
+          },
+          {
+            "en": "So I have a nephew and a niece.",
+            "tr": "Yani bir erkek ve bir kız yeğenim var."
+          },
+          {
+            "en": "My nephew is a student.",
+            "tr": "Erkek yeğenim öğrenci."
+          },
+          {
+            "en": "My brother's son is my nephew.",
+            "tr": "Ağabeyimin oğlu benim yeğenim."
+          }
         ]
       },
       {
         "name": "Büyükler ve kuzenler",
         "items": [
-          { "en": "My mother's mother is my grandmother.", "tr": "Annemin annesi benim anneannem." },
-          { "en": "My grandparents passed away.", "tr": "Büyükannem ve büyükbabam vefat etti." },
-          { "en": "I have many cousins.", "tr": "Çok kuzenim var." },
-          { "en": "I don't have any grandchildren.", "tr": "Hiç torunum yok." }
+          {
+            "en": "My mother's mother is my grandmother.",
+            "tr": "Annemin annesi benim anneannem."
+          },
+          {
+            "en": "My grandparents passed away.",
+            "tr": "Büyükannem ve büyükbabam vefat etti."
+          },
+          {
+            "en": "I have many cousins.",
+            "tr": "Çok kuzenim var."
+          },
+          {
+            "en": "I don't have any grandchildren.",
+            "tr": "Hiç torunum yok."
+          }
         ]
       },
       {
         "name": "Nerede yaşıyorlar?",
         "items": [
-          { "en": "My family lives in Ankara.", "tr": "Ailem Ankara'da yaşıyor." },
-          { "en": "I live in Ankara too.", "tr": "Ben de Ankara'da yaşıyorum." },
-          { "en": "My mother lives in Ankara.", "tr": "Annem Ankara'da yaşıyor." },
-          { "en": "My uncle lives in İzmir.", "tr": "Amcam İzmir'de yaşıyor." },
-          { "en": "I miss my family.", "tr": "Ailemi özlüyorum." }
+          {
+            "en": "My family lives in Ankara.",
+            "tr": "Ailem Ankara'da yaşıyor."
+          },
+          {
+            "en": "I live in Ankara too.",
+            "tr": "Ben de Ankara'da yaşıyorum."
+          },
+          {
+            "en": "My mother lives in Ankara.",
+            "tr": "Annem Ankara'da yaşıyor."
+          },
+          {
+            "en": "My uncle lives in İzmir.",
+            "tr": "Amcam İzmir'de yaşıyor."
+          },
+          {
+            "en": "I miss my family.",
+            "tr": "Ailemi özlüyorum."
+          }
         ]
       }
     ],
@@ -101,61 +301,392 @@
   "dialogues": [
     {
       "title": "Tanışma",
-      "speakers": { "A": "John", "B": "Ali" },
+      "speakers": {
+        "A": "John",
+        "B": "Ali"
+      },
       "student": "B",
       "lines": [
-        { "who": "A", "en": "Hello! I'm John. What's your name?", "tr": "Merhaba! Ben John. Adın ne?" },
-        { "who": "B", "en": "Hi, my name is Ali. Nice to meet you.", "tr": "Merhaba, benim adım Ali. Tanıştığımıza memnun oldum." },
-        { "who": "A", "en": "Nice to meet you too. How are you?", "tr": "Ben de memnun oldum. Nasılsın?" },
-        { "who": "B", "en": "I'm fine, thank you. And you?", "tr": "İyiyim, teşekkür ederim. Ya sen?" },
-        { "who": "A", "en": "I'm good, thanks. How old are you?", "tr": "İyiyim, sağ ol. Kaç yaşındasın?" },
-        { "who": "B", "en": "I'm forty-one years old.", "tr": "Kırk bir yaşındayım." },
-        { "who": "A", "en": "Are you married?", "tr": "Evli misin?" },
-        { "who": "B", "en": "Yes, I am. I have a daughter.", "tr": "Evet, evliyim. Bir kızım var." },
-        { "who": "A", "en": "What do you do?", "tr": "Ne iş yapıyorsun?" },
-        { "who": "B", "en": "I'm an occupational health and safety specialist.", "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım." }
+        {
+          "who": "A",
+          "en": "Hello! I'm John. What's your name?",
+          "tr": "Merhaba! Ben John. Adın ne?"
+        },
+        {
+          "who": "B",
+          "en": "Hi, my name is Ali. Nice to meet you.",
+          "tr": "Merhaba, benim adım Ali. Tanıştığımıza memnun oldum."
+        },
+        {
+          "who": "A",
+          "en": "Nice to meet you too. How are you?",
+          "tr": "Ben de memnun oldum. Nasılsın?"
+        },
+        {
+          "who": "B",
+          "en": "I'm fine, thank you. And you?",
+          "tr": "İyiyim, teşekkür ederim. Ya sen?"
+        },
+        {
+          "who": "A",
+          "en": "I'm good, thanks. How old are you?",
+          "tr": "İyiyim, sağ ol. Kaç yaşındasın?"
+        },
+        {
+          "who": "B",
+          "en": "I'm forty-one years old.",
+          "tr": "Kırk bir yaşındayım."
+        },
+        {
+          "who": "A",
+          "en": "Are you married?",
+          "tr": "Evli misin?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, I am. I have a daughter.",
+          "tr": "Evet, evliyim. Bir kızım var."
+        },
+        {
+          "who": "A",
+          "en": "What do you do?",
+          "tr": "Ne iş yapıyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I'm an occupational health and safety specialist.",
+          "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım."
+        }
       ]
     },
     {
       "title": "Aile",
-      "speakers": { "A": "John", "B": "Ali" },
+      "speakers": {
+        "A": "John",
+        "B": "Ali"
+      },
       "student": "B",
       "lines": [
-        { "who": "A", "en": "Do you have any brothers or sisters?", "tr": "Hiç kardeşin var mı?" },
-        { "who": "B", "en": "Yes, I have one brother and one sister.", "tr": "Evet, bir erkek ve bir kız kardeşim var." },
-        { "who": "A", "en": "Are they older or younger than you?", "tr": "Senden büyükler mi, küçükler mi?" },
-        { "who": "B", "en": "My brother is older than me. My sister is younger.", "tr": "Ağabeyim benden büyük. Kız kardeşim küçük." },
-        { "who": "A", "en": "Do they have children?", "tr": "Onların çocukları var mı?" },
-        { "who": "B", "en": "Yes. My sister has a son and a daughter.", "tr": "Evet. Kız kardeşimin bir oğlu ve bir kızı var." },
-        { "who": "A", "en": "So you have a nephew and a niece!", "tr": "Demek bir erkek ve bir kız yeğenin var!" },
-        { "who": "B", "en": "That's right. They are students.", "tr": "Doğru. Onlar öğrenci." },
-        { "who": "A", "en": "Are your grandparents alive?", "tr": "Büyükannen ve büyükbaban hayatta mı?" },
-        { "who": "B", "en": "No, they passed away. But I have many cousins.", "tr": "Hayır, vefat ettiler. Ama çok kuzenim var." },
-        { "who": "A", "en": "Where does your mother live?", "tr": "Annen nerede yaşıyor?" },
-        { "who": "B", "en": "My mother lives in Ankara. I miss her.", "tr": "Annem Ankara'da yaşıyor. Onu özlüyorum." }
+        {
+          "who": "A",
+          "en": "Do you have any brothers or sisters?",
+          "tr": "Hiç kardeşin var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, I have one brother and one sister.",
+          "tr": "Evet, bir erkek ve bir kız kardeşim var."
+        },
+        {
+          "who": "A",
+          "en": "Are they older or younger than you?",
+          "tr": "Senden büyükler mi, küçükler mi?"
+        },
+        {
+          "who": "B",
+          "en": "My brother is older than me. My sister is younger.",
+          "tr": "Ağabeyim benden büyük. Kız kardeşim küçük."
+        },
+        {
+          "who": "A",
+          "en": "Do they have children?",
+          "tr": "Onların çocukları var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes. My sister has a son and a daughter.",
+          "tr": "Evet. Kız kardeşimin bir oğlu ve bir kızı var."
+        },
+        {
+          "who": "A",
+          "en": "So you have a nephew and a niece!",
+          "tr": "Demek bir erkek ve bir kız yeğenin var!"
+        },
+        {
+          "who": "B",
+          "en": "That's right. They are students.",
+          "tr": "Doğru. Onlar öğrenci."
+        },
+        {
+          "who": "A",
+          "en": "Are your grandparents alive?",
+          "tr": "Büyükannen ve büyükbaban hayatta mı?"
+        },
+        {
+          "who": "B",
+          "en": "No, they passed away. But I have many cousins.",
+          "tr": "Hayır, vefat ettiler. Ama çok kuzenim var."
+        },
+        {
+          "who": "A",
+          "en": "Where does your mother live?",
+          "tr": "Annen nerede yaşıyor?"
+        },
+        {
+          "who": "B",
+          "en": "My mother lives in Ankara. I miss her.",
+          "tr": "Annem Ankara'da yaşıyor. Onu özlüyorum."
+        }
       ]
     }
   ],
+  "reading": {
+    "title": "Ali's family",
+    "sentences": [
+      {
+        "en": "Ali is forty-one years old.",
+        "tr": "Ali kırk bir yaşında."
+      },
+      {
+        "en": "He is married and he has a daughter.",
+        "tr": "Evli ve bir kızı var."
+      },
+      {
+        "en": "Her name is Ela. She is eleven years old.",
+        "tr": "Kızının adı Ela. On bir yaşında."
+      },
+      {
+        "en": "Ali has one brother and one sister.",
+        "tr": "Ali'nin bir erkek, bir kız kardeşi var."
+      },
+      {
+        "en": "His brother is older than him. His sister is younger.",
+        "tr": "Ağabeyi ondan büyük. Kız kardeşi küçük."
+      },
+      {
+        "en": "His sister has a son and a daughter.",
+        "tr": "Kız kardeşinin bir oğlu ve bir kızı var."
+      },
+      {
+        "en": "So Ali has a nephew and a niece.",
+        "tr": "Yani Ali'nin bir erkek ve bir kız yeğeni var."
+      },
+      {
+        "en": "His mother lives in Ankara. His father passed away.",
+        "tr": "Annesi Ankara'da yaşıyor. Babası vefat etti."
+      },
+      {
+        "en": "Ali misses his family.",
+        "tr": "Ali ailesini özlüyor."
+      }
+    ],
+    "note": "Metin Ali'yi anlatıyor, bu yüzden **he / his** (o / onun) kullanılıyor. Tek kişiden bahsederken fiile **-s** gelir: Ali **has**, his mother **lives**, Ali **misses**. Kendinden bahsederken **I have, I live, I miss** dersin.",
+    "gist": {
+      "q": "Metin ne hakkında?",
+      "options": [
+        "Ali'nin ailesi",
+        "Ali'nin işi",
+        "Ali'nin bir günü",
+        "John'un ailesi"
+      ]
+    },
+    "truefalse": [
+      {
+        "en": "Ali has two daughters.",
+        "tr": "Ali'nin iki kızı var.",
+        "answer": false,
+        "fix": "He has a daughter."
+      },
+      {
+        "en": "Ali's brother is older than him.",
+        "tr": "Ali'nin ağabeyi ondan büyük.",
+        "answer": true
+      },
+      {
+        "en": "Ali has a nephew and a niece.",
+        "tr": "Ali'nin bir erkek ve bir kız yeğeni var.",
+        "answer": true
+      },
+      {
+        "en": "Ali's mother lives in İzmir.",
+        "tr": "Ali'nin annesi İzmir'de yaşıyor.",
+        "answer": false,
+        "fix": "His mother lives in Ankara."
+      },
+      {
+        "en": "Ali's father is alive.",
+        "tr": "Ali'nin babası hayatta.",
+        "answer": false,
+        "fix": "His father passed away."
+      }
+    ],
+    "blanks": [
+      "married",
+      "brother",
+      "older",
+      "nephew",
+      "lives",
+      "misses"
+    ],
+    "rewrite": {
+      "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He is → I am, he has → I have, his → my, Ali misses → I miss.",
+      "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I miss my family."
+    }
+  },
   "tests": {
     "words": [
-      { "q": "babaanne", "options": ["grandmother", "aunt", "niece", "cousin"] },
-      { "q": "dayı", "options": ["uncle", "cousin", "nephew", "grandfather"] },
-      { "q": "kız yeğen", "options": ["niece", "nephew", "cousin", "granddaughter"] },
-      { "q": "erkek yeğen", "options": ["nephew", "grandson", "cousin", "brother"] },
-      { "q": "torun", "options": ["grandchild", "cousin", "nephew", "child"] },
-      { "q": "teyze", "options": ["aunt", "sister", "niece", "mother-in-law"] },
-      { "q": "kuzen", "options": ["cousin", "nephew", "uncle", "siblings"] },
-      { "q": "abla", "options": ["older sister", "younger sister", "aunt", "niece"] },
-      { "q": "kayınvalide", "options": ["mother-in-law", "grandmother", "aunt", "sister-in-law"] },
-      { "q": "kardeşler", "options": ["siblings", "cousins", "parents", "relatives"] },
-      { "q": "My mother's brother is my ___.", "options": ["uncle", "cousin", "nephew", "grandfather"] },
-      { "q": "My sister's daughter is my ___.", "options": ["niece", "cousin", "granddaughter", "aunt"] },
-      { "q": "My father's mother is my ___.", "options": ["grandmother", "aunt", "mother-in-law", "niece"] },
-      { "q": "My uncle's son is my ___.", "options": ["cousin", "nephew", "brother", "grandson"] },
-      { "q": "My son's daughter is my ___.", "options": ["granddaughter", "niece", "daughter", "cousin"] },
-      { "q": "My wife's father is my ___.", "options": ["father-in-law", "grandfather", "uncle", "brother-in-law"] },
-      { "q": "\"Kaç yaşındasın?\" nasıl sorulur?", "options": ["How old are you?", "How are you?", "What's your name?", "What do you do?"] },
-      { "q": "My family ___ in Ankara.", "options": ["lives", "live", "living", "is live"] }
+      {
+        "q": "babaanne",
+        "options": [
+          "grandmother",
+          "aunt",
+          "niece",
+          "cousin"
+        ]
+      },
+      {
+        "q": "dayı",
+        "options": [
+          "uncle",
+          "cousin",
+          "nephew",
+          "grandfather"
+        ]
+      },
+      {
+        "q": "kız yeğen",
+        "options": [
+          "niece",
+          "nephew",
+          "cousin",
+          "granddaughter"
+        ]
+      },
+      {
+        "q": "erkek yeğen",
+        "options": [
+          "nephew",
+          "grandson",
+          "cousin",
+          "brother"
+        ]
+      },
+      {
+        "q": "torun",
+        "options": [
+          "grandchild",
+          "cousin",
+          "nephew",
+          "child"
+        ]
+      },
+      {
+        "q": "teyze",
+        "options": [
+          "aunt",
+          "sister",
+          "niece",
+          "mother-in-law"
+        ]
+      },
+      {
+        "q": "kuzen",
+        "options": [
+          "cousin",
+          "nephew",
+          "uncle",
+          "siblings"
+        ]
+      },
+      {
+        "q": "abla",
+        "options": [
+          "older sister",
+          "younger sister",
+          "aunt",
+          "niece"
+        ]
+      },
+      {
+        "q": "kayınvalide",
+        "options": [
+          "mother-in-law",
+          "grandmother",
+          "aunt",
+          "sister-in-law"
+        ]
+      },
+      {
+        "q": "kardeşler",
+        "options": [
+          "siblings",
+          "cousins",
+          "parents",
+          "relatives"
+        ]
+      },
+      {
+        "q": "My mother's brother is my ___.",
+        "options": [
+          "uncle",
+          "cousin",
+          "nephew",
+          "grandfather"
+        ]
+      },
+      {
+        "q": "My sister's daughter is my ___.",
+        "options": [
+          "niece",
+          "cousin",
+          "granddaughter",
+          "aunt"
+        ]
+      },
+      {
+        "q": "My father's mother is my ___.",
+        "options": [
+          "grandmother",
+          "aunt",
+          "mother-in-law",
+          "niece"
+        ]
+      },
+      {
+        "q": "My uncle's son is my ___.",
+        "options": [
+          "cousin",
+          "nephew",
+          "brother",
+          "grandson"
+        ]
+      },
+      {
+        "q": "My son's daughter is my ___.",
+        "options": [
+          "granddaughter",
+          "niece",
+          "daughter",
+          "cousin"
+        ]
+      },
+      {
+        "q": "My wife's father is my ___.",
+        "options": [
+          "father-in-law",
+          "grandfather",
+          "uncle",
+          "brother-in-law"
+        ]
+      },
+      {
+        "q": "\"Kaç yaşındasın?\" nasıl sorulur?",
+        "options": [
+          "How old are you?",
+          "How are you?",
+          "What's your name?",
+          "What do you do?"
+        ]
+      },
+      {
+        "q": "My family ___ in Ankara.",
+        "options": [
+          "lives",
+          "live",
+          "living",
+          "is live"
+        ]
+      }
     ],
     "dialogue": "auto"
   },
@@ -163,22 +694,62 @@
     "intro": "Derse başlamadan önce kendini tanıtan bir metin yazdın. Cümle yapın büyük ölçüde doğruydu; düzeltilenler aşağıda.",
     "original": "I ama Ali / My name is Ali. I am fourty one years old. My age is 41. I have one child. Her name is Ela. She is eleven years old. I am married. I love my wife and daughter. I and my wife have own car. I have an house. I graduated university. My job is occupational healt safety UZMANI. I have one brother and one sister. My mother YAŞIYOR, but my father dead.",
     "items": [
-      { "wrong": "fourty", "right": "forty", "note": "\"My age is 41\" cümlesine gerek yok." },
-      { "wrong": "I and my wife have own car", "right": "My wife and I have a car.", "note": "Kendini sona koy: my wife and I." },
-      { "wrong": "an house", "right": "a house", "note": "an sadece sesli harfle başlayan kelimeden önce." },
-      { "wrong": "I graduated university", "right": "I graduated from university.", "note": "graduate from = -den mezun olmak" },
-      { "wrong": "occupational healt safety UZMANI", "right": "I am an occupational health and safety specialist.", "note": "uzman = specialist" },
-      { "wrong": "My mother YAŞIYOR", "right": "My mother is alive.", "note": "" },
-      { "wrong": "my father dead", "right": "My father passed away.", "note": "passed away = vefat etti (kibar söyleyiş)" }
+      {
+        "wrong": "fourty",
+        "right": "forty",
+        "note": "\"My age is 41\" cümlesine gerek yok."
+      },
+      {
+        "wrong": "I and my wife have own car",
+        "right": "My wife and I have a car.",
+        "note": "Kendini sona koy: my wife and I."
+      },
+      {
+        "wrong": "an house",
+        "right": "a house",
+        "note": "an sadece sesli harfle başlayan kelimeden önce."
+      },
+      {
+        "wrong": "I graduated university",
+        "right": "I graduated from university.",
+        "note": "graduate from = -den mezun olmak"
+      },
+      {
+        "wrong": "occupational healt safety UZMANI",
+        "right": "I am an occupational health and safety specialist.",
+        "note": "uzman = specialist"
+      },
+      {
+        "wrong": "My mother YAŞIYOR",
+        "right": "My mother is alive.",
+        "note": ""
+      },
+      {
+        "wrong": "my father dead",
+        "right": "My father passed away.",
+        "note": "passed away = vefat etti (kibar söyleyiş)"
+      }
     ],
     "corrected": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I love my wife and my daughter. We have a car and a house. I graduated from university. I am an occupational health and safety specialist. I have one brother and one sister. My mother is alive, but my father passed away."
   },
   "session": {
     "intro": "Bu dersin sohbette yapılan bölümünün sonuçları.",
     "results": [
-      { "step": "Tekrar (5 soru)", "score": "3 / 5", "note": "How old are you? sorusuna \"I am fine\" dedin (How are you? ile karıştı). Meslek adında health kelimesi eksikti." },
-      { "step": "Tanışma diyaloğu testi", "score": "5 / 5", "note": "" },
-      { "step": "Konuşma", "score": "4 / 4 doğru", "note": "-s kuralını doğru uyguladın: My family lives in … Öneri: I live in … too." }
+      {
+        "step": "Tekrar (5 soru)",
+        "score": "3 / 5",
+        "note": "How old are you? sorusuna \"I am fine\" dedin (How are you? ile karıştı). Meslek adında health kelimesi eksikti."
+      },
+      {
+        "step": "Tanışma diyaloğu testi",
+        "score": "5 / 5",
+        "note": ""
+      },
+      {
+        "step": "Konuşma",
+        "score": "4 / 4 doğru",
+        "note": "-s kuralını doğru uyguladın: My family lives in … Öneri: I live in … too."
+      }
     ],
     "watch": [
       "How are you? (Nasılsın?) ile How old are you? (Kaç yaşındasın?) karışıyor.",

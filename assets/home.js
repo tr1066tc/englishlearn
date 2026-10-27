@@ -10,7 +10,7 @@
 
   const st = App.readState().progress;
   const testTags = p => Object.entries(p?.tests || {}).map(([name, t]) =>
-    h('span', { class: 'tag' }, `${name === 'words' ? 'Kelime' : name === 'dialogue' ? 'Diyalog' : 'Test'}: ${t.best}/${t.total}`));
+    h('span', { class: 'tag' }, `${App.testLabel(name)}: ${t.best}/${t.total}`));
 
   const sorted = lessons.slice().sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
   const lessonCards = sorted.map(l => {

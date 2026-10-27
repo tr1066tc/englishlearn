@@ -424,7 +424,59 @@ const App = (() => {
     return out;
   }
 
+  // ---------- Test adları (ana sayfa ve ilerleme için) ----------
+  const TEST_NAMES = {
+    words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi',
+    tf: 'Okuma: doğru/yanlış', cloze: 'Okuma: boşluk', match: 'Eşleştir', order: 'Cümle sırala', spell: 'Yaz',
+  };
+  const testLabel = n => TEST_NAMES[n] || n;
+
+  // ---------- Öğrencinin yazdıkları ----------
+  // Anahtar: "<ders-id>:okuma" (kendi paragrafı) veya "<ders-id>:cumleler" (kendi cümleleri)
+  function getWriting(key) { return readState().writing?.[key] || ''; }
+  function setWriting(key, text) {
+    updateState(s => {
+      s.writing ||= {};
+      if (text.trim()) s.writing[key] = text; else delete s.writing[key];
+    });
+  }
+  async function copyText(text, btn) {
+    const label = btn.textContent;
+    try { await navigator.clipboard.writeText(text); }
+    catch {
+      const t = h('textarea', { style: 'position:fixed;opacity:0' }); t.value = text;
+      document.body.append(t); t.select(); try { document.execCommand('copy'); } catch { /* yok */ } t.remove();
+    }
+    btn.textContent = '✓ Kopyalandı';
+    setTimeout(() => { btn.textContent = label; }, 2000);
+  }
+  // Kendi metnini yazma kutusu: yazdıkça bu telefona kaydedilir, "Claude'a kopyala" ile derse getirilir.
+  function writingBox(key, { prompt, models, model, copyTitle }) {
+    const ta = h('textarea', { class: 'write-box', rows: 7, placeholder: 'Buraya İngilizce yaz…', autocapitalize: 'sentences', spellcheck: 'false' });
+    ta.value = getWriting(key);
+    const status = h('span', { class: 'small muted' }, ta.value ? 'Kaydedildi.' : '');
+    let t = null;
+    ta.addEventListener('input', () => {
+      clearTimeout(t);
+      t = setTimeout(() => { setWriting(key, ta.value); status.textContent = 'Kaydedildi.'; }, 400);
+    });
+    const copy = h('button', { class: 'primary', type: 'button' }, "Claude'a kopyala");
+    copy.addEventListener('click', () => {
+      setWriting(key, ta.value);
+      copyText(`${copyTitle}:\n${ta.value.trim()}`, copy);
+    });
+    return h('div', {},
+      prompt ? h('p', { class: 'small' }, prompt) : null,
+      models?.length ? h('div', { class: 'models' }, models.map(m => h('div', { class: 'line-text' }, h('span', { class: 'en', style: 'font-weight:500' }, '• ' + m), listenBtn(m)))) : null,
+      ta,
+      h('div', { class: 'row', style: 'align-items:center' }, copy, status),
+      model ? h('details', {}, h('summary', { class: 'small' }, 'Örnek metni göster'),
+        h('div', { class: 'line-text' }, h('p', { style: 'flex:1' }, model), listenBtn(model))) : null,
+      h('p', { class: 'small muted' }, "Yazdığın bu telefonda saklanır. Kopyalayıp bir sonraki derste Claude'a yapıştır, birlikte düzeltelim."));
+  }
+
   return {
+    TEST_NAMES, testLabel, getWriting, setWriting, copyText, writingBox,
     esc, fmt, h, fill, shuffle, param, formatDate,
     loadLessonIndex, loadLesson, loadReviewIndex, loadReview, loadWords,
     readState, writeState, updateState, markVisit, setCompleted, saveTest,
