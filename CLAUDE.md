@@ -76,6 +76,7 @@ Okunuş, Türk okuyucunun doğrudan okuyabileceği şekilde **Türkçe harflerle
 index.html, lesson.html, words.html, review.html, exercises.html, progress.html   # sayfa kabukları (hepsi aynı)
 assets/style.css      # tek stil dosyası, renk değişkenleri :root'ta, açık/koyu tema
 assets/app.js         # ortak: veri yükleme, ses, tema, ilerleme, testler (App nesnesi)
+assets/srs.js         # Anki benzeri aralıklı tekrar motoru (kelime desteleri)
 assets/<sayfa>.js     # home, lesson, words, review, exercises, progress
 data/lessons/index.json              # ana sayfadaki ders listesi
 data/lessons/YYYY-MM-DD-ders-NN.json # her ders
@@ -145,6 +146,16 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 4. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler).
 5. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
 
+## Kelime desteleri (Anki benzeri aralıklı tekrar)
+
+Kelimeler sayfasının varsayılan sekmesi **Desteler**: her ders bir deste, dersin her kelime grubu bir alt deste. Bir kelime yalnızca **ilk geçtiği dersin ilk grubunda** sayılır (sonraki derslerin "tekrar" gruplarında tekrar kart açılmaz). Sağdaki üç sayı AnkiDroid'deki gibi: **mavi = yeni** (günlük sınırla), **kırmızı = öğrenme / yeniden öğrenme** (20 dk içinde zamanı gelen), **yeşil = bugün tekrarı gelen**.
+
+- Motor `assets/srs.js`. Varsayılanlar Anki'nin kendi varsayılanları (ankitects/anki `rslib/src/deckconfig/mod.rs`, `scheduler/states/review.rs`, `steps.rs`): öğrenme adımları 1 dk + 10 dk, yeniden öğrenme 10 dk, mezuniyet 1 gün (Kolay 4 gün), başlangıç kolaylığı 2,5, Zor ×1,2 (kolaylık −0,15), Yeniden kolaylık −0,20 (en az 1,3), Kolay ×1,3 (+0,15), günde 20 yeni / 200 tekrar, yeni gün 04:00. 8 kez unutulan kart "zor kelime" işaretlenir.
+- Düğmeler: Yeniden / Zor / İyi / Kolay, üstlerinde sonraki aralık. Tek adımlık "Geri al" var.
+- Ayarlar: günlük yeni kart sınırı (5/10/20/30) ve kart yönü (İng→Tür, Tür→İng, ikisi de). Kart kimliği `<yön>:<kelime>`.
+- Durum `localStorage` → `englishlearn:v1` → `srs` (`cards`, `days`, `settings`, `collapsed`, `undo`). "Yeniden" cevabı `missed` sayacına da eklenir. İlerleme sayfası özetinde kart istatistikleri ve çok unutulan kelimeler yer alır; `tekrar-testi` ve `ilerleme` bunları kullanabilir.
+- Yeni ders eklemek için ek iş gerekmez: dersin `words.groups` listesi otomatik olarak yeni deste olur.
+
 ## Alıştırma kağıtları (PDF)
 
 `exercises.html` sayfası her ders için yazıcıdan çıktı alınabilir bir **alıştırma kağıdı** ve ayrı bir **cevap anahtarı** sunar. İkisi de ders JSON'undan `node tools/alistirma.js <ders-id>` ile üretilir (A4, kalemle çözülür; eşleştir, şık seç, ilk harf ipuçlu yaz, cümle sırala, diyaloğu tamamla, 3 kez söyleme çizelgesi, kendi cümlelerin). Aynı ders için her seferinde aynı sorular çıkar.
@@ -159,7 +170,7 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 - **Her adım ekrandaki kontrollerle yapılabilmeli.** "Metni elinle kapat" gibi elle yapılacak talimat yazma; gizle/göster, sayaç, test gibi düğmeler kullan.
 - Ses: `speechSynthesis` (İngilizce ses, varsayılan hız **yavaş**). Ses yoksa sayfa uyarı gösterir, metin kullanılabilir kalır. Claude uygulamasının içindeki pencerede ses çalışmıyor; site telefonun tarayıcısında açılır. Android'de Google konuşma motoruna İngilizce ses paketi gerekebilir.
 - Açık/koyu tema; renkler `assets/style.css` içindeki değişkenlerden.
-- İlerleme `localStorage` anahtarı `englishlearn:v1` altında: `progress` (ders/test sonuçları), `missed` (yanlış yapılan kelime/cümle sayıları), `settings`. Claude bunu doğrudan okuyamaz; öğrenci İlerleme sayfasındaki özeti kopyalayıp yapıştırır.
+- İlerleme `localStorage` anahtarı `englishlearn:v1` altında: `progress` (ders/test sonuçları), `missed` (yanlış yapılan kelime/cümle sayıları), `srs` (kelime kartları), `settings`. Claude bunu doğrudan okuyamaz; öğrenci İlerleme sayfasındaki özeti kopyalayıp yapıştırır.
 - Arayüz metinleri Türkçe ve kısa; öğrenciye "sen" diye hitap edilir.
 
 ## İş akışı

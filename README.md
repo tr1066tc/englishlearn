@@ -3,7 +3,7 @@
 Kişisel İngilizce ders sitesi. Her akşamın dersi bir veri dosyası olarak eklenir; site telefonun tarayıcısında açılıp tekrar edilir.
 
 - **Dersler** (`index.html`): dersler gün gün; her ders kelimeler → kalıplar → diyalog → test.
-- **Kelimeler** (`words.html`): bütün kelimeler, Türkçe anlam, Türkçe harflerle okunuş, sesli telaffuz, arama ve konu filtresi.
+- **Kelimeler** (`words.html`): Anki benzeri desteler (her ders bir deste; yeni / öğrenme / tekrar sayıları, Yeniden-Zor-İyi-Kolay ile aralıklı tekrar) ve bütün kelimelerin listesi: Türkçe anlam, Türkçe harflerle okunuş, sesli telaffuz, arama ve konu filtresi.
 - **Tekrar** (`review.html`): karışık ve planlı tekrar testleri.
 - **Alıştırma** (`exercises.html`): her ders için yazıcıdan çıktı alınabilir PDF alıştırma kağıdı ve cevap anahtarı (`node tools/alistirma.js <ders-id>` üretir).
 - **İlerleme** (`progress.html`): bu telefondaki ilerleme ve Claude'a gönderilecek özet.

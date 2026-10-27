@@ -20,6 +20,9 @@
     ...reviews.map(r => ({ key: 'review:' + r.id, label: r.title, date: r.date }))]
     .sort((a, b) => a.date.localeCompare(b.date));
 
+  const k = SRS.summary();
+  const dirName = d => d === 'tr' ? 'Tür→İng' : 'İng→Tür';
+
   function summary() {
     const lines = [`İlerleme özeti (${new Date().toLocaleDateString('tr-TR')})`, ''];
     for (const r of rows) {
@@ -27,6 +30,8 @@
       const tests = Object.entries(p?.tests || {}).map(([n, t]) => `${testName(n)} son ${t.score}/${t.total}, en iyi ${t.best}/${t.total}, ${t.tries} deneme`).join('; ');
       lines.push(`- ${r.date} ${r.label}: ${p?.completed ? 'tamamlandı (' + day(p.completedAt) + ')' : p?.lastVisit ? 'başlandı' : 'açılmadı'}${tests ? ' — ' + tests : ''}`);
     }
+    lines.push('', `Kelime kartları: ${k.seen} kart görüldü (${k.learning} öğreniliyor, ${k.young} genç, ${k.mature} olgun = 21+ gün). Bugün ${k.today.n} kart çalışıldı, ${k.dueToday} tekrar kartının sırası geldi.`);
+    if (k.hard.length) lines.push('Kartlarda çok unutulanlar: ' + k.hard.slice(0, 15).map(x => `${x.word} (${dirName(x.dir)}, ${x.lapses} kez)`).join(', '));
     lines.push('', 'En çok yanlış yapılanlar:');
     lines.push(...(missed.length ? missed.slice(0, 25).map(([t, n]) => `- ${t} (${n})`) : ['- yok']));
     return lines.join('\n');
@@ -48,7 +53,9 @@
     h('div', { class: 'stats' },
       h('div', { class: 'stat' }, h('b', {}, `${doneLessons.length} / ${lessons.length}`), 'ders tamamlandı'),
       h('div', { class: 'stat' }, h('b', {}, String(Object.values(P).reduce((n, p) => n + Object.values(p.tests || {}).reduce((m, t) => m + (t.tries || 0), 0), 0))), 'test çözüldü'),
-      h('div', { class: 'stat' }, h('b', {}, String(missed.length)), 'takılınan kelime/cümle')),
+      h('div', { class: 'stat' }, h('b', {}, String(missed.length)), 'takılınan kelime/cümle'),
+      h('div', { class: 'stat' }, h('b', {}, String(k.seen)), 'kelime kartı görüldü'),
+      h('div', { class: 'stat' }, h('b', {}, String(k.mature)), 'olgun kart (21+ gün)')),
     h('h2', {}, 'Dersler ve testler'),
     h('div', {}, rows.map(r => {
       const p = P[r.key];
