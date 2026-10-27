@@ -81,6 +81,33 @@
     "note": "child kelimesinin çoğulu; -s almaz."
   },
   {
+    "en": "company",
+    "tr": "şirket",
+    "say": "kampıni",
+    "topic": "iş",
+    "example": {
+      "en": "I work for a big company.",
+      "tr": "Büyük bir şirkette çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "construction site",
+    "tr": "şantiye",
+    "say": "kınstrakşın sayt",
+    "topic": "iş",
+    "example": {
+      "en": "I work on a construction site.",
+      "tr": "Bir şantiyede çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Uzun ifade: site kelimesini atlamamaya dikkat."
+  },
+  {
     "en": "cousin",
     "tr": "kuzen",
     "say": "kazın",
@@ -104,6 +131,46 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "day",
+    "tr": "gün",
+    "say": "dey",
+    "topic": "zaman",
+    "example": {
+      "en": "I study English every day.",
+      "tr": "Her gün İngilizce çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "difficult",
+    "tr": "zor",
+    "say": "difikılt",
+    "topic": "duygu",
+    "example": {
+      "en": "Dealing with people is difficult.",
+      "tr": "İnsanlarla uğraşmak zor."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Yazılışı: difficult (iki f)."
+  },
+  {
+    "en": "evening",
+    "tr": "akşam",
+    "say": "iivnin",
+    "topic": "zaman",
+    "example": {
+      "en": "I study English every evening.",
+      "tr": "Her akşam İngilizce çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
     ]
   },
   {
@@ -132,6 +199,34 @@
     "lessons": [
       "2026-10-25-ders-01"
     ]
+  },
+  {
+    "en": "finish",
+    "tr": "bitirmek",
+    "say": "finiş",
+    "topic": "zaman",
+    "example": {
+      "en": "I finish at six.",
+      "tr": "Altıda bitiriyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Saat için at: finish at six."
+  },
+  {
+    "en": "follow the rules",
+    "tr": "kurallara uymak",
+    "say": "falo dı rulz",
+    "topic": "iş",
+    "example": {
+      "en": "Workers and managers follow the rules.",
+      "tr": "İşçiler ve idareciler kurallara uyar."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Tek kişide -s: the manager follows the rules."
   },
   {
     "en": "grandchild",
@@ -214,6 +309,19 @@
     ]
   },
   {
+    "en": "happy",
+    "tr": "mutlu",
+    "say": "hepi",
+    "topic": "duygu",
+    "example": {
+      "en": "I want to be happy at work.",
+      "tr": "İşte mutlu olmak istiyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "husband",
     "tr": "eş (erkek), koca",
     "say": "hazbınd",
@@ -224,6 +332,19 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "important",
+    "tr": "önemli",
+    "say": "impootınt",
+    "topic": "duygu",
+    "example": {
+      "en": "My job is important.",
+      "tr": "İşim önemli."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
     ]
   },
   {
@@ -240,6 +361,32 @@
     ]
   },
   {
+    "en": "job",
+    "tr": "iş, meslek",
+    "say": "caab",
+    "topic": "iş",
+    "example": {
+      "en": "My job is important.",
+      "tr": "İşim önemli."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "legal",
+    "tr": "yasal, kanuni",
+    "say": "liigıl",
+    "topic": "iş",
+    "example": {
+      "en": "I have a lot of legal responsibility.",
+      "tr": "Çok yasal sorumluluğum var."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "live",
     "tr": "yaşamak, oturmak",
     "say": "liv",
@@ -249,9 +396,23 @@
       "tr": "Ankara'da yaşıyorum."
     },
     "lessons": [
-      "2026-10-25-ders-01"
+      "2026-10-25-ders-01",
+      "2026-10-27-ders-02"
     ],
     "note": "I live ama my family lives (tek kişi/şey için -s)."
+  },
+  {
+    "en": "manager",
+    "tr": "idareci, yönetici",
+    "say": "menıcır",
+    "topic": "iş",
+    "example": {
+      "en": "The manager follows the rules.",
+      "tr": "Yönetici kurallara uyar."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
   },
   {
     "en": "married",
@@ -276,7 +437,8 @@
       "tr": "Ailemi özlüyorum."
     },
     "lessons": [
-      "2026-10-25-ders-01"
+      "2026-10-25-ders-01",
+      "2026-10-27-ders-02"
     ]
   },
   {
@@ -342,7 +504,8 @@
       "tr": "Ben bir iş sağlığı ve güvenliği uzmanıyım."
     },
     "lessons": [
-      "2026-10-25-ders-01"
+      "2026-10-25-ders-01",
+      "2026-10-27-ders-02"
     ],
     "note": "Uzun ifade: health kelimesini atlamamaya dikkat."
   },
@@ -413,6 +576,45 @@
     ]
   },
   {
+    "en": "responsibility",
+    "tr": "sorumluluk",
+    "say": "rispansıbiliti",
+    "topic": "iş",
+    "example": {
+      "en": "I have a lot of responsibility.",
+      "tr": "Çok sorumluluğum var."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "rules",
+    "tr": "kurallar",
+    "say": "rulz",
+    "topic": "iş",
+    "example": {
+      "en": "Safety rules are important.",
+      "tr": "Güvenlik kuralları önemlidir."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "safety culture",
+    "tr": "güvenlik kültürü",
+    "say": "seyfti kalçır",
+    "topic": "iş",
+    "example": {
+      "en": "In a big company, there is a safety culture.",
+      "tr": "Büyük bir şirkette güvenlik kültürü vardır."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "siblings",
     "tr": "kardeşler",
     "say": "siblingz",
@@ -474,7 +676,35 @@
       "tr": "Ben bir güvenlik uzmanıyım."
     },
     "lessons": [
-      "2026-10-25-ders-01"
+      "2026-10-25-ders-01",
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "start",
+    "tr": "başlamak",
+    "say": "staart",
+    "topic": "zaman",
+    "example": {
+      "en": "I start at eight.",
+      "tr": "Sekizde başlıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Saat için at: start at eight."
+  },
+  {
+    "en": "tired",
+    "tr": "yorgun",
+    "say": "tayırd",
+    "topic": "duygu",
+    "example": {
+      "en": "I am tired in the evening.",
+      "tr": "Akşamları yorgunum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
     ]
   },
   {
@@ -492,6 +722,20 @@
     "note": "Amca ve dayı için aynı kelime: on my father's side / on my mother's side ile ayrılır."
   },
   {
+    "en": "week",
+    "tr": "hafta",
+    "say": "viik",
+    "topic": "zaman",
+    "example": {
+      "en": "I work six days a week.",
+      "tr": "Haftada altı gün çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "a week = haftada."
+  },
+  {
     "en": "wife",
     "tr": "eş (kadın)",
     "say": "vayf",
@@ -502,6 +746,46 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "work",
+    "tr": "çalışmak",
+    "say": "vörk",
+    "topic": "iş",
+    "example": {
+      "en": "I work six days a week.",
+      "tr": "Haftada altı gün çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "work on a site (şantiyede) ama work for a company (bir şirkette)."
+  },
+  {
+    "en": "worker",
+    "tr": "işçi, çalışan",
+    "say": "vörkır",
+    "topic": "iş",
+    "example": {
+      "en": "The workers follow the rules.",
+      "tr": "İşçiler kurallara uyar."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "workplace",
+    "tr": "işyeri",
+    "say": "vörkpleys",
+    "topic": "iş",
+    "example": {
+      "en": "Not every workplace is good.",
+      "tr": "Her işyeri iyi değil."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
     ]
   },
   {

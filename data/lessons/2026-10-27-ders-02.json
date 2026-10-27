@@ -1,0 +1,178 @@
+{
+  "id": "2026-10-27-ders-02",
+  "number": 2,
+  "date": "2026-10-27",
+  "week": 2,
+  "topic": "İşim ve bir günüm",
+  "title": "İşim: nerede, ne iş, hangi saatler",
+  "summary": "Nerede çalıştığını, ne iş yaptığını ve hangi saatlerde çalıştığını anlatma. Sonunda işin hakkındaki düşüncelerin ve hedefin: kurumsal bir şirkette çalışmak.",
+  "words": {
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 21 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
+    "groups": [
+      { "name": "İş ve işyeri", "words": ["job", "work", "company", "construction site", "workplace", "manager", "worker"] },
+      { "name": "Zaman", "words": ["week", "day", "start", "finish", "evening"] },
+      { "name": "Kurallar ve sorumluluk", "words": ["rules", "follow the rules", "responsibility", "legal", "safety culture"] },
+      { "name": "Nasıl hissediyorum, ne düşünüyorum", "words": ["happy", "tired", "difficult", "important"] },
+      { "name": "Ders 1'den tekrar", "words": ["specialist", "occupational health and safety", "live", "miss"] }
+    ]
+  },
+  "patterns": {
+    "notes": [
+      { "title": "work on · work for", "text": "**work on** a construction site (şantiyede) · **work for** a company (bir şirkette, bir şirket için)." },
+      { "title": "at + saat · a week", "text": "Saat için **at**: I start **at** eight. I finish **at** six. · Haftada kaç gün için **a week**: I work six days **a week**." },
+      { "title": "Üç ayrı soru, üç ayrı cevap", "text": "**What do you do?** = Ne iş yapıyorsun? · **How are you?** = Nasılsın? · **How old are you?** = Kaç yaşındasın? Birbirine karıştırma." },
+      { "title": "is · are · -s", "text": "**people are** (çoğul) · **there is** a safety culture (tek şey) · workers **follow** (çoğul, -s yok) · the manager follow**s** (tek kişi, -s var)." }
+    ],
+    "tables": [
+      {
+        "title": "İşle ilgili soru ve cevaplar",
+        "intro": "Tanışırken sık sorulan işle ilgili sorular ve senin cevapların.",
+        "columns": ["Soru", "Türkçesi", "Cevap"],
+        "rows": [
+          ["What do you do?", "Ne iş yapıyorsun?", "I'm an occupational health and safety specialist."],
+          ["Where do you work?", "Nerede çalışıyorsun?", "I work on a construction site."],
+          ["Do you work for a company?", "Bir şirkette mi çalışıyorsun?", "Yes, I work for a big company."],
+          ["How many days a week do you work?", "Haftada kaç gün çalışıyorsun?", "I work six days a week."],
+          ["What time do you start?", "Saat kaçta başlıyorsun?", "I start at eight and finish at six."]
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "Ders 1'den tekrar",
+        "items": [
+          { "en": "I'm married and I have a daughter.", "tr": "Evliyim ve bir kızım var." },
+          { "en": "My family lives in Ankara.", "tr": "Ailem Ankara'da yaşıyor." },
+          { "en": "I miss my family.", "tr": "Ailemi özlüyorum." }
+        ]
+      },
+      {
+        "name": "İşimi anlatıyorum",
+        "items": [
+          { "en": "I'm an occupational health and safety specialist.", "tr": "İş sağlığı ve güvenliği uzmanıyım." },
+          { "en": "I work for a big company.", "tr": "Büyük bir şirkette çalışıyorum." },
+          { "en": "I work on a construction site.", "tr": "Bir şantiyede çalışıyorum." },
+          { "en": "I work six days a week.", "tr": "Haftada altı gün çalışıyorum." },
+          { "en": "I start at eight and finish at six.", "tr": "Sekizde başlıyorum, altıda bitiriyorum." }
+        ]
+      },
+      {
+        "name": "İşimi anlatırken soru sorma",
+        "items": [
+          { "en": "What do you do?", "tr": "Ne iş yapıyorsun?" },
+          { "en": "Where do you work?", "tr": "Nerede çalışıyorsun?" },
+          { "en": "How many days a week do you work?", "tr": "Haftada kaç gün çalışıyorsun?" },
+          { "en": "What time do you start?", "tr": "Saat kaçta başlıyorsun?" }
+        ]
+      },
+      {
+        "name": "İşim hakkında ne düşünüyorum?",
+        "items": [
+          { "en": "My job is important.", "tr": "İşim önemli." },
+          { "en": "Dealing with people is difficult.", "tr": "İnsanlarla uğraşmak zor." },
+          { "en": "I have a lot of legal responsibility.", "tr": "Çok yasal sorumluluğum var." },
+          { "en": "Not every workplace is good.", "tr": "Her işyeri iyi değil." },
+          { "en": "People don't follow the rules at every workplace.", "tr": "Her işyerinde kurallara tam uyulmuyor." },
+          { "en": "I am tired in the evening.", "tr": "Akşamları yorgunum." }
+        ]
+      },
+      {
+        "name": "Hedefim: kurumsal bir şirket",
+        "items": [
+          { "en": "In a big company, there is a safety culture.", "tr": "Büyük bir şirkette güvenlik kültürü vardır." },
+          { "en": "Workers and managers follow the rules.", "tr": "İşçiler ve idareciler kurallara uyar." },
+          { "en": "Then I can do my job well.", "tr": "O zaman işimi iyi yapabilirim." },
+          { "en": "I want to be happy at work and like my job.", "tr": "İşte mutlu olmak ve işimi sevmek istiyorum." }
+        ]
+      }
+    ],
+    "footnote": "Bu cümlelerdeki şirket, şehir ve saatler örnek; kendi durumuna göre değiştirerek söyle."
+  },
+  "dialogues": [
+    {
+      "title": "İşim",
+      "speakers": { "A": "John", "B": "Ali" },
+      "student": "B",
+      "lines": [
+        { "who": "A", "en": "What do you do?", "tr": "Ne iş yapıyorsun?" },
+        { "who": "B", "en": "I'm an occupational health and safety specialist.", "tr": "İş sağlığı ve güvenliği uzmanıyım." },
+        { "who": "A", "en": "Where do you work?", "tr": "Nerede çalışıyorsun?" },
+        { "who": "B", "en": "I work on a construction site.", "tr": "Bir şantiyede çalışıyorum." },
+        { "who": "A", "en": "Do you work for a company?", "tr": "Bir şirkette mi çalışıyorsun?" },
+        { "who": "B", "en": "Yes, I work for a big company.", "tr": "Evet, büyük bir şirkette çalışıyorum." },
+        { "who": "A", "en": "How many days a week do you work?", "tr": "Haftada kaç gün çalışıyorsun?" },
+        { "who": "B", "en": "I work six days a week.", "tr": "Haftada altı gün çalışıyorum." },
+        { "who": "A", "en": "What time do you start?", "tr": "Saat kaçta başlıyorsun?" },
+        { "who": "B", "en": "I start at eight and finish at six.", "tr": "Sekizde başlıyorum, altıda bitiriyorum." },
+        { "who": "A", "en": "Where does your family live?", "tr": "Ailen nerede yaşıyor?" },
+        { "who": "B", "en": "My family lives in Ankara. I miss my family.", "tr": "Ailem Ankara'da yaşıyor. Ailemi özlüyorum." }
+      ]
+    },
+    {
+      "title": "Hedefim",
+      "speakers": { "A": "John", "B": "Ali" },
+      "student": "B",
+      "lines": [
+        { "who": "A", "en": "Is your job difficult?", "tr": "İşin zor mu?" },
+        { "who": "B", "en": "Yes, it is. Dealing with people is difficult.", "tr": "Evet, zor. İnsanlarla uğraşmak zor." },
+        { "who": "A", "en": "Do people follow the rules at every workplace?", "tr": "İnsanlar her işyerinde kurallara uyuyor mu?" },
+        { "who": "B", "en": "No, they don't. Not every workplace is good.", "tr": "Hayır, uymuyor. Her işyeri iyi değil." },
+        { "who": "A", "en": "Where do you want to work?", "tr": "Nerede çalışmak istiyorsun?" },
+        { "who": "B", "en": "I want to work in a big company. In a big company, there is a safety culture.", "tr": "Büyük bir şirkette çalışmak istiyorum. Büyük bir şirkette güvenlik kültürü vardır." },
+        { "who": "A", "en": "Do workers and managers follow the rules there?", "tr": "İşçiler ve idareciler orada kurallara uyuyor mu?" },
+        { "who": "B", "en": "Yes, they do. Then I can do my job well.", "tr": "Evet, uyuyor. O zaman işimi iyi yapabilirim." },
+        { "who": "A", "en": "Do you want to be happy at work?", "tr": "İşte mutlu olmak istiyor musun?" },
+        { "who": "B", "en": "Yes, I do. I want to be happy at work and like my job.", "tr": "Evet, istiyorum. İşte mutlu olmak ve işimi sevmek istiyorum." }
+      ]
+    }
+  ],
+  "tests": {
+    "words": [
+      { "q": "şantiye", "options": ["construction site", "company", "workplace", "manager"] },
+      { "q": "şirket", "options": ["company", "manager", "worker", "workplace"] },
+      { "q": "sorumluluk", "options": ["responsibility", "rules", "safety culture", "legal"] },
+      { "q": "kurallar", "options": ["rules", "responsibility", "legal", "week"] },
+      { "q": "kurallara uymak", "options": ["follow the rules", "finish the rules", "start the rules", "miss the rules"] },
+      { "q": "mutlu", "options": ["happy", "tired", "difficult", "important"] },
+      { "q": "yorgun", "options": ["tired", "happy", "difficult", "important"] },
+      { "q": "akşam", "options": ["evening", "week", "day", "workplace"] },
+      { "q": "I work ___ a construction site.", "options": ["on", "for", "at", "in"] },
+      { "q": "I work ___ a big company.", "options": ["for", "on", "at", "of"] },
+      { "q": "I start ___ eight.", "options": ["at", "on", "in", "for"] },
+      { "q": "I work six days ___ week.", "options": ["a", "the", "at", "in"] },
+      { "q": "\"Ne iş yapıyorsun?\" nasıl sorulur?", "options": ["What do you do?", "How are you?", "How old are you?", "Where do you work?"] },
+      { "q": "I am an occupational ___ and safety specialist.", "options": ["health", "healt", "helth", "heal"] },
+      { "q": "People ___ difficult.", "options": ["are", "is", "am", "does"] },
+      { "q": "My family ___ in Ankara.", "options": ["lives", "live", "living", "is live"] },
+      { "q": "Workers and managers ___ the rules.", "options": ["follow", "follows", "following", "is follow"] },
+      { "q": "In a big company, ___ a safety culture.", "options": ["there is", "there are", "they are", "it are"] }
+    ],
+    "dialogue": "auto"
+  },
+  "corrections": {
+    "intro": "Bu akşam yazdığın cümlelerdeki düzeltmeler. Geri kalan cümlelerin hepsi doğruydu.",
+    "original": "I am an occupational healt and safety specialist. I work for a big company. I work on a construction site. I start at eight and finish six. My family lives in Ankara. I miss them. I don't like my job because people is diffucult. Every workplace is not good.",
+    "items": [
+      { "wrong": "fourty one", "right": "forty-one", "note": "forty yazılışında u yok." },
+      { "wrong": "healt", "right": "health", "note": "sonda h var." },
+      { "wrong": "on a construction", "right": "on a construction site", "note": "site = yer, alan. construction tek başına \"inşaat\" demek." },
+      { "wrong": "finish six", "right": "finish at six", "note": "saat için at kullanılır. Sadece \"at six\" demen yeterli, o'clock şart değil." },
+      { "wrong": "people is diffucult", "right": "people are difficult", "note": "people çoğul sayılır, are gelir. difficult yazılışına dikkat." },
+      { "wrong": "Every workplace is not good.", "right": "Not every workplace is good.", "note": "\"Her yer iyi değil\" böyle söylenir." }
+    ],
+    "corrected": "I am an occupational health and safety specialist. I work for a big company. I work on a construction site. I start at eight and finish at six. My family lives in Ankara. I miss them. I don't like my job because people are difficult. Dealing with people is difficult. I have a lot of legal responsibility. Not every workplace is good. People don't follow the rules at every workplace."
+  },
+  "session": {
+    "intro": "Bu dersin sohbette yapılan bölümünün sonuçları.",
+    "results": [
+      { "step": "Tekrar (5 soru)", "score": "5 / 5", "note": "Yazımdaki \"fourty\" dışında hepsi doğruydu. How old are you? ve meslek cümlesi sorunsuzdu." },
+      { "step": "Diyalog testi (John soruyor)", "score": "6 / 6", "note": "Beş soruyu ilk turda cevapladı, meslek sorusunu ikinci turda. health kelimesini bu sefer atlamadı; construction site yerine \"construction\" yazdı." },
+      { "step": "Konuşma: işimi anlatıyorum", "score": "8 cümle", "note": "İşini, çalışma saatlerini ve ailesini anlattı. Düşüncesini de paylaştı: insanlarla uğraşmak zor, yasal sorumluluk fazla, kurallara her yerde uyulmuyor. Hedefini söyledi: güvenlik kültürü olan kurumsal bir şirkette çalışmak." }
+    ],
+    "watch": [
+      "people çoğul sayılır: people are, people follow.",
+      "Saat için at: finish at six.",
+      "Uzun adlarda kelime atlama sürüyor: construction site (site eksik kaldı). occupational health and safety specialist bu derste tam çıktı."
+    ]
+  }
+}

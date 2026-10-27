@@ -55,7 +55,7 @@ Repo ve site **herkese açık**. Öğrenci gizlilik için takma ad kullanılmas�
 - Konular öğrencinin hayatından: aile, iş (İSG, şantiye), günlük rutin.
 - Bir derste az sayıda yeni kalıp; önceki derslerin kalıpları tekrar edilir.
 - Takip edilen zayıf noktalar ders dosyalarındaki `session.watch` alanında; yeni dersin tekrar adımında bunları sor.
-  - Şu an: *How are you?* / *How old are you?* karışıklığı; uzun meslek adında kelime atlama (*occupational health and safety specialist*).
+  - Şu an: uzun adlarda kelime atlama (*construction site* → site eksik kaldı; *occupational health and safety specialist* Ders 2'de tam çıktı, takip sürsün); *people are* (çoğul); saat için *at* (*finish at six*); yazım: *forty*, *health*, *difficult*. (*How are you?* / *How old are you?* karışıklığı Ders 2 tekrarında düzeldi.)
 - Kütüphanedeki her kelimede Türkçe anlam ve Türkçe harflerle okunuş **mutlaka** olmalı.
 
 ## Okunuş yazım kuralları
