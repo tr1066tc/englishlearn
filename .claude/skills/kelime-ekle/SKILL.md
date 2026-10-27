@@ -19,7 +19,7 @@ Tek kaynak `data/words.json`. Format ve okunuş kuralları `CLAUDE.md` içinde.
    ```
    - `tr`: kısa, en yaygın anlam(lar). Türkçede birden çok karşılığı olanları yaz (uncle → amca, dayı, enişte).
    - `say`: Türkçe harflerle okunuş, `CLAUDE.md` → "Okunuş yazım kuralları". Emin değilsen Amerikan telaffuzunu esas al.
-   - `topic`: mevcut konulardan birini kullan (`python3 -c "import json;print(sorted({w['topic'] for w in json.load(open('data/words.json'))}))"`). Gerçekten yeni bir alansa yeni konu aç.
+   - `topic`: phrasal verb ise (fiil + up/away/with/from…) mutlaka `"phrasal verb"`; bu kelimeler ayrı Phrasal verbs destesine gider. Diğerlerinde mevcut konulardan birini kullan (`python3 -c "import json;print(sorted({w['topic'] for w in json.load(open('data/words.json'))}))"`). Gerçekten yeni bir alansa yeni konu aç.
    - `example`: öğrencinin hayatından, A1–A2, 4–8 kelimelik cümle; takma adlarla (Ali, Ela, Ankara, İzmir).
    - `note` (isteğe bağlı): th sesi, düzensiz çoğul, sık yapılan hata, Türkçede ayrı/İngilizcede tek kelime gibi kısa ipucu.
    - `lessons`: kelime bir derse bağlı değilse en son dersi değil, öğrencinin istediği dersi yaz; ders yoksa sor. (Doğrulayıcı boş `lessons` kabul etmez.)

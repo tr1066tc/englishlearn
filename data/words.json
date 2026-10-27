@@ -68,6 +68,19 @@
     ]
   },
   {
+    "en": "big",
+    "tr": "büyük",
+    "say": "big",
+    "topic": "genel",
+    "example": {
+      "en": "I work for a big company.",
+      "tr": "Büyük bir şirkette çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "brother",
     "tr": "erkek kardeş",
     "say": "bradır",
@@ -105,6 +118,33 @@
     },
     "lessons": [
       "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "can",
+    "tr": "-ebilmek, -abilmek",
+    "say": "ken",
+    "topic": "genel",
+    "example": {
+      "en": "I can do my job well.",
+      "tr": "İşimi iyi yapabilirim."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Olumsuzu: can't (kent)."
+  },
+  {
+    "en": "car",
+    "tr": "araba",
+    "say": "kaar",
+    "topic": "genel",
+    "example": {
+      "en": "We have a car.",
+      "tr": "Bir arabamız var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
     ]
   },
   {
@@ -241,6 +281,20 @@
     ]
   },
   {
+    "en": "deal with",
+    "tr": "uğraşmak, ilgilenmek",
+    "say": "diil vid",
+    "topic": "phrasal verb",
+    "example": {
+      "en": "Dealing with people is difficult.",
+      "tr": "İnsanlarla uğraşmak zor."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "with'teki th: dil ucu dişlerin arasında; burada yaklaşık d ile yazıldı."
+  },
+  {
     "en": "difficult",
     "tr": "zor",
     "say": "difikılt",
@@ -268,6 +322,20 @@
     ]
   },
   {
+    "en": "English",
+    "tr": "İngilizce",
+    "say": "ingliş",
+    "topic": "genel",
+    "example": {
+      "en": "I study English every evening.",
+      "tr": "Her akşam İngilizce çalışıyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Dil adları büyük harfle yazılır."
+  },
+  {
     "en": "evening",
     "tr": "akşam",
     "say": "iivnin",
@@ -280,6 +348,20 @@
       "2026-10-27-ders-02",
       "2026-10-28-ders-03"
     ]
+  },
+  {
+    "en": "family",
+    "tr": "aile",
+    "say": "femıli",
+    "topic": "aile",
+    "example": {
+      "en": "My family lives in Ankara.",
+      "tr": "Ailem Ankara'da yaşıyor."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Tek bir şey sayılır: my family lives (-s)."
   },
   {
     "en": "father",
@@ -303,6 +385,33 @@
     "example": {
       "en": "My wife's father is my father-in-law.",
       "tr": "Eşimin babası benim kayınpederim."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "feel",
+    "tr": "hissetmek",
+    "say": "fiil",
+    "topic": "duygu",
+    "example": {
+      "en": "I feel happy on Sunday.",
+      "tr": "Pazar günü mutlu hissediyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "How do you feel? = Kendini nasıl hissediyorsun?"
+  },
+  {
+    "en": "fine",
+    "tr": "iyi",
+    "say": "fayn",
+    "topic": "tanışma",
+    "example": {
+      "en": "I'm fine, thank you.",
+      "tr": "İyiyim, teşekkür ederim."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -351,6 +460,20 @@
     ]
   },
   {
+    "en": "go",
+    "tr": "gitmek",
+    "say": "gou",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "How do you go to work?",
+      "tr": "İşe nasıl gidiyorsun?"
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "Ali'den bahsederken: he goes."
+  },
+  {
     "en": "go to bed",
     "tr": "yatmak",
     "say": "gou tı bed",
@@ -363,6 +486,34 @@
       "2026-10-28-ders-03"
     ],
     "note": "Ali'den bahsederken: he goes to bed (go → goes)."
+  },
+  {
+    "en": "good",
+    "tr": "iyi",
+    "say": "gud",
+    "topic": "genel",
+    "example": {
+      "en": "I'm good, thanks.",
+      "tr": "İyiyim, sağ ol."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "good sıfat (a good job), well zarf (I work well)."
+  },
+  {
+    "en": "graduate from",
+    "tr": "-den mezun olmak",
+    "say": "grecueyt frım",
+    "topic": "phrasal verb",
+    "example": {
+      "en": "I graduated from university.",
+      "tr": "Üniversiteden mezun oldum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Geçmiş hâli: graduated from. from'u unutma."
   },
   {
     "en": "grandchild",
@@ -472,6 +623,20 @@
     ]
   },
   {
+    "en": "have",
+    "tr": "sahip olmak, -si olmak; (yemek) yemek",
+    "say": "hev",
+    "topic": "genel",
+    "example": {
+      "en": "I have a daughter.",
+      "tr": "Bir kızım var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "he / she → has: Ali has a daughter."
+  },
+  {
     "en": "have breakfast",
     "tr": "kahvaltı yapmak",
     "say": "hev brekfıst",
@@ -510,6 +675,74 @@
     "lessons": [
       "2026-10-28-ders-03"
     ]
+  },
+  {
+    "en": "health",
+    "tr": "sağlık",
+    "say": "helt",
+    "topic": "iş",
+    "example": {
+      "en": "Health and safety are important.",
+      "tr": "Sağlık ve güvenlik önemlidir."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "th: dil ucu üst dişlerin arasında söylenir. Yazılışı: health (sonda h var)."
+  },
+  {
+    "en": "hello",
+    "tr": "merhaba, selam",
+    "say": "helou",
+    "topic": "tanışma",
+    "example": {
+      "en": "Hello! I'm John.",
+      "tr": "Merhaba! Ben John."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "hi",
+    "tr": "merhaba (samimi)",
+    "say": "hay",
+    "topic": "tanışma",
+    "example": {
+      "en": "Hi, my name is Ali.",
+      "tr": "Merhaba, benim adım Ali."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "home",
+    "tr": "ev, yuva",
+    "say": "houm",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I come home at seven.",
+      "tr": "Yedide eve geliyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "come home / go home: home'dan önce to gelmez."
+  },
+  {
+    "en": "house",
+    "tr": "ev (bina)",
+    "say": "haus",
+    "topic": "genel",
+    "example": {
+      "en": "We have a house.",
+      "tr": "Bir evimiz var."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "house = bina olarak ev; home = yaşadığın yer, yuva."
   },
   {
     "en": "husband",
@@ -590,6 +823,19 @@
     ]
   },
   {
+    "en": "like",
+    "tr": "sevmek, hoşlanmak",
+    "say": "layk",
+    "topic": "duygu",
+    "example": {
+      "en": "I want to like my job.",
+      "tr": "İşimi sevmek istiyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "live",
     "tr": "yaşamak, oturmak",
     "say": "liv",
@@ -603,6 +849,19 @@
       "2026-10-27-ders-02"
     ],
     "note": "I live ama my family lives (tek kişi/şey için -s)."
+  },
+  {
+    "en": "love",
+    "tr": "sevmek",
+    "say": "lav",
+    "topic": "duygu",
+    "example": {
+      "en": "I love my wife and my daughter.",
+      "tr": "Eşimi ve kızımı seviyorum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
   },
   {
     "en": "manager",
@@ -629,6 +888,20 @@
     "lessons": [
       "2026-10-25-ders-01"
     ]
+  },
+  {
+    "en": "meet",
+    "tr": "tanışmak, buluşmak",
+    "say": "miit",
+    "topic": "tanışma",
+    "example": {
+      "en": "Nice to meet you.",
+      "tr": "Tanıştığımıza memnun oldum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Cevabı: Nice to meet you too."
   },
   {
     "en": "meeting",
@@ -713,6 +986,20 @@
     ]
   },
   {
+    "en": "name",
+    "tr": "ad, isim",
+    "say": "neym",
+    "topic": "tanışma",
+    "example": {
+      "en": "My name is Ali.",
+      "tr": "Benim adım Ali."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "What's your name? = Adın ne?"
+  },
+  {
     "en": "nephew",
     "tr": "erkek yeğen",
     "say": "nefyu",
@@ -720,6 +1007,19 @@
     "example": {
       "en": "My nephew is a student.",
       "tr": "Erkek yeğenim öğrenci."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "nice",
+    "tr": "hoş, güzel",
+    "say": "nays",
+    "topic": "tanışma",
+    "example": {
+      "en": "Nice to meet you.",
+      "tr": "Tanıştığımıza memnun oldum."
     },
     "lessons": [
       "2026-10-25-ders-01"
@@ -782,6 +1082,34 @@
     "note": "Uzun ifade: health kelimesini atlamamaya dikkat."
   },
   {
+    "en": "old",
+    "tr": "yaşlı; (yaş söylerken) yaşında",
+    "say": "ould",
+    "topic": "genel",
+    "example": {
+      "en": "I'm forty-one years old.",
+      "tr": "Kırk bir yaşındayım."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "How old are you? = Kaç yaşındasın?"
+  },
+  {
+    "en": "older",
+    "tr": "daha büyük (yaşça)",
+    "say": "oldır",
+    "topic": "aile",
+    "example": {
+      "en": "My brother is older than me.",
+      "tr": "Ağabeyim benden büyük."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "older than me = benden büyük"
+  },
+  {
     "en": "older brother",
     "tr": "ağabey",
     "say": "oldır bradır",
@@ -824,7 +1152,7 @@
     "en": "pass away",
     "tr": "vefat etmek",
     "say": "pes ıvey",
-    "topic": "tanışma",
+    "topic": "phrasal verb",
     "example": {
       "en": "My father passed away.",
       "tr": "Babam vefat etti."
@@ -833,6 +1161,20 @@
       "2026-10-25-ders-01"
     ],
     "note": "Geçmiş hâli: passed away (pest ıvey)."
+  },
+  {
+    "en": "people",
+    "tr": "insanlar",
+    "say": "piipıl",
+    "topic": "iş",
+    "example": {
+      "en": "Some people are difficult.",
+      "tr": "Bazı insanlar zor."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "Çoğul sayılır: people are (is değil)."
   },
   {
     "en": "relatives",
@@ -861,9 +1203,35 @@
     ]
   },
   {
+    "en": "right",
+    "tr": "doğru; sağ",
+    "say": "rayt",
+    "topic": "genel",
+    "example": {
+      "en": "That's right.",
+      "tr": "Doğru."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
     "en": "rules",
     "tr": "kurallar",
     "say": "rulz",
+    "topic": "iş",
+    "example": {
+      "en": "Safety rules are important.",
+      "tr": "Güvenlik kuralları önemlidir."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "safety",
+    "tr": "güvenlik",
+    "say": "seyfti",
     "topic": "iş",
     "example": {
       "en": "Safety rules are important.",
@@ -939,6 +1307,46 @@
     ]
   },
   {
+    "en": "site",
+    "tr": "saha, alan",
+    "say": "sayt",
+    "topic": "iş",
+    "example": {
+      "en": "I check the site every day.",
+      "tr": "Her gün sahayı kontrol ediyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ],
+    "note": "construction site = şantiye"
+  },
+  {
+    "en": "sleep",
+    "tr": "uyumak",
+    "say": "sliip",
+    "topic": "günlük rutin",
+    "example": {
+      "en": "I sleep at night.",
+      "tr": "Geceleri uyuyorum."
+    },
+    "lessons": [
+      "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "small",
+    "tr": "küçük",
+    "say": "smool",
+    "topic": "genel",
+    "example": {
+      "en": "My car is small.",
+      "tr": "Arabam küçük."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ]
+  },
+  {
     "en": "so",
     "tr": "bu yüzden, o yüzden",
     "say": "sou",
@@ -995,6 +1403,19 @@
     "note": "Saat için at: start at eight."
   },
   {
+    "en": "student",
+    "tr": "öğrenci",
+    "say": "stuudınt",
+    "topic": "aile",
+    "example": {
+      "en": "My nephew is a student.",
+      "tr": "Erkek yeğenim öğrenci."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
     "en": "study",
     "tr": "çalışmak (ders), okumak",
     "say": "stadi",
@@ -1020,6 +1441,20 @@
     "lessons": [
       "2026-10-28-ders-03"
     ]
+  },
+  {
+    "en": "thank you",
+    "tr": "teşekkür ederim",
+    "say": "tenk yu",
+    "topic": "tanışma",
+    "example": {
+      "en": "I'm fine, thank you.",
+      "tr": "İyiyim, teşekkür ederim."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "th: dil ucu üst dişlerin arasında söylenir. Daha samimisi: thanks (sağ ol)."
   },
   {
     "en": "then",
@@ -1048,6 +1483,20 @@
       "2026-10-28-ders-03"
     ],
     "note": "th: dil ucu üst dişlerin arasında söylenir; burada yaklaşık t ile yazıldı."
+  },
+  {
+    "en": "time",
+    "tr": "zaman, saat",
+    "say": "taym",
+    "topic": "zaman",
+    "example": {
+      "en": "What time do you start?",
+      "tr": "Saat kaçta başlıyorsun?"
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "What time = saat kaçta"
   },
   {
     "en": "tired",
@@ -1091,10 +1540,23 @@
     "note": "Amca ve dayı için aynı kelime: on my father's side / on my mother's side ile ayrılır."
   },
   {
+    "en": "university",
+    "tr": "üniversite",
+    "say": "yunıvörsıti",
+    "topic": "tanışma",
+    "example": {
+      "en": "I graduated from university.",
+      "tr": "Üniversiteden mezun oldum."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ]
+  },
+  {
     "en": "wake up",
     "tr": "uyanmak",
     "say": "veyk ap",
-    "topic": "günlük rutin",
+    "topic": "phrasal verb",
     "example": {
       "en": "I wake up at six o'clock.",
       "tr": "Saat altıda uyanıyorum."
@@ -1103,6 +1565,20 @@
       "2026-10-28-ders-03"
     ],
     "note": "Ali'den bahsederken: he wakes up."
+  },
+  {
+    "en": "want",
+    "tr": "istemek",
+    "say": "vaant",
+    "topic": "duygu",
+    "example": {
+      "en": "I want to work in a big company.",
+      "tr": "Büyük bir şirkette çalışmak istiyorum."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "want to + fiil: I want to work. Ali'den bahsederken: he wants."
   },
   {
     "en": "Wednesday",
@@ -1131,6 +1607,20 @@
       "2026-10-27-ders-02"
     ],
     "note": "a week = haftada."
+  },
+  {
+    "en": "well",
+    "tr": "iyi (bir şekilde)",
+    "say": "vel",
+    "topic": "genel",
+    "example": {
+      "en": "I can do my job well.",
+      "tr": "İşimi iyi yapabilirim."
+    },
+    "lessons": [
+      "2026-10-27-ders-02"
+    ],
+    "note": "good sıfat (a good job), well zarf (do it well)."
   },
   {
     "en": "why",
@@ -1198,6 +1688,34 @@
     "lessons": [
       "2026-10-27-ders-02"
     ]
+  },
+  {
+    "en": "year",
+    "tr": "yıl",
+    "say": "yiır",
+    "topic": "zaman",
+    "example": {
+      "en": "I'm forty-one years old.",
+      "tr": "Kırk bir yaşındayım."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "Çoğulu: years."
+  },
+  {
+    "en": "younger",
+    "tr": "daha küçük (yaşça)",
+    "say": "yangır",
+    "topic": "aile",
+    "example": {
+      "en": "My sister is younger than me.",
+      "tr": "Kız kardeşim benden küçük."
+    },
+    "lessons": [
+      "2026-10-25-ders-01"
+    ],
+    "note": "younger than me = benden küçük"
   },
   {
     "en": "younger brother",

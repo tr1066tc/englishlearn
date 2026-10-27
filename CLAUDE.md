@@ -189,6 +189,8 @@ Kelimeler sayfasının varsayılan sekmesi **Desteler**: her ders bir deste, der
 - Ayarlar: günlük yeni kart sınırı (5/10/20/30) ve kart yönü (İng→Tür, Tür→İng, ikisi de). Kart kimliği `<yön>:<kelime>`.
 - Durum `localStorage` → `englishlearn:v1` → `srs` (`cards`, `days`, `settings`, `collapsed`, `undo`). "Yeniden" cevabı `missed` sayacına da eklenir. İlerleme sayfası özetinde kart istatistikleri ve çok unutulan kelimeler yer alır; `tekrar-testi` ve `ilerleme` bunları kullanabilir.
 - Yeni ders eklemek için ek iş gerekmez: dersin `words.groups` listesi otomatik olarak yeni deste olur.
+- **Phrasal verbs destesi:** `topic` değeri `"phrasal verb"` olan kelimeler (wake up, pass away, deal with, graduate from…) ders destelerinde değil, en altta ayrı **Phrasal verbs** destesinde, ilk geçtikleri derse göre "Ders N" alt destelerinde durur. Kart kimliği değişmediği için ilerleme korunur.
+- **Derste geçen her kelime kütüphanede olmalı** (öğrencinin isteği): kalıp, diyalog, okuma ve ısınma metinlerindeki bütün içerik kelimeleri ve phrasal verb'ler `words.json`'da olmalı. Kelime gruplarında yer almayanlar dersin **"Metinlerden kelimeler"** grubuna, phrasal verb'ler **"Phrasal verbs"** grubuna eklenir (ders sayfasında da görünür). Kapsam dışı: zamirler, a/the, be fiilleri, edatlar (in/on/at…), sayılar, isimler (Ali, Ankara…). `dogrula.py` eksik kelimeyi uyarı olarak listeler; uyarı varsa kelimeyi ekle.
 
 ## Ekranda alıştırma (`practice.html?id=<ders-id>`)
 

@@ -42,6 +42,8 @@ Her kelime için `kelime-ekle` skill'indeki kuralları uygula:
 - Yoksa: `en, tr, say, topic, example{en,tr}, lessons` ile ekle; gerekiyorsa `note`.
 - Diziyi İngilizceye göre alfabetik sırala, `ensure_ascii=False`, 2 boşluk girinti.
 
+Metinlerdeki (kalıp, diyalog, okuma, ısınma) bütün içerik kelimeleri kütüphanede olmalı: gruplarda olmayanları "Metinlerden kelimeler" grubuna, phrasal verb'leri (`topic: "phrasal verb"`) "Phrasal verbs" grubuna ekle. `python3 tools/dogrula.py` eksikleri uyarı olarak listeler; uyarı kalmasın.
+
 ## 4. Ana sayfa listesine ekle
 
 `data/lessons/index.json` dizisine `{ id, number, date, week, topic, title }` ekle (ders dosyasıyla birebir aynı değerler).

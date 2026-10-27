@@ -7,7 +7,7 @@
   "title": "İşim: nerede, ne iş, hangi saatler",
   "summary": "Nerede çalıştığını, ne iş yaptığını ve hangi saatlerde çalıştığını anlatma. Sonunda işin hakkındaki düşüncelerin ve hedefin: kurumsal bir şirkette çalışmak.",
   "words": {
-    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 24 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi.",
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 24 yeni kelime var; Ders 1'den dört kelime de tekrar için en alta eklendi. Metinlerde geçen 12 kelime de en alttaki gruplarda; phrasal verb'ler ayrıca Kelimeler → Phrasal verbs destesinde.",
     "groups": [
       {
         "name": "İş ve işyeri",
@@ -65,6 +65,28 @@
           "occupational health and safety",
           "live",
           "miss"
+        ]
+      },
+      {
+        "name": "Metinlerden kelimeler",
+        "words": [
+          "big",
+          "small",
+          "people",
+          "want",
+          "like",
+          "can",
+          "well",
+          "English",
+          "safety",
+          "health",
+          "time"
+        ]
+      },
+      {
+        "name": "Phrasal verbs",
+        "words": [
+          "deal with"
         ]
       }
     ]

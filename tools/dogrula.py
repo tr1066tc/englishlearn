@@ -120,6 +120,35 @@ for entry in index:
         if g and len(g.get("options", [])) != 4:
             errors.append(f"{lid}: okuma 'gist' sorusunda 4 şık olmalı")
 
+# Ders metinlerinde geçen her içerik kelimesi kütüphanede olmalı (öğrencinin isteği).
+STOP = set("""i you he she it we they me him her us them my your his its our their a an the is am are be was were
+and but or not don't doesn't isn't aren't can't do does did to of in on at for from with by as than this that
+these those there here what where when how which who that's let's i'm you're he's she's it's what's they're
+yes no any some many much lot every too very one two three four five six seven eight nine ten eleven twelve
+forty forty-one ali john ela ankara izmir""".split())
+IRREG = {"has": "have", "goes": "go", "children": "child", "grandchildren": "grandchild", "passed": "pass", "dealing": "deal"}
+lib = set(by_key)
+for w in words:
+    lib.update(w.get("en", "").lower().replace("-", " ").split())
+def known_word(t):
+    t = IRREG.get(t, t)
+    cands = {t, t[:-1], t[:-2], t[:-3] + "y", t[:-2] + "e" if t.endswith("ed") else t, t[:-3], t[:-3] + "e"}
+    if t.endswith("'s"):
+        cands.add(t[:-2])
+    return any(c in lib or c in STOP for c in cands if c)
+for entry in index:
+    path = DATA / "lessons" / f"{entry.get('id')}.json"
+    if not path.exists():
+        continue
+    lesson = json.loads(path.read_text(encoding="utf-8"))
+    texts = [i["en"] for g in lesson.get("patterns", {}).get("groups", []) for i in g.get("items", [])]
+    texts += [l["en"] for d in lesson.get("dialogues", []) for l in d.get("lines", [])]
+    texts += [x["en"] for x in (lesson.get("reading") or {}).get("sentences", [])]
+    texts += [x[k] for x in lesson.get("warmup", []) for k in ("q", "a")]
+    missing = sorted({t for txt in texts for t in re.findall(r"[a-z'-]+", txt.replace("İ", "I").lower().replace("’", "'")) if not known_word(t.strip("'-"))})
+    if missing:
+        warnings.append(f"{entry.get('id')}: metinde geçip kütüphanede olmayan kelimeler: {', '.join(missing)}")
+
 for path in sorted((DATA / "lessons").glob("*.json")):
     if path.name != "index.json" and path.stem not in ids:
         errors.append(f"lessons/{path.name}: index.json içinde listelenmemiş")

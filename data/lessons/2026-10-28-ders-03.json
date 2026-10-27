@@ -44,7 +44,7 @@
     }
   ],
   "words": {
-    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 27 yeni kelime var; Ders 2'den dört kelime tekrar için en altta.",
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 27 yeni kelime var; Ders 2'den dört kelime tekrar için en altta. Metinlerde geçen 5 kelime de en alttaki gruplarda; phrasal verb'ler ayrıca Kelimeler → Phrasal verbs destesinde.",
     "groups": [
       {
         "name": "Sabah",
@@ -100,6 +100,16 @@
           "finish",
           "tired",
           "evening"
+        ]
+      },
+      {
+        "name": "Metinlerden kelimeler",
+        "words": [
+          "site",
+          "go",
+          "home",
+          "feel",
+          "sleep"
         ]
       }
     ]

@@ -60,6 +60,9 @@ const SRS = (() => {
 
   // ---------- desteler ----------
   // Her kelime ilk geçtiği dersin, o dersteki ilk grubunun destesinde yer alır (aynı kelime iki destede sayılmaz).
+  // Phrasal verb'ler (topic: "phrasal verb") ders destelerinde değil, ayrı "Phrasal verbs" destesinde,
+  // ilk geçtikleri derse göre alt destelerde durur.
+  const PHRASAL = 'phrasal verb';
   function buildDecks(lessons, words, dir) {
     const dirs = dir === 'both' ? ['en', 'tr'] : [dir];
     const home = new Map();
@@ -72,15 +75,24 @@ const SRS = (() => {
         }
       }
     }
-    return sorted.map(l => {
+    const isPhrasal = k => words.map.get(k)?.topic === PHRASAL;
+    // Anki gibi önce bir yöndeki bütün kartlar, sonra diğer yön
+    const idsOf = keys => dirs.flatMap(d => keys.map(k => `${d}:${k}`));
+    const lessonDecks = sorted.map(l => {
       const subs = (l.words?.groups || []).map(g => {
-        const keys = g.words.map(k => k.toLowerCase()).filter(k => home.get(k)?.l === l && home.get(k)?.g === g);
-        // Anki gibi önce bir yöndeki bütün kartlar, sonra diğer yön
-        const ids = dirs.flatMap(d => keys.map(k => `${d}:${k}`));
-        return { id: `${l.id}/${g.name}`, name: g.name, lesson: l, ids };
+        const keys = g.words.map(k => k.toLowerCase()).filter(k => !isPhrasal(k) && home.get(k)?.l === l && home.get(k)?.g === g);
+        return { id: `${l.id}/${g.name}`, name: g.name, lesson: l, ids: idsOf(keys) };
       }).filter(sd => sd.ids.length);
       return { id: l.id, name: `Ders ${l.number}: ${l.title}`, lesson: l, subs, ids: subs.flatMap(sd => sd.ids) };
     }).filter(d => d.ids.length);
+    const phrasalSubs = sorted.map(l => {
+      const keys = [...home].filter(([k, hm]) => hm.l === l && isPhrasal(k)).map(([k]) => k);
+      return { id: `phrasal/${l.id}`, name: `Ders ${l.number}`, lesson: l, ids: idsOf(keys) };
+    }).filter(sd => sd.ids.length);
+    if (phrasalSubs.length) {
+      lessonDecks.push({ id: 'phrasal', name: 'Phrasal verbs', subs: phrasalSubs, ids: phrasalSubs.flatMap(sd => sd.ids) });
+    }
+    return lessonDecks;
   }
   const wordOf = id => id.slice(id.indexOf(':') + 1);
   const dirOf = id => id.slice(0, id.indexOf(':'));

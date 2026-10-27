@@ -7,7 +7,7 @@
   "title": "Kendini tanıtma ve aile",
   "summary": "Kendini tanıtma, tanışma diyaloğu ve geniş aile kelimeleri: yeğen, babaanne, anneanne, dede, torun, kuzen, eşin ailesi.",
   "words": {
-    "intro": "Okunuşlar Türkçe harflerle yazıldı. mother, father, brother kelimelerindeki th sesi dil ucu dişlerin arasındayken söylenir; burada yaklaşık d ile yazıldı.",
+    "intro": "Okunuşlar Türkçe harflerle yazıldı. mother, father, brother kelimelerindeki th sesi dil ucu dişlerin arasındayken söylenir; burada yaklaşık d ile yazıldı. Metinlerde geçen 21 kelime de en alttaki gruplarda; phrasal verb'ler ayrıca Kelimeler → Phrasal verbs destesinde.",
     "groups": [
       {
         "name": "Yakın aile",
@@ -77,6 +77,42 @@
           "miss",
           "specialist",
           "occupational health and safety"
+        ]
+      },
+      {
+        "name": "Tanışma kalıpları",
+        "words": [
+          "hello",
+          "hi",
+          "name",
+          "nice",
+          "meet",
+          "fine",
+          "good",
+          "thank you"
+        ]
+      },
+      {
+        "name": "Metinlerden kelimeler",
+        "words": [
+          "old",
+          "year",
+          "older",
+          "younger",
+          "family",
+          "have",
+          "love",
+          "right",
+          "student",
+          "university",
+          "car",
+          "house"
+        ]
+      },
+      {
+        "name": "Phrasal verbs",
+        "words": [
+          "graduate from"
         ]
       }
     ]
