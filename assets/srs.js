@@ -44,9 +44,16 @@ const SRS = (() => {
     return s;
   }
   const save = s => App.writeState(s);
+  // newBy: bugün hangi derste (üst deste) kaç yeni kart açıldı. Sınır Anki gibi deste başına sayılır.
   function todayStats(s, now = Date.now()) {
     const id = day(now).id;
-    return s.srs.days[id] ||= { new: 0, rev: 0, learn: 0, n: 0, ms: 0 };
+    const t = s.srs.days[id] ||= { new: 0, rev: 0, learn: 0, n: 0, ms: 0 };
+    t.newBy ||= {};
+    return t;
+  }
+  // Bir dersin (üst destenin) bugün için kalan yeni kart hakkı
+  function newLeft(s, lessonId, now = Date.now()) {
+    return Math.max(0, s.srs.settings.newPerDay - (todayStats(s, now).newBy[lessonId] || 0));
   }
 
   // ---------- desteler ----------
@@ -77,7 +84,7 @@ const SRS = (() => {
   const dirOf = id => id.slice(0, id.indexOf(':'));
 
   // ---------- sayılar: yeni / öğrenme / tekrar ----------
-  function counts(ids, s, now = Date.now()) {
+  function counts(ids, s, now = Date.now(), lessonId) {
     const today = day(now).num;
     let nw = 0, lrn = 0, rev = 0;
     for (const id of ids) {
@@ -88,7 +95,7 @@ const SRS = (() => {
     }
     const t = todayStats(s, now), set = s.srs.settings;
     return {
-      new: Math.min(nw, Math.max(0, set.newPerDay - t.new)),
+      new: Math.min(nw, newLeft(s, lessonId, now)),
       learn: lrn,
       review: Math.min(rev, Math.max(0, set.revPerDay - t.rev)),
       newTotal: nw,
@@ -96,7 +103,7 @@ const SRS = (() => {
   }
 
   // Sıradaki kart: önce zamanı gelen öğrenme kartları, sonra tekrar, sonra yeni, en son 20 dk içinde gelecek öğrenme kartları.
-  function next(ids, s, now = Date.now()) {
+  function next(ids, s, now = Date.now(), lessonId) {
     const today = day(now).num;
     const cards = s.srs.cards;
     const t = todayStats(s, now), set = s.srs.settings;
@@ -108,7 +115,7 @@ const SRS = (() => {
         .sort((a, b) => cards[a].dueDay - cards[b].dueDay);
       if (due.length) return { id: due[0], q: 'review' };
     }
-    if (t.new < set.newPerDay) {
+    if (newLeft(s, lessonId, now) > 0) {
       const fresh = ids.find(id => !cards[id]);
       if (fresh) return { id: fresh, q: 'new' };
     }
@@ -198,13 +205,13 @@ const SRS = (() => {
   }
 
   // Cevabı kaydeder; tek adımlık geri alma bilgisini saklar.
-  function answer(id, ease, elapsedMs, now = Date.now()) {
+  function answer(id, ease, elapsedMs, lessonId, now = Date.now()) {
     const s = load();
     const prev = s.srs.cards[id];
     const t = todayStats(s, now);
-    s.srs.undo = { id, prev: prev || null, day: day(now).id, stats: { ...t } };
+    s.srs.undo = { id, prev: prev || null, day: day(now).id, stats: { ...t, newBy: { ...t.newBy } } };
     s.srs.cards[id] = schedule(prev, ease, now);
-    if (!prev) t.new++;
+    if (!prev) { t.new++; t.newBy[lessonId] = (t.newBy[lessonId] || 0) + 1; }
     else if (prev.t === 'review') t.rev++;
     else t.learn++;
     t.n++;
@@ -260,5 +267,5 @@ const SRS = (() => {
     };
   }
 
-  return { CFG, day, load, todayStats, buildDecks, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
+  return { CFG, day, load, todayStats, newLeft, buildDecks, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
 })();
