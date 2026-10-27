@@ -56,13 +56,13 @@
   // ---------- desteler ----------
   function deckList() {
     const { s, list } = decks();
-    const total = list.map(d => SRS.counts(d.ids, s, Date.now(), d.lesson.id))
+    const total = list.map(d => SRS.counts(d, s))
       .reduce((a, c) => ({ new: a.new + c.new, learn: a.learn + c.learn, review: a.review + c.review }), { new: 0, learn: 0, review: 0 });
     const t = SRS.todayStats(s);
     const rows = h('div', { class: 'card decks' });
 
     for (const d of list) {
-      const c = SRS.counts(d.ids, s, Date.now(), d.lesson.id);
+      const c = SRS.counts(d, s);
       const open = !s.srs.collapsed[d.id];
       const chev = h('button', { class: 'chev', type: 'button', 'aria-expanded': String(open), 'aria-label': open ? 'Alt desteleri gizle' : 'Alt desteleri göster' }, open ? '⌄' : '›');
       chev.addEventListener('click', () => { SRS.toggleCollapsed(d.id); deckList(); });
@@ -72,7 +72,7 @@
         for (const sd of d.subs) {
           rows.append(h('div', { class: 'deck-row sub' },
             h('span', { class: 'chev-space' }),
-            h('button', { class: 'deck-name', type: 'button', onclick: () => go('calis/' + sd.id) }, h('span', {}, sd.name), countsEl(SRS.counts(sd.ids, s, Date.now(), sd.lesson.id)))));
+            h('button', { class: 'deck-name', type: 'button', onclick: () => go('calis/' + sd.id) }, h('span', {}, sd.name), countsEl(SRS.counts(sd, s)))));
         }
       }
     }
@@ -108,7 +108,7 @@
         h('p', { class: 'small muted' }, 'Bir deste ismine dokununca o destenin (alt desteleri dahil) kartları çalışılır. Bir kelime yalnızca ilk geçtiği derste sayılır.')),
       h('details', { class: 'card' },
         h('summary', {}, 'Ayarlar'),
-        chipRow('Günlük yeni kart sınırı (her ders için ayrı)', 'newPerDay', [[5, '5'], [10, '10'], [20, '20'], [30, '30']]),
+        chipRow('Günlük yeni kart sınırı (her alt deste için ayrı)', 'newPerDay', [[5, '5'], [10, '10'], [20, '20'], [30, '30']]),
         chipRow('Kartın ön yüzü', 'dir', [['en', 'İngilizce → Türkçe'], ['tr', 'Türkçe → İngilizce'], ['both', 'İkisi de']]),
         h('p', { class: 'small muted' }, '"Türkçe → İngilizce" konuşurken kelimeyi hatırlamayı çalıştırır. "İkisi de" her kelime için iki ayrı kart açar.'),
         h('div', { class: 'row' }, h('button', { type: 'button', onclick: () => {
@@ -123,9 +123,8 @@
     if (!found) return go('desteler');
     const { deck, title } = found;
     const now = Date.now();
-    const lessonId = deck.lesson.id;
-    const c = SRS.counts(deck.ids, s, now, lessonId);
-    const nx = SRS.next(deck.ids, s, now, lessonId);
+    const c = SRS.counts(deck, s, now);
+    const nx = SRS.next(deck, s, now);
 
     const undoBtn = h('button', { class: 'chip', type: 'button', disabled: !SRS.canUndo(), onclick: () => { SRS.undo(); study(deckId); } }, '↶ Geri al');
     const top = h('div', { class: 'study-top' },
@@ -139,13 +138,13 @@
     if (!nx) {
       const due = SRS.nextLearnDue(deck.ids, s);
       const tomorrow = SRS.dueTomorrow(deck.ids, s);
-      const limitHit = c.newTotal > 0 && SRS.newLeft(s, lessonId) === 0;
+      const limitHit = SRS.limitHit(deck, s);
       if (due) timer = setTimeout(() => study(deckId), Math.max(1000, due - Date.now() - SRS.CFG.learnAheadMin * 60e3 + 500));
       App.fill(main, top,
         h('div', { class: 'card done' },
           h('p', { class: 'big' }, 'Tebrikler! Bu destede şimdilik kart kalmadı. 🎉'),
           due ? h('p', {}, `Öğrenme kartlarından biri ${new Date(due).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })} civarında tekrar gelecek. Sayfa açık kalırsa kendiliğinden gelir.`) : null,
-          limitHit ? h('p', { class: 'small muted' }, `Bu dersin bugünkü yeni kart sınırına (${s.srs.settings.newPerDay}) ulaştın. Diğer derslerin yeni kartları ayrı sayılır, onlar etkilenmez. Bu dersin yeni kartları yarın gelecek; istersen Ayarlar'dan sınırı artırabilirsin.`) : null,
+          limitHit ? h('p', { class: 'small muted' }, `Bu destenin bugünkü yeni kart sınırına (alt deste başına ${s.srs.settings.newPerDay}) ulaştın. Diğer destelerin sınırı ayrı sayılır. Kalan yeni kartlar yarın gelecek; istersen Ayarlar'dan sınırı artırabilirsin.`) : null,
           h('p', { class: 'small muted' }, `Yarın bu destede yaklaşık ${tomorrow} tekrar kartı var.`),
           h('div', { class: 'row' }, h('button', { class: 'primary', type: 'button', onclick: () => go('desteler') }, 'Destelere dön'))));
       return;
@@ -176,7 +175,7 @@
       back.hidden = false;
       if (dir === 'tr') App.speak(w.en);
       const btn = (ease, text, cls) => h('button', { class: 'ans ' + cls, type: 'button', onclick: () => {
-        SRS.answer(id, ease, Date.now() - shownAt, lessonId);
+        SRS.answer(id, ease, Date.now() - shownAt, nx.leaf);
         study(deckId);
       } }, h('span', { class: 'ivl' }, SRS.label(prev, ease)), h('span', {}, text));
       App.fill(bar, btn(1, 'Yeniden', 'again'), btn(2, 'Zor', 'hard'), btn(3, 'İyi', 'good'), btn(4, 'Kolay', 'easy'));

@@ -44,17 +44,19 @@ const SRS = (() => {
     return s;
   }
   const save = s => App.writeState(s);
-  // newBy: bugün hangi derste (üst deste) kaç yeni kart açıldı. Sınır Anki gibi deste başına sayılır.
+  // newBy: bugün hangi alt destede kaç yeni kart açıldı. Sınır Anki gibi her alt deste için ayrı sayılır.
   function todayStats(s, now = Date.now()) {
     const id = day(now).id;
     const t = s.srs.days[id] ||= { new: 0, rev: 0, learn: 0, n: 0, ms: 0 };
     t.newBy ||= {};
     return t;
   }
-  // Bir dersin (üst destenin) bugün için kalan yeni kart hakkı
-  function newLeft(s, lessonId, now = Date.now()) {
-    return Math.max(0, s.srs.settings.newPerDay - (todayStats(s, now).newBy[lessonId] || 0));
+  // Bir alt destenin bugün için kalan yeni kart hakkı
+  function newLeft(s, leafId, now = Date.now()) {
+    return Math.max(0, s.srs.settings.newPerDay - (todayStats(s, now).newBy[leafId] || 0));
   }
+  // Üst destenin alt desteleri; alt destenin kendisi
+  const leaves = deck => deck.subs || [deck];
 
   // ---------- desteler ----------
   // Her kelime ilk geçtiği dersin, o dersteki ilk grubunun destesinde yer alır (aynı kelime iki destede sayılmaz).
@@ -84,29 +86,37 @@ const SRS = (() => {
   const dirOf = id => id.slice(0, id.indexOf(':'));
 
   // ---------- sayılar: yeni / öğrenme / tekrar ----------
-  function counts(ids, s, now = Date.now(), lessonId) {
+  // Üst destenin sayıları alt destelerin toplamıdır (AnkiDroid'deki gibi).
+  function counts(deck, s, now = Date.now()) {
     const today = day(now).num;
-    let nw = 0, lrn = 0, rev = 0;
-    for (const id of ids) {
-      const c = s.srs.cards[id];
-      if (!c) nw++;
-      else if (c.t === 'learn' || c.t === 'relearn') { if (c.due <= now + CFG.learnAheadMin * MIN) lrn++; }
-      else if (c.dueDay <= today) rev++;
+    let nw = 0, lrn = 0, rev = 0, fresh = 0;
+    for (const leaf of leaves(deck)) {
+      let leafNew = 0;
+      for (const id of leaf.ids) {
+        const c = s.srs.cards[id];
+        if (!c) leafNew++;
+        else if (c.t === 'learn' || c.t === 'relearn') { if (c.due <= now + CFG.learnAheadMin * MIN) lrn++; }
+        else if (c.dueDay <= today) rev++;
+      }
+      fresh += leafNew;
+      nw += Math.min(leafNew, newLeft(s, leaf.id, now));
     }
     const t = todayStats(s, now), set = s.srs.settings;
     return {
-      new: Math.min(nw, newLeft(s, lessonId, now)),
+      new: nw,
       learn: lrn,
       review: Math.min(rev, Math.max(0, set.revPerDay - t.rev)),
-      newTotal: nw,
+      newTotal: fresh,
     };
   }
 
-  // Sıradaki kart: önce zamanı gelen öğrenme kartları, sonra tekrar, sonra yeni, en son 20 dk içinde gelecek öğrenme kartları.
-  function next(ids, s, now = Date.now(), lessonId) {
+  // Sıradaki kart: önce zamanı gelen öğrenme kartları, sonra tekrar, sonra yeni (alt deste sırasıyla,
+  // her alt destenin kendi sınırıyla), en son 20 dk içinde gelecek öğrenme kartları.
+  function next(deck, s, now = Date.now()) {
     const today = day(now).num;
     const cards = s.srs.cards;
     const t = todayStats(s, now), set = s.srs.settings;
+    const ids = deck.ids;
     const learning = ids.filter(id => cards[id] && (cards[id].t === 'learn' || cards[id].t === 'relearn'))
       .sort((a, b) => cards[a].due - cards[b].due);
     if (learning.length && cards[learning[0]].due <= now) return { id: learning[0], q: 'learn' };
@@ -115,12 +125,17 @@ const SRS = (() => {
         .sort((a, b) => cards[a].dueDay - cards[b].dueDay);
       if (due.length) return { id: due[0], q: 'review' };
     }
-    if (newLeft(s, lessonId, now) > 0) {
-      const fresh = ids.find(id => !cards[id]);
-      if (fresh) return { id: fresh, q: 'new' };
+    for (const leaf of leaves(deck)) {
+      if (newLeft(s, leaf.id, now) <= 0) continue;
+      const fresh = leaf.ids.find(id => !cards[id]);
+      if (fresh) return { id: fresh, q: 'new', leaf: leaf.id };
     }
     if (learning.length && cards[learning[0]].due <= now + CFG.learnAheadMin * MIN) return { id: learning[0], q: 'learn' };
     return null;
+  }
+  // Yeni kartı olup bugünkü sınırı dolan alt deste var mı
+  function limitHit(deck, s, now = Date.now()) {
+    return leaves(deck).some(leaf => leaf.ids.some(id => !s.srs.cards[id]) && newLeft(s, leaf.id, now) === 0);
   }
   // Destede daha sonra gelecek öğrenme kartı varsa ne zaman
   function nextLearnDue(ids, s) {
@@ -205,13 +220,13 @@ const SRS = (() => {
   }
 
   // Cevabı kaydeder; tek adımlık geri alma bilgisini saklar.
-  function answer(id, ease, elapsedMs, lessonId, now = Date.now()) {
+  function answer(id, ease, elapsedMs, leafId, now = Date.now()) {
     const s = load();
     const prev = s.srs.cards[id];
     const t = todayStats(s, now);
     s.srs.undo = { id, prev: prev || null, day: day(now).id, stats: { ...t, newBy: { ...t.newBy } } };
     s.srs.cards[id] = schedule(prev, ease, now);
-    if (!prev) { t.new++; t.newBy[lessonId] = (t.newBy[lessonId] || 0) + 1; }
+    if (!prev) { t.new++; t.newBy[leafId] = (t.newBy[leafId] || 0) + 1; }
     else if (prev.t === 'review') t.rev++;
     else t.learn++;
     t.n++;
@@ -267,5 +282,5 @@ const SRS = (() => {
     };
   }
 
-  return { CFG, day, load, todayStats, newLeft, buildDecks, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
+  return { CFG, day, load, todayStats, newLeft, limitHit, buildDecks, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
 })();
