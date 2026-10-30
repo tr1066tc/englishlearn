@@ -57,6 +57,13 @@ python3 tools/dogrula.py            # PDF'i olmayan ders hata verir
 PDF'lerin sayfa sayısına bak (`pdfinfo`, 5 sayfayı aşmasın); gerekirse `pdftoppm -r 60 -png` ile bir sayfaya göz at. PDF'ler de commit'e girer.
 Hata kalmayana kadar düzelt. İstersen `python3 -m http.server` ile açıp Playwright'la 390 px genişlikte ders sayfasına bak (konsol hatası olmamalı). Sonra commit et ("Ders N: <başlık>") ve çalışılan dala push et. Öğrenci izin verdiği için aynı commit'i `git push origin <çalışma-dalı>:refs/heads/main` ile `main`'e de gönder (fast-forward), yoksa ders sitede görünmez.
 
+**Yayının bittiğini doğrula.** `main`'e push GitHub Pages yayınını başlatır; yayın bitmeden ders bağlantısı 404 verir (30 Ekim'de yayın birkaç dakika kuyrukta bekledi ve öğrenci hata gördü). Bağlantıyı vermeden önce son yayının bu commit için `completed success` olmasını bekle:
+
+```bash
+until s=$(gh api "repos/tr1066tc/englishlearn/actions/runs?per_page=1" --jq '.workflow_runs[0] | "\(.status) \(.conclusion) \(.head_sha[0:7])"') && [[ "$s" == completed* ]]; do sleep 30; done; echo "$s"
+```
+(Arka planda çalıştır.) Sonuç `success` değilse ya da uzun sürüyorsa öğrenciye dersin hazır olduğunu ama yayının beklediğini söyle; bağlantıyı "birkaç dakika sonra" notuyla ver.
+
 ## 6. CLAUDE.md'yi güncelle
 
 "Ders sırası" tablosunda dersi ✅ yap (tarih ile), sıradakini işaretle. Zayıf noktalar ("Şu an") değiştiyse güncelle. Bu değişiklik de aynı commit'e girsin.
