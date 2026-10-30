@@ -55,9 +55,9 @@ Repo ve site **herkese açık**. Öğrenci gizlilik için takma ad kullanılmas�
 |---|---|---|---|
 | 1 | 1 | Ben ve ailem: kendini tanıtma, geniş aile | ✅ 25 Ekim |
 | 2 | 2 | İşim: nerede, ne iş, hangi saatler | ✅ 27 Ekim |
-| 3 | 2 | Bir günüm: sabahtan akşama, saat söyleme, günler | ✅ 28 Ekim (hazır) |
-| 4 | 3 | Şantiyem: şantiyedeki kişiler ve yerler (worker, engineer, foreman, office, gate…), there is / there are | sıradaki |
-| 5 | 3 | Basit güvenlik cümleleri: emir kipi (Wear your helmet. Don't run. Be careful.), KKD kelimeleri | |
+| 3 | 2 | Bir günüm: sabahtan akşama, saat söyleme, günler | ✅ 28 Ekim |
+| 4 | 3 | Şantiyem: şantiyedeki kişiler ve yerler (engineer, foreman, office, gate…), there is / there are, near / next to / behind | ✅ 30 Ekim (hazır) |
+| 5 | 3 | Basit güvenlik cümleleri: emir kipi (Wear your helmet. Don't run. Be careful.), KKD kelimeleri | sıradaki |
 | 6 | 3 | Şantiyede bir sorun: can / can't, must / mustn't, uyarı vermek | |
 | 7 | 4 | Hafta tekrarı + 2 dakikalık tanıtım metnini birleştirme (okuma paragraflarının I hâlleri) | |
 | 8 | 4 | Tanıtım kaydı: metni sesli okuma ve ezberden söyleme (ay sonu ses kaydı) | |
@@ -80,7 +80,7 @@ Her ders önceki derslerin kalıplarını tekrar eder; yeni ders hazırlanınca 
   - Şu an: uzun adlarda kelime atlama (*construction site* → site eksik kaldı; *occupational health and safety specialist* Ders 2'de tam çıktı, takip sürsün); *people are* (çoğul); saat için *at* (*finish at six*); yazım: *forty*, *health*, *difficult*. (*How are you?* / *How old are you?* karışıklığı Ders 2 tekrarında düzeldi.)
 - Kütüphanedeki her kelimede Türkçe anlam ve Türkçe harflerle okunuş **mutlaka** olmalı.
 - **Cevap yalnızca sorulanı söyler** (öğrencinin açık isteği). Diyalog, ısınma ve testlerde cevaba sorulmayan bilgi ekleme: *Are you married? → Yes, I am.* (çocuk sorulmadı). Ek bilgi gerekiyorsa karşı taraf ayrı bir soruyla sorar: *Do you have any children? → Yes, I have a daughter.* · *Why? → Because …* · *What time do you finish? → I finish at six.* İstisnalar: selamlaşma kalıpları (*Nice to meet you*, *And you?*) ve açık uçlu sorular (*What do you do in the evening?* → akşam yaptıklarını sıralamak). Okuma paragrafı ve kalıp cümleleri soru-cevap olmadığı için *because, so, then* ile bağlanabilir.
-- **Ali'nin hayatı derslerde tutarlı olmalı** (takma adlı kurgu; öğrenci aksini söylerse güncelle): 41 yaşında, Ankara'da eşi ve kızı Ela (11) ile yaşıyor · annesi Ankara'da, babası vefat etti · büyükanne ve büyükbabaları vefat etti · bir ağabeyi, bir küçük kız kardeşi var; kız kardeşinin bir oğlu ve bir kızı var · çok kuzeni var · amcası İzmir'de · eşinin ailesi İzmir'de · İSG uzmanı, büyük bir şirkette şantiyede · pazartesi–cumartesi 08:00–18:00, pazar izin · 06:00 uyanır, 07:00 evden çıkar, arabayla gider, 19:00 eve gelir, ailesiyle akşam yemeği yer, 20:30 İngilizce, 22:00 yatar · hedefi güvenlik kültürü olan büyük bir şirket. Yeni cümleler bunlarla çelişmesin (ör. her akşam ailesiyle olduğu için "I miss my family" yazma).
+- **Ali'nin hayatı derslerde tutarlı olmalı** (takma adlı kurgu; öğrenci aksini söylerse güncelle): 41 yaşında, Ankara'da eşi ve kızı Ela (11) ile yaşıyor · annesi Ankara'da, babası vefat etti · büyükanne ve büyükbabaları vefat etti · bir ağabeyi, bir küçük kız kardeşi var; kız kardeşinin bir oğlu ve bir kızı var · çok kuzeni var · amcası İzmir'de · eşinin ailesi İzmir'de · İSG uzmanı, büyük bir şirkette şantiyede · pazartesi–cumartesi 08:00–18:00, pazar izin · 06:00 uyanır, 07:00 evden çıkar, arabayla gider, 19:00 eve gelir, ailesiyle akşam yemeği yer, 20:30 İngilizce, 22:00 yatar · hedefi güvenlik kültürü olan büyük bir şirket · şantiyesi (Ders 4): kapının yakınında ofis, ofisin yanında yemekhane, ofisin arkasında otopark, yemekhanenin arkasında tuvaletler; iki vinç, çok kamyon, üç ekskavatör; iki yüz işçi, beş mühendis, bir formen; tünel ve köprü var, Ali her gün tüneli ve köprüyü kontrol eder; tünel tehlikeli (çok makine var). Yeni cümleler bunlarla çelişmesin (ör. her akşam ailesiyle olduğu için "I miss my family" yazma).
 
 ## Okunuş yazım kuralları
 

@@ -68,6 +68,19 @@
     ]
   },
   {
+    "en": "behind",
+    "tr": "arkasında",
+    "say": "bihaynd",
+    "topic": "konum",
+    "example": {
+      "en": "The parking area is behind the office.",
+      "tr": "Otopark ofisin arkasında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "big",
     "tr": "büyük",
     "say": "big",
@@ -78,6 +91,19 @@
     },
     "lessons": [
       "2026-10-27-ders-02"
+    ]
+  },
+  {
+    "en": "bridge",
+    "tr": "köprü",
+    "say": "bric",
+    "topic": "şantiye",
+    "example": {
+      "en": "I check the bridge every day.",
+      "tr": "Her gün köprüyü kontrol ediyorum."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -135,6 +161,19 @@
     "note": "Olumsuzu: can't (kent)."
   },
   {
+    "en": "canteen",
+    "tr": "yemekhane",
+    "say": "kentiin",
+    "topic": "şantiye",
+    "example": {
+      "en": "The canteen is next to the office.",
+      "tr": "Yemekhane ofisin yanında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "car",
     "tr": "araba",
     "say": "kaar",
@@ -157,7 +196,8 @@
       "tr": "Her gün sahayı kontrol ediyorum."
     },
     "lessons": [
-      "2026-10-28-ders-03"
+      "2026-10-28-ders-03",
+      "2026-10-30-ders-04"
     ],
     "note": "Ali'den bahsederken: he checks."
   },
@@ -224,7 +264,8 @@
       "tr": "Bir şantiyede çalışıyorum."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-30-ders-04"
     ],
     "note": "Uzun ifade: site kelimesini atlamamaya dikkat."
   },
@@ -239,6 +280,32 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "crane",
+    "tr": "vinç",
+    "say": "kreyn",
+    "topic": "şantiye",
+    "example": {
+      "en": "There are two cranes.",
+      "tr": "İki vinç var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
+    "en": "dangerous",
+    "tr": "tehlikeli",
+    "say": "deyncırıs",
+    "topic": "güvenlik",
+    "example": {
+      "en": "The tunnel is dangerous.",
+      "tr": "Tünel tehlikeli."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -322,6 +389,33 @@
     ]
   },
   {
+    "en": "driver",
+    "tr": "şoför, sürücü",
+    "say": "drayvır",
+    "topic": "şantiye",
+    "example": {
+      "en": "The truck driver starts at eight.",
+      "tr": "Kamyon şoförü sekizde başlıyor."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
+    "en": "engineer",
+    "tr": "mühendis",
+    "say": "encıniır",
+    "topic": "şantiye",
+    "example": {
+      "en": "There are five engineers on my site.",
+      "tr": "Şantiyemde beş mühendis var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "an engineer (sesli harf: an)."
+  },
+  {
     "en": "English",
     "tr": "İngilizce",
     "say": "ingliş",
@@ -348,6 +442,20 @@
       "2026-10-27-ders-02",
       "2026-10-28-ders-03"
     ]
+  },
+  {
+    "en": "excavator",
+    "tr": "ekskavatör, kazıcı",
+    "say": "ekskıveytır",
+    "topic": "şantiye",
+    "example": {
+      "en": "There are three excavators.",
+      "tr": "Üç ekskavatör var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "an excavator (sesli harf: an)."
   },
   {
     "en": "family",
@@ -447,6 +555,20 @@
     "note": "Tek kişide -s: the manager follows the rules."
   },
   {
+    "en": "foreman",
+    "tr": "formen, ustabaşı",
+    "say": "formın",
+    "topic": "şantiye",
+    "example": {
+      "en": "The foreman checks the workers.",
+      "tr": "Formen işçileri kontrol ediyor."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "Çoğulu: foremen (formın)."
+  },
+  {
     "en": "Friday",
     "tr": "cuma",
     "say": "fraydey",
@@ -458,6 +580,20 @@
     "lessons": [
       "2026-10-28-ders-03"
     ]
+  },
+  {
+    "en": "gate",
+    "tr": "kapı (ana giriş), giriş kapısı",
+    "say": "geyt",
+    "topic": "şantiye",
+    "example": {
+      "en": "The office is near the gate.",
+      "tr": "Ofis kapının yakınında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "Oda kapısı door; site girişindeki büyük kapı gate."
   },
   {
     "en": "go",
@@ -771,6 +907,20 @@
     ]
   },
   {
+    "en": "in front of",
+    "tr": "önünde",
+    "say": "in frant ıv",
+    "topic": "konum",
+    "example": {
+      "en": "The gate is in front of the office.",
+      "tr": "Kapı ofisin önünde."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "of'u unutma: in front of the office."
+  },
+  {
     "en": "in-laws",
     "tr": "eşin ailesi",
     "say": "in looz",
@@ -864,6 +1014,20 @@
     ]
   },
   {
+    "en": "machine",
+    "tr": "makine",
+    "say": "mışiin",
+    "topic": "şantiye",
+    "example": {
+      "en": "There are many machines in the tunnel.",
+      "tr": "Tünelde çok makine var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "Okunuşa dikkat: ch burada ş gibi."
+  },
+  {
     "en": "manager",
     "tr": "idareci, yönetici",
     "say": "menıcır",
@@ -913,7 +1077,8 @@
       "tr": "Pazartesi güvenlik toplantımız var."
     },
     "lessons": [
-      "2026-10-28-ders-03"
+      "2026-10-28-ders-03",
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -1000,6 +1165,19 @@
     "note": "What's your name? = Adın ne?"
   },
   {
+    "en": "near",
+    "tr": "yakınında, yakın",
+    "say": "niır",
+    "topic": "konum",
+    "example": {
+      "en": "The office is near the gate.",
+      "tr": "Ofis kapının yakınında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "nephew",
     "tr": "erkek yeğen",
     "say": "nefyu",
@@ -1010,6 +1188,19 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "next to",
+    "tr": "yanında",
+    "say": "nekst tu",
+    "topic": "konum",
+    "example": {
+      "en": "The canteen is next to the office.",
+      "tr": "Yemekhane ofisin yanında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -1082,6 +1273,20 @@
     "note": "Uzun ifade: health kelimesini atlamamaya dikkat."
   },
   {
+    "en": "office",
+    "tr": "ofis, büro",
+    "say": "oofis",
+    "topic": "şantiye",
+    "example": {
+      "en": "The office is near the gate.",
+      "tr": "Ofis kapının yakınında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "an office (sesli harf: an)."
+  },
+  {
     "en": "old",
     "tr": "yaşlı; (yaş söylerken) yaşında",
     "say": "ould",
@@ -1136,6 +1341,20 @@
     ]
   },
   {
+    "en": "operator",
+    "tr": "operatör",
+    "say": "apıreytır",
+    "topic": "şantiye",
+    "example": {
+      "en": "There is an operator in every crane.",
+      "tr": "Her vincin içinde bir operatör var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "an operator (sesli harf: an)."
+  },
+  {
     "en": "parents",
     "tr": "anne ve baba",
     "say": "perınts",
@@ -1146,6 +1365,19 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "parking area",
+    "tr": "otopark",
+    "say": "paarking eriı",
+    "topic": "şantiye",
+    "example": {
+      "en": "The parking area is behind the office.",
+      "tr": "Otopark ofisin arkasında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -1216,6 +1448,19 @@
     ]
   },
   {
+    "en": "road",
+    "tr": "yol",
+    "say": "roud",
+    "topic": "şantiye",
+    "example": {
+      "en": "The trucks are on the road.",
+      "tr": "Kamyonlar yolda."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "rules",
     "tr": "kurallar",
     "say": "rulz",
@@ -1227,6 +1472,20 @@
     "lessons": [
       "2026-10-27-ders-02"
     ]
+  },
+  {
+    "en": "safe",
+    "tr": "güvenli",
+    "say": "seyf",
+    "topic": "güvenlik",
+    "example": {
+      "en": "Is the tunnel safe?",
+      "tr": "Tünel güvenli mi?"
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ],
+    "note": "safety (isim) = güvenlik, safe (sıfat) = güvenli."
   },
   {
     "en": "safety",
@@ -1319,6 +1578,19 @@
       "2026-10-28-ders-03"
     ],
     "note": "construction site = şantiye"
+  },
+  {
+    "en": "site manager",
+    "tr": "şantiye şefi",
+    "say": "sayt menıcır",
+    "topic": "şantiye",
+    "example": {
+      "en": "The site manager has a meeting on Monday.",
+      "tr": "Şantiye şefinin pazartesi toplantısı var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
   },
   {
     "en": "sleep",
@@ -1443,6 +1715,19 @@
     ]
   },
   {
+    "en": "team",
+    "tr": "ekip, takım",
+    "say": "tiim",
+    "topic": "şantiye",
+    "example": {
+      "en": "The foreman has a big team.",
+      "tr": "Formenin büyük bir ekibi var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "thank you",
     "tr": "teşekkür ederim",
     "say": "tenk yu",
@@ -1513,6 +1798,45 @@
     ]
   },
   {
+    "en": "today",
+    "tr": "bugün",
+    "say": "tıdey",
+    "topic": "zaman",
+    "example": {
+      "en": "Are there any visitors today?",
+      "tr": "Bugün ziyaretçi var mı?"
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
+    "en": "toilet",
+    "tr": "tuvalet",
+    "say": "toylıt",
+    "topic": "şantiye",
+    "example": {
+      "en": "The toilets are behind the canteen.",
+      "tr": "Tuvaletler yemekhanenin arkasında."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
+    "en": "truck",
+    "tr": "kamyon",
+    "say": "trak",
+    "topic": "şantiye",
+    "example": {
+      "en": "There are many trucks on the site.",
+      "tr": "Şantiyede çok kamyon var."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
+    ]
+  },
+  {
     "en": "Tuesday",
     "tr": "salı",
     "say": "tuuzdey",
@@ -1523,6 +1847,19 @@
     },
     "lessons": [
       "2026-10-28-ders-03"
+    ]
+  },
+  {
+    "en": "tunnel",
+    "tr": "tünel",
+    "say": "tanıl",
+    "topic": "şantiye",
+    "example": {
+      "en": "The tunnel is dangerous.",
+      "tr": "Tünel tehlikeli."
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -1550,6 +1887,19 @@
     },
     "lessons": [
       "2026-10-25-ders-01"
+    ]
+  },
+  {
+    "en": "visitor",
+    "tr": "ziyaretçi",
+    "say": "vizitır",
+    "topic": "şantiye",
+    "example": {
+      "en": "Are there any visitors today?",
+      "tr": "Bugün ziyaretçi var mı?"
+    },
+    "lessons": [
+      "2026-10-30-ders-04"
     ]
   },
   {
@@ -1673,7 +2023,8 @@
       "tr": "İşçiler kurallara uyar."
     },
     "lessons": [
-      "2026-10-27-ders-02"
+      "2026-10-27-ders-02",
+      "2026-10-30-ders-04"
     ]
   },
   {

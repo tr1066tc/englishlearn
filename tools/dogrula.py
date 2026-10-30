@@ -125,7 +125,7 @@ STOP = set("""i you he she it we they me him her us them my your his its our the
 and but or not don't doesn't isn't aren't can't do does did to of in on at for from with by as than this that
 these those there here what where when how which who that's let's i'm you're he's she's it's what's they're
 yes no any some many much lot every too very one two three four five six seven eight nine ten eleven twelve
-forty forty-one ali john ela ankara izmir""".split())
+forty forty-one hundred ali john ela ankara izmir""".split())
 IRREG = {"has": "have", "goes": "go", "children": "child", "grandchildren": "grandchild", "passed": "pass", "dealing": "deal"}
 lib = set(by_key)
 for w in words:

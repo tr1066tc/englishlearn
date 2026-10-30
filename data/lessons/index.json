@@ -22,5 +22,13 @@
     "week": 2,
     "topic": "İşim ve bir günüm",
     "title": "Bir günüm: sabahtan akşama"
+  },
+  {
+    "id": "2026-10-30-ders-04",
+    "number": 4,
+    "date": "2026-10-30",
+    "week": 3,
+    "topic": "Şantiye ve basit güvenlik cümleleri",
+    "title": "Şantiyem: kişiler ve yerler"
   }
 ]
