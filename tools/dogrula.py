@@ -116,6 +116,11 @@ for entry in index:
                 errors.append(f"{lid}: doğru/yanlış sorusu eksik: {q.get('en')!r}")
             if q.get("answer") is False and not q.get("fix"):
                 warnings.append(f"{lid}: yanlış cümle için 'fix' (metindeki doğrusu) yok: {q.get('en')!r}")
+        for n, f in enumerate((r.get("rewrite") or {}).get("frames", [])):
+            if "___" not in f.get("text", "") or not f.get("model"):
+                errors.append(f"{lid}: kalıp kutusu {n + 1}: '___' ya da 'model' eksik")
+        if r.get("rewrite") and not r["rewrite"].get("frames"):
+            warnings.append(f"{lid}: okuma 'rewrite.frames' (kalıp kutusu) yok; öğrenci boş sayfaya yazamıyor")
         g = r.get("gist")
         if g and len(g.get("options", [])) != 4:
             errors.append(f"{lid}: okuma 'gist' sorusunda 4 şık olmalı")

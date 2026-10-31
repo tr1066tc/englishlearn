@@ -574,7 +574,49 @@
     ],
     "rewrite": {
       "prompt": "Metni kendi ağzından, kendi saatlerinle yeniden yaz: Ali wakes up → I wake up, he has → I have, he goes → I go, his → my.",
-      "model": "I wake up at six o'clock. I have breakfast at half past six. I leave home at seven and drive to the construction site. I start work at eight. I check the site every day. I have lunch at twelve o'clock. I finish work at six and come home at seven. I have dinner with my family. At half past eight I study English. I go to bed at ten. Sunday is my day off."
+      "model": "I wake up at six o'clock. I have breakfast at half past six. I leave home at seven and drive to the construction site. I start work at eight. I check the site every day. I have lunch at twelve o'clock. I finish work at six and come home at seven. I have dinner with my family. At half past eight I study English. I go to bed at ten. Sunday is my day off.",
+      "frames": [
+        {
+          "text": "I wake up at ___.",
+          "hint": "saat (ör. six o'clock)",
+          "model": "I wake up at six o'clock."
+        },
+        {
+          "text": "I have breakfast at ___.",
+          "hint": "saat (ör. half past six)",
+          "model": "I have breakfast at half past six."
+        },
+        {
+          "text": "I leave home at ___.",
+          "hint": "saat (ör. seven)",
+          "model": "I leave home at seven."
+        },
+        {
+          "text": "I ___ to work.",
+          "hint": "nasıl gidiyorsun (ör. drive)",
+          "model": "I drive to work."
+        },
+        {
+          "text": "I come home at ___.",
+          "hint": "saat (ör. seven)",
+          "model": "I come home at seven."
+        },
+        {
+          "text": "I study English at ___.",
+          "hint": "saat (ör. half past eight)",
+          "model": "I study English at half past eight."
+        },
+        {
+          "text": "I go to bed at ___.",
+          "hint": "saat (ör. ten)",
+          "model": "I go to bed at ten."
+        },
+        {
+          "text": "___ is my day off.",
+          "hint": "gün (ör. Sunday)",
+          "model": "Sunday is my day off."
+        }
+      ]
     }
   },
   "exercises": {

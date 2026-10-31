@@ -529,7 +529,44 @@
     ],
     "rewrite": {
       "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He works → I work, he finishes → I finish, his → my.",
-      "model": "I am forty-one years old. I am an occupational health and safety specialist. I work for a big company on a construction site. I work six days a week. I start at eight and finish at six. In the evening I am tired, but I study English. I live in Ankara with my wife and my daughter. I want to work in a big company with a safety culture."
+      "model": "I am forty-one years old. I am an occupational health and safety specialist. I work for a big company on a construction site. I work six days a week. I start at eight and finish at six. In the evening I am tired, but I study English. I live in Ankara with my wife and my daughter. I want to work in a big company with a safety culture.",
+      "frames": [
+        {
+          "text": "I am an ___.",
+          "hint": "mesleğin",
+          "model": "I am an occupational health and safety specialist."
+        },
+        {
+          "text": "I work for ___.",
+          "hint": "nasıl bir şirket (ör. a big company)",
+          "model": "I work for a big company."
+        },
+        {
+          "text": "I work on ___.",
+          "hint": "nerede (ör. a construction site)",
+          "model": "I work on a construction site."
+        },
+        {
+          "text": "I work ___ days a week.",
+          "hint": "kaç gün (ör. six)",
+          "model": "I work six days a week."
+        },
+        {
+          "text": "I start at ___ and finish at ___.",
+          "hint": "saatler (ör. eight · six)",
+          "model": "I start at eight and finish at six."
+        },
+        {
+          "text": "In the evening I am ___.",
+          "hint": "nasılsın (ör. tired, happy)",
+          "model": "In the evening I am tired."
+        },
+        {
+          "text": "I want to work in ___.",
+          "hint": "nerede çalışmak istiyorsun (ör. a big company)",
+          "model": "I want to work in a big company."
+        }
+      ]
     }
   },
   "tests": {

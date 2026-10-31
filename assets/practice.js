@@ -193,8 +193,13 @@
     card('A. Eşleştir', matchRoot),
     card('B. Cümle sırala', orderRoot),
     card('C. Kelimeyi yaz', spellRoot),
-    card('D. Kendi cümlelerin', App.writingBox(`${lesson.id}:cumleler`, {
-      prompt: wg?.title ? `${wg.title}. Örneklere bak, kendi hayatından 5 cümle yaz.` : 'Örneklere bak, kendi hayatından 5 cümle yaz.',
-      models, copyTitle: `Ders ${lesson.number}: kendi cümlelerim`,
-    })));
+    card('D. Kendi cümlelerin', lesson.reading?.rewrite?.frames?.length
+      ? h('div', {},
+          App.frameBox(`${lesson.id}:cerceve`, lesson.reading.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi cümlelerim` }),
+          h('details', {}, h('summary', { class: 'small' }, 'Serbest yaz (istersen)'),
+            App.writingBox(`${lesson.id}:cumleler`, { prompt: 'İstersen kendi cümlelerini serbestçe yaz.', models, copyTitle: `Ders ${lesson.number}: serbest cümlelerim` })))
+      : App.writingBox(`${lesson.id}:cumleler`, {
+          prompt: wg?.title ? `${wg.title}. Örneklere bak, kendi hayatından 5 cümle yaz.` : 'Örneklere bak, kendi hayatından 5 cümle yaz.',
+          models, copyTitle: `Ders ${lesson.number}: kendi cümlelerim`,
+        })));
 })();

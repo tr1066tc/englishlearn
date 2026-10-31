@@ -73,7 +73,7 @@
   function dialogueCard(d) {
     const body = h('div');
     const tabs = h('div', { class: 'seg', role: 'tablist' });
-    const modes = { read: 'Oku ve dinle', repeat: 'Tekrar et' };
+    const modes = { read: 'Oku ve dinle', repeat: 'Tekrar et', answer: 'Sen cevapla' };
     let mode = 'read';
     for (const [m, label] of Object.entries(modes)) {
       tabs.append(h('button', { type: 'button', role: 'tab', 'aria-selected': String(m === mode), 'data-m': m, onclick: () => { mode = m; paint(); } }, label));
@@ -81,7 +81,7 @@
     function paint() {
       stop();
       tabs.querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.m === mode)));
-      App.fill(body, mode === 'read' ? readMode(d) : repeatMode(d));
+      App.fill(body, mode === 'read' ? readMode(d) : mode === 'repeat' ? repeatMode(d) : answerMode(d));
     }
     paint();
     return h('div', { class: 'card' }, h('h2', { style: 'margin-top:0' }, d.title), tabs, body);
@@ -99,6 +99,19 @@
         h('button', { class: 'chip', type: 'button', onclick: stop }, '■ Durdur'),
         App.hideToggle(list)),
       list);
+  }
+
+  // Sen cevapla: John'un sorusu gelir, öğrenci kendi bilgisiyle yüksek sesle cevaplar, sonra örnek cevaba bakar.
+  // "Tekrar et"in bir sonraki basamağı: ezberden değil, aklında arayıp üreterek.
+  function answerMode(d) {
+    const root = h('div');
+    const items = App.dialoguePairs([d]).map(p => ({ ...p, qTr: null, prompt: 'Kendi bilginle, yüksek sesle cevap ver. Kısa olsun; sadece sorulanı söyle. Sonra örnek cevaba bak.' }));
+    App.recallQuiz(root, items, {
+      key, title, testName: 'answer', keepOrder: true,
+      intro: 'Bu sefer ezberden değil, kendi hayatından cevap ver. Kelime aklına gelmezse önce aklında ara; bulamazsan örneğe bak.',
+      revealLabel: 'Örnek cevabı göster', yesLabel: '✓ Söyleyebildim', noLabel: '✗ Takıldım',
+    });
+    return root;
   }
 
   // Öğrencinin satırları tek tek gelir; 3 kez "Söyledim" deyince sonraki cümle.
@@ -344,9 +357,14 @@
       card(`${step1 ? 2 : 1}. Oku ve dinle`, readLocked, readBody),
       r.truefalse?.length ? card(`${step1 ? 3 : 2}. Doğru mu, yanlış mı?`, tfRoot) : null,
       r.blanks?.length ? card(`${step1 ? 4 : 3}. Boşlukları doldur`, clozeRoot) : null,
-      r.rewrite ? card(`${step1 ? 5 : 4}. Kendi paragrafın`, App.writingBox(`${lesson.id}:okuma`, {
-        prompt: r.rewrite.prompt, model: r.rewrite.model, copyTitle: `Ders ${lesson.number} okuma: kendi paragrafım`,
-      })) : null);
+      r.rewrite ? card(`${step1 ? 5 : 4}. Kendi paragrafın`, r.rewrite.frames?.length
+        ? h('div', {},
+            App.frameBox(`${lesson.id}:cerceve`, r.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi paragrafım` }),
+            h('details', {}, h('summary', { class: 'small' }, 'Örnek paragrafı göster'),
+              h('div', { class: 'line-text' }, h('p', { style: 'flex:1' }, r.rewrite.model), listenBtn(r.rewrite.model))))
+        : App.writingBox(`${lesson.id}:okuma`, {
+            prompt: r.rewrite.prompt, model: r.rewrite.model, copyTitle: `Ders ${lesson.number} okuma: kendi paragrafım`,
+          })) : null);
   }
 
   // ---------- Bölüm 4: Test ----------

@@ -7,75 +7,225 @@
   "title": "Şantiyem: kişiler ve yerler",
   "summary": "Şantiyeni anlatma: orada kimler ve neler var, yerler nerede. There is / there are, Is there…? / How many…? soruları ve near, next to, behind, in front of.",
   "warmup": [
-    { "q": "What time do you wake up?", "a": "I wake up at six o'clock.", "tr": "Saat altıda uyanıyorum. (saat için at)" },
-    { "q": "How do you go to work?", "a": "I drive to the construction site.", "tr": "Arabayla şantiyeye gidiyorum. (site'ı atlama)" },
-    { "q": "What time do you finish?", "a": "I finish at six.", "tr": "Altıda bitiriyorum. (saat için at)" },
-    { "q": "When is your day off?", "a": "Sunday is my day off.", "tr": "Pazar benim izin günüm." },
-    { "q": "What does Ali do at half past eight?", "a": "He studies English.", "tr": "İngilizce çalışıyor. (he → studies)" },
-    { "q": "Why is your job difficult?", "a": "Because some people are difficult.", "tr": "Çünkü bazı insanlar zor. (people → are)" }
+    {
+      "q": "What time do you wake up?",
+      "a": "I wake up at six o'clock.",
+      "tr": "Saat altıda uyanıyorum. (saat için at)"
+    },
+    {
+      "q": "How do you go to work?",
+      "a": "I drive to the construction site.",
+      "tr": "Arabayla şantiyeye gidiyorum. (site'ı atlama)"
+    },
+    {
+      "q": "What time do you finish?",
+      "a": "I finish at six.",
+      "tr": "Altıda bitiriyorum. (saat için at)"
+    },
+    {
+      "q": "When is your day off?",
+      "a": "Sunday is my day off.",
+      "tr": "Pazar benim izin günüm."
+    },
+    {
+      "q": "What does Ali do at half past eight?",
+      "a": "He studies English.",
+      "tr": "İngilizce çalışıyor. (he → studies)"
+    },
+    {
+      "q": "Why is your job difficult?",
+      "a": "Because some people are difficult.",
+      "tr": "Çünkü bazı insanlar zor. (people → are)"
+    }
   ],
   "words": {
     "intro": "Okunuşlar Türkçe harflerle yazıldı. Bu derste 26 yeni kelime var; önceki derslerden dört kelime tekrar için en altta.",
     "groups": [
-      { "name": "Şantiyedeki kişiler", "words": ["engineer", "foreman", "site manager", "operator", "driver", "visitor", "team"] },
-      { "name": "Şantiyedeki yerler", "words": ["office", "gate", "canteen", "parking area", "toilet", "road", "tunnel", "bridge"] },
-      { "name": "Makineler", "words": ["crane", "truck", "excavator", "machine"] },
-      { "name": "Nerede?", "words": ["near", "next to", "behind", "in front of"] },
-      { "name": "Güvenli mi?", "words": ["safe", "dangerous", "today"] },
-      { "name": "Önceki derslerden tekrar", "words": ["worker", "check", "meeting", "construction site"] }
+      {
+        "name": "Şantiyedeki kişiler",
+        "words": [
+          "engineer",
+          "foreman",
+          "site manager",
+          "operator",
+          "driver",
+          "visitor",
+          "team"
+        ]
+      },
+      {
+        "name": "Şantiyedeki yerler",
+        "words": [
+          "office",
+          "gate",
+          "canteen",
+          "parking area",
+          "toilet",
+          "road",
+          "tunnel",
+          "bridge"
+        ]
+      },
+      {
+        "name": "Makineler",
+        "words": [
+          "crane",
+          "truck",
+          "excavator",
+          "machine"
+        ]
+      },
+      {
+        "name": "Nerede?",
+        "words": [
+          "near",
+          "next to",
+          "behind",
+          "in front of"
+        ]
+      },
+      {
+        "name": "Güvenli mi?",
+        "words": [
+          "safe",
+          "dangerous",
+          "today"
+        ]
+      },
+      {
+        "name": "Önceki derslerden tekrar",
+        "words": [
+          "worker",
+          "check",
+          "meeting",
+          "construction site"
+        ]
+      }
     ]
   },
   "patterns": {
     "notes": [
-      { "title": "there is · there are", "text": "Tek şey: **There is** an office. (= There's) · Birden çok: **There are** two cranes. Türkçedeki \"var\" gibi: Şantiyede bir ofis **var**." },
-      { "title": "Soru: Is there…? · Are there…? · How many…?", "text": "**Is there** a canteen? → Yes, there is. / No, there isn't. · **Are there** any visitors? → Yes, there are. / No, there aren't. · **How many** workers **are there**? → There are two hundred workers." },
-      { "title": "Nerede?", "text": "The office is **near** the gate. (yakınında) · The canteen is **next to** the office. (yanında) · The parking area is **behind** the office. (arkasında) · The gate is **in front of** the office. (önünde)" },
-      { "title": "a / an (Ders 1'den)", "text": "Sesli harfle başlayan kelimeden önce **an**: **an** office, **an** engineer, **an** excavator · diğerlerinde **a**: **a** crane, **a** gate, **a** truck." }
+      {
+        "title": "there is · there are",
+        "text": "Tek şey: **There is** an office. (= There's) · Birden çok: **There are** two cranes. Türkçedeki \"var\" gibi: Şantiyede bir ofis **var**."
+      },
+      {
+        "title": "Soru: Is there…? · Are there…? · How many…?",
+        "text": "**Is there** a canteen? → Yes, there is. / No, there isn't. · **Are there** any visitors? → Yes, there are. / No, there aren't. · **How many** workers **are there**? → There are two hundred workers."
+      },
+      {
+        "title": "Nerede?",
+        "text": "The office is **near** the gate. (yakınında) · The canteen is **next to** the office. (yanında) · The parking area is **behind** the office. (arkasında) · The gate is **in front of** the office. (önünde)"
+      },
+      {
+        "title": "a / an (Ders 1'den)",
+        "text": "Sesli harfle başlayan kelimeden önce **an**: **an** office, **an** engineer, **an** excavator · diğerlerinde **a**: **a** crane, **a** gate, **a** truck."
+      }
     ],
     "groups": [
       {
         "name": "Şantiyemde neler var?",
         "items": [
-          { "en": "There is an office on my site.", "tr": "Şantiyemde bir ofis var." },
-          { "en": "There is a canteen next to the office.", "tr": "Ofisin yanında bir yemekhane var." },
-          { "en": "There are two cranes.", "tr": "İki vinç var." },
-          { "en": "There are many trucks and excavators.", "tr": "Çok kamyon ve ekskavatör var." }
+          {
+            "en": "There is an office on my site.",
+            "tr": "Şantiyemde bir ofis var."
+          },
+          {
+            "en": "There is a canteen next to the office.",
+            "tr": "Ofisin yanında bir yemekhane var."
+          },
+          {
+            "en": "There are two cranes.",
+            "tr": "İki vinç var."
+          },
+          {
+            "en": "There are many trucks and excavators.",
+            "tr": "Çok kamyon ve ekskavatör var."
+          }
         ]
       },
       {
         "name": "Şantiyede kimler var?",
         "items": [
-          { "en": "There are two hundred workers.", "tr": "İki yüz işçi var." },
-          { "en": "There are five engineers.", "tr": "Beş mühendis var." },
-          { "en": "The foreman checks the workers.", "tr": "Formen işçileri kontrol ediyor." },
-          { "en": "The site manager has a meeting on Monday.", "tr": "Şantiye şefinin pazartesi toplantısı var." }
+          {
+            "en": "There are two hundred workers.",
+            "tr": "İki yüz işçi var."
+          },
+          {
+            "en": "There are five engineers.",
+            "tr": "Beş mühendis var."
+          },
+          {
+            "en": "The foreman checks the workers.",
+            "tr": "Formen işçileri kontrol ediyor."
+          },
+          {
+            "en": "The site manager has a meeting on Monday.",
+            "tr": "Şantiye şefinin pazartesi toplantısı var."
+          }
         ]
       },
       {
         "name": "Nerede?",
         "items": [
-          { "en": "The office is near the gate.", "tr": "Ofis kapının yakınında." },
-          { "en": "The canteen is next to the office.", "tr": "Yemekhane ofisin yanında." },
-          { "en": "The parking area is behind the office.", "tr": "Otopark ofisin arkasında." },
-          { "en": "The toilets are behind the canteen.", "tr": "Tuvaletler yemekhanenin arkasında." }
+          {
+            "en": "The office is near the gate.",
+            "tr": "Ofis kapının yakınında."
+          },
+          {
+            "en": "The canteen is next to the office.",
+            "tr": "Yemekhane ofisin yanında."
+          },
+          {
+            "en": "The parking area is behind the office.",
+            "tr": "Otopark ofisin arkasında."
+          },
+          {
+            "en": "The toilets are behind the canteen.",
+            "tr": "Tuvaletler yemekhanenin arkasında."
+          }
         ]
       },
       {
         "name": "Soru sorma",
         "items": [
-          { "en": "Is there a canteen?", "tr": "Yemekhane var mı?" },
-          { "en": "Are there any visitors today?", "tr": "Bugün ziyaretçi var mı?" },
-          { "en": "How many workers are there?", "tr": "Kaç işçi var?" },
-          { "en": "Where is the office?", "tr": "Ofis nerede?" }
+          {
+            "en": "Is there a canteen?",
+            "tr": "Yemekhane var mı?"
+          },
+          {
+            "en": "Are there any visitors today?",
+            "tr": "Bugün ziyaretçi var mı?"
+          },
+          {
+            "en": "How many workers are there?",
+            "tr": "Kaç işçi var?"
+          },
+          {
+            "en": "Where is the office?",
+            "tr": "Ofis nerede?"
+          }
         ]
       },
       {
         "name": "Güvenli mi?",
         "items": [
-          { "en": "The tunnel is dangerous.", "tr": "Tünel tehlikeli." },
-          { "en": "There are many machines in the tunnel.", "tr": "Tünelde çok makine var." },
-          { "en": "I check the site every day.", "tr": "Her gün sahayı kontrol ediyorum." },
-          { "en": "Safety is very important on a construction site.", "tr": "Şantiyede güvenlik çok önemlidir." }
+          {
+            "en": "The tunnel is dangerous.",
+            "tr": "Tünel tehlikeli."
+          },
+          {
+            "en": "There are many machines in the tunnel.",
+            "tr": "Tünelde çok makine var."
+          },
+          {
+            "en": "I check the site every day.",
+            "tr": "Her gün sahayı kontrol ediyorum."
+          },
+          {
+            "en": "Safety is very important on a construction site.",
+            "tr": "Şantiyede güvenlik çok önemlidir."
+          }
         ]
       }
     ],
@@ -84,99 +234,459 @@
   "dialogues": [
     {
       "title": "Şantiyem",
-      "speakers": { "A": "John", "B": "Ali" },
+      "speakers": {
+        "A": "John",
+        "B": "Ali"
+      },
       "student": "B",
       "lines": [
-        { "who": "A", "en": "Where do you work?", "tr": "Nerede çalışıyorsun?" },
-        { "who": "B", "en": "I work on a construction site.", "tr": "Bir şantiyede çalışıyorum." },
-        { "who": "A", "en": "Is there an office on the site?", "tr": "Şantiyede ofis var mı?" },
-        { "who": "B", "en": "Yes, there is.", "tr": "Evet, var." },
-        { "who": "A", "en": "Where is the office?", "tr": "Ofis nerede?" },
-        { "who": "B", "en": "The office is near the gate.", "tr": "Ofis kapının yakınında." },
-        { "who": "A", "en": "Is there a canteen?", "tr": "Yemekhane var mı?" },
-        { "who": "B", "en": "Yes, there is.", "tr": "Evet, var." },
-        { "who": "A", "en": "Where is the canteen?", "tr": "Yemekhane nerede?" },
-        { "who": "B", "en": "The canteen is next to the office.", "tr": "Yemekhane ofisin yanında." },
-        { "who": "A", "en": "Are there any cranes?", "tr": "Vinç var mı?" },
-        { "who": "B", "en": "Yes, there are.", "tr": "Evet, var." },
-        { "who": "A", "en": "How many cranes are there?", "tr": "Kaç vinç var?" },
-        { "who": "B", "en": "There are two cranes.", "tr": "İki vinç var." }
+        {
+          "who": "A",
+          "en": "Where do you work?",
+          "tr": "Nerede çalışıyorsun?"
+        },
+        {
+          "who": "B",
+          "en": "I work on a construction site.",
+          "tr": "Bir şantiyede çalışıyorum."
+        },
+        {
+          "who": "A",
+          "en": "Is there an office on the site?",
+          "tr": "Şantiyede ofis var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, there is.",
+          "tr": "Evet, var."
+        },
+        {
+          "who": "A",
+          "en": "Where is the office?",
+          "tr": "Ofis nerede?"
+        },
+        {
+          "who": "B",
+          "en": "The office is near the gate.",
+          "tr": "Ofis kapının yakınında."
+        },
+        {
+          "who": "A",
+          "en": "Is there a canteen?",
+          "tr": "Yemekhane var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, there is.",
+          "tr": "Evet, var."
+        },
+        {
+          "who": "A",
+          "en": "Where is the canteen?",
+          "tr": "Yemekhane nerede?"
+        },
+        {
+          "who": "B",
+          "en": "The canteen is next to the office.",
+          "tr": "Yemekhane ofisin yanında."
+        },
+        {
+          "who": "A",
+          "en": "Are there any cranes?",
+          "tr": "Vinç var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, there are.",
+          "tr": "Evet, var."
+        },
+        {
+          "who": "A",
+          "en": "How many cranes are there?",
+          "tr": "Kaç vinç var?"
+        },
+        {
+          "who": "B",
+          "en": "There are two cranes.",
+          "tr": "İki vinç var."
+        }
       ]
     },
     {
       "title": "Şantiyedeki insanlar",
-      "speakers": { "A": "John", "B": "Ali" },
+      "speakers": {
+        "A": "John",
+        "B": "Ali"
+      },
       "student": "B",
       "lines": [
-        { "who": "A", "en": "How many workers are there?", "tr": "Kaç işçi var?" },
-        { "who": "B", "en": "There are two hundred workers.", "tr": "İki yüz işçi var." },
-        { "who": "A", "en": "Are there any engineers?", "tr": "Mühendis var mı?" },
-        { "who": "B", "en": "Yes, there are.", "tr": "Evet, var." },
-        { "who": "A", "en": "How many engineers are there?", "tr": "Kaç mühendis var?" },
-        { "who": "B", "en": "There are five engineers.", "tr": "Beş mühendis var." },
-        { "who": "A", "en": "Who checks the workers?", "tr": "İşçileri kim kontrol ediyor?" },
-        { "who": "B", "en": "The foreman checks the workers.", "tr": "Formen işçileri kontrol ediyor." },
-        { "who": "A", "en": "Is the tunnel safe?", "tr": "Tünel güvenli mi?" },
-        { "who": "B", "en": "No, it isn't.", "tr": "Hayır, değil." },
-        { "who": "A", "en": "Why not?", "tr": "Neden değil?" },
-        { "who": "B", "en": "Because there are many machines in the tunnel.", "tr": "Çünkü tünelde çok makine var." }
+        {
+          "who": "A",
+          "en": "How many workers are there?",
+          "tr": "Kaç işçi var?"
+        },
+        {
+          "who": "B",
+          "en": "There are two hundred workers.",
+          "tr": "İki yüz işçi var."
+        },
+        {
+          "who": "A",
+          "en": "Are there any engineers?",
+          "tr": "Mühendis var mı?"
+        },
+        {
+          "who": "B",
+          "en": "Yes, there are.",
+          "tr": "Evet, var."
+        },
+        {
+          "who": "A",
+          "en": "How many engineers are there?",
+          "tr": "Kaç mühendis var?"
+        },
+        {
+          "who": "B",
+          "en": "There are five engineers.",
+          "tr": "Beş mühendis var."
+        },
+        {
+          "who": "A",
+          "en": "Who checks the workers?",
+          "tr": "İşçileri kim kontrol ediyor?"
+        },
+        {
+          "who": "B",
+          "en": "The foreman checks the workers.",
+          "tr": "Formen işçileri kontrol ediyor."
+        },
+        {
+          "who": "A",
+          "en": "Is the tunnel safe?",
+          "tr": "Tünel güvenli mi?"
+        },
+        {
+          "who": "B",
+          "en": "No, it isn't.",
+          "tr": "Hayır, değil."
+        },
+        {
+          "who": "A",
+          "en": "Why not?",
+          "tr": "Neden değil?"
+        },
+        {
+          "who": "B",
+          "en": "Because there are many machines in the tunnel.",
+          "tr": "Çünkü tünelde çok makine var."
+        }
       ]
     }
   ],
   "reading": {
     "title": "Ali's construction site",
     "sentences": [
-      { "en": "Ali works on a big construction site.", "tr": "Ali büyük bir şantiyede çalışıyor." },
-      { "en": "There is an office near the gate.", "tr": "Kapının yakınında bir ofis var." },
-      { "en": "There is a canteen next to the office.", "tr": "Ofisin yanında bir yemekhane var." },
-      { "en": "The parking area is behind the office.", "tr": "Otopark ofisin arkasında." },
-      { "en": "There are two cranes, many trucks and three excavators.", "tr": "İki vinç, çok kamyon ve üç ekskavatör var." },
-      { "en": "There are two hundred workers and five engineers.", "tr": "İki yüz işçi ve beş mühendis var." },
-      { "en": "The foreman checks the workers every morning.", "tr": "Formen her sabah işçileri kontrol ediyor." },
-      { "en": "Ali checks the tunnel and the bridge every day.", "tr": "Ali her gün tüneli ve köprüyü kontrol ediyor." },
-      { "en": "The tunnel is dangerous, so safety is very important there.", "tr": "Tünel tehlikeli, bu yüzden orada güvenlik çok önemli." }
+      {
+        "en": "Ali works on a big construction site.",
+        "tr": "Ali büyük bir şantiyede çalışıyor."
+      },
+      {
+        "en": "There is an office near the gate.",
+        "tr": "Kapının yakınında bir ofis var."
+      },
+      {
+        "en": "There is a canteen next to the office.",
+        "tr": "Ofisin yanında bir yemekhane var."
+      },
+      {
+        "en": "The parking area is behind the office.",
+        "tr": "Otopark ofisin arkasında."
+      },
+      {
+        "en": "There are two cranes, many trucks and three excavators.",
+        "tr": "İki vinç, çok kamyon ve üç ekskavatör var."
+      },
+      {
+        "en": "There are two hundred workers and five engineers.",
+        "tr": "İki yüz işçi ve beş mühendis var."
+      },
+      {
+        "en": "The foreman checks the workers every morning.",
+        "tr": "Formen her sabah işçileri kontrol ediyor."
+      },
+      {
+        "en": "Ali checks the tunnel and the bridge every day.",
+        "tr": "Ali her gün tüneli ve köprüyü kontrol ediyor."
+      },
+      {
+        "en": "The tunnel is dangerous, so safety is very important there.",
+        "tr": "Tünel tehlikeli, bu yüzden orada güvenlik çok önemli."
+      }
     ],
     "note": "Tek şey için **there is**, birden çok şey için **there are**: There **is** a canteen. · There **are** two cranes. Yer bildirirken: **near** the gate, **next to** the office, **behind** the office. Ali'den bahsederken fiile -s: Ali **works**, Ali **checks**.",
-    "gist": { "q": "Metin ne hakkında?", "options": ["Ali'nin şantiyesi", "Ali'nin ailesi", "Ali'nin bir günü", "Ali'nin evi"] },
+    "gist": {
+      "q": "Metin ne hakkında?",
+      "options": [
+        "Ali'nin şantiyesi",
+        "Ali'nin ailesi",
+        "Ali'nin bir günü",
+        "Ali'nin evi"
+      ]
+    },
     "truefalse": [
-      { "en": "There is a canteen next to the office.", "tr": "Ofisin yanında bir yemekhane var.", "answer": true },
-      { "en": "The parking area is in front of the office.", "tr": "Otopark ofisin önünde.", "answer": false, "fix": "The parking area is behind the office." },
-      { "en": "There are three cranes.", "tr": "Üç vinç var.", "answer": false, "fix": "There are two cranes, many trucks and three excavators." },
-      { "en": "The foreman checks the workers every morning.", "tr": "Formen her sabah işçileri kontrol ediyor.", "answer": true },
-      { "en": "The bridge is dangerous.", "tr": "Köprü tehlikeli.", "answer": false, "fix": "The tunnel is dangerous, so safety is very important there." }
+      {
+        "en": "There is a canteen next to the office.",
+        "tr": "Ofisin yanında bir yemekhane var.",
+        "answer": true
+      },
+      {
+        "en": "The parking area is in front of the office.",
+        "tr": "Otopark ofisin önünde.",
+        "answer": false,
+        "fix": "The parking area is behind the office."
+      },
+      {
+        "en": "There are three cranes.",
+        "tr": "Üç vinç var.",
+        "answer": false,
+        "fix": "There are two cranes, many trucks and three excavators."
+      },
+      {
+        "en": "The foreman checks the workers every morning.",
+        "tr": "Formen her sabah işçileri kontrol ediyor.",
+        "answer": true
+      },
+      {
+        "en": "The bridge is dangerous.",
+        "tr": "Köprü tehlikeli.",
+        "answer": false,
+        "fix": "The tunnel is dangerous, so safety is very important there."
+      }
     ],
-    "blanks": ["near", "next", "behind", "cranes", "engineers", "checks"],
+    "blanks": [
+      "near",
+      "next",
+      "behind",
+      "cranes",
+      "engineers",
+      "checks"
+    ],
     "rewrite": {
       "prompt": "Metni kendi şantiyene göre, kendi ağzından yeniden yaz: Ali works → I work, Ali checks → I check. Sayıları ve yerleri kendi şantiyene göre değiştir.",
-      "model": "I work on a big construction site. There is an office near the gate. There is a canteen next to the office. The parking area is behind the office. There are two cranes, many trucks and three excavators. There are two hundred workers and five engineers. The foreman checks the workers every morning. I check the tunnel and the bridge every day. The tunnel is dangerous, so safety is very important there."
+      "model": "I work on a big construction site. There is an office near the gate. There is a canteen next to the office. The parking area is behind the office. There are two cranes, many trucks and three excavators. There are two hundred workers and five engineers. The foreman checks the workers every morning. I check the tunnel and the bridge every day. The tunnel is dangerous, so safety is very important there.",
+      "frames": [
+        {
+          "text": "I work on a ___ construction site.",
+          "hint": "big ya da small",
+          "model": "I work on a big construction site."
+        },
+        {
+          "text": "There is ___ near the gate.",
+          "hint": "bir yer (ör. an office)",
+          "model": "There is an office near the gate."
+        },
+        {
+          "text": "There is ___ next to the office.",
+          "hint": "bir yer (ör. a canteen)",
+          "model": "There is a canteen next to the office."
+        },
+        {
+          "text": "There are ___ cranes.",
+          "hint": "sayı (ör. two)",
+          "model": "There are two cranes."
+        },
+        {
+          "text": "There are ___ workers.",
+          "hint": "sayı (ör. two hundred)",
+          "model": "There are two hundred workers."
+        },
+        {
+          "text": "I check ___ every day.",
+          "hint": "neyi kontrol ediyorsun (ör. the site, the tunnel)",
+          "model": "I check the site every day."
+        },
+        {
+          "text": "___ is dangerous.",
+          "hint": "şantiyede ne tehlikeli (ör. The tunnel)",
+          "model": "The tunnel is dangerous."
+        }
+      ]
     }
   },
   "exercises": {
     "write": {
       "title": "Benim şantiyem",
-      "models": ["There is an office near the gate.", "There are two cranes.", "The canteen is next to the office."]
+      "models": [
+        "There is an office near the gate.",
+        "There are two cranes.",
+        "The canteen is next to the office."
+      ]
     }
   },
   "tests": {
     "words": [
-      { "q": "mühendis", "options": ["engineer", "foreman", "driver", "visitor"] },
-      { "q": "formen, ustabaşı", "options": ["foreman", "engineer", "operator", "team"] },
-      { "q": "yemekhane", "options": ["canteen", "office", "toilet", "gate"] },
-      { "q": "vinç", "options": ["crane", "truck", "bridge", "tunnel"] },
-      { "q": "kamyon", "options": ["truck", "crane", "excavator", "machine"] },
-      { "q": "tehlikeli", "options": ["dangerous", "safe", "important", "tired"] },
-      { "q": "ziyaretçi", "options": ["visitor", "driver", "worker", "manager"] },
-      { "q": "köprü", "options": ["bridge", "road", "tunnel", "gate"] },
-      { "q": "arkasında", "options": ["behind", "near", "next to", "in front of"] },
-      { "q": "There ___ an office near the gate.", "options": ["is", "are", "am", "be"] },
-      { "q": "There ___ two cranes.", "options": ["are", "is", "am", "be"] },
-      { "q": "___ there a canteen?", "options": ["Is", "Are", "Do", "Does"] },
-      { "q": "How many workers ___ there?", "options": ["are", "is", "do", "does"] },
-      { "q": "The canteen is next ___ the office.", "options": ["to", "of", "at", "in"] },
-      { "q": "The gate is in front ___ the office.", "options": ["of", "to", "at", "on"] },
-      { "q": "I work on a construction ___.", "options": ["site", "side", "city", "sight"] },
-      { "q": "___ engineer checks the bridge.", "options": ["An", "A", "Many", "Two"] },
-      { "q": "Some people ___ difficult.", "options": ["are", "is", "am", "be"] }
+      {
+        "q": "mühendis",
+        "options": [
+          "engineer",
+          "foreman",
+          "driver",
+          "visitor"
+        ]
+      },
+      {
+        "q": "formen, ustabaşı",
+        "options": [
+          "foreman",
+          "engineer",
+          "operator",
+          "team"
+        ]
+      },
+      {
+        "q": "yemekhane",
+        "options": [
+          "canteen",
+          "office",
+          "toilet",
+          "gate"
+        ]
+      },
+      {
+        "q": "vinç",
+        "options": [
+          "crane",
+          "truck",
+          "bridge",
+          "tunnel"
+        ]
+      },
+      {
+        "q": "kamyon",
+        "options": [
+          "truck",
+          "crane",
+          "excavator",
+          "machine"
+        ]
+      },
+      {
+        "q": "tehlikeli",
+        "options": [
+          "dangerous",
+          "safe",
+          "important",
+          "tired"
+        ]
+      },
+      {
+        "q": "ziyaretçi",
+        "options": [
+          "visitor",
+          "driver",
+          "worker",
+          "manager"
+        ]
+      },
+      {
+        "q": "köprü",
+        "options": [
+          "bridge",
+          "road",
+          "tunnel",
+          "gate"
+        ]
+      },
+      {
+        "q": "arkasında",
+        "options": [
+          "behind",
+          "near",
+          "next to",
+          "in front of"
+        ]
+      },
+      {
+        "q": "There ___ an office near the gate.",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "q": "There ___ two cranes.",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "q": "___ there a canteen?",
+        "options": [
+          "Is",
+          "Are",
+          "Do",
+          "Does"
+        ]
+      },
+      {
+        "q": "How many workers ___ there?",
+        "options": [
+          "are",
+          "is",
+          "do",
+          "does"
+        ]
+      },
+      {
+        "q": "The canteen is next ___ the office.",
+        "options": [
+          "to",
+          "of",
+          "at",
+          "in"
+        ]
+      },
+      {
+        "q": "The gate is in front ___ the office.",
+        "options": [
+          "of",
+          "to",
+          "at",
+          "on"
+        ]
+      },
+      {
+        "q": "I work on a construction ___.",
+        "options": [
+          "site",
+          "side",
+          "city",
+          "sight"
+        ]
+      },
+      {
+        "q": "___ engineer checks the bridge.",
+        "options": [
+          "An",
+          "A",
+          "Many",
+          "Two"
+        ]
+      },
+      {
+        "q": "Some people ___ difficult.",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ]
+      }
     ],
     "dialogue": "auto"
   }

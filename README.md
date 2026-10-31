@@ -3,7 +3,7 @@
 Kişisel İngilizce ders sitesi. Her akşamın dersi bir veri dosyası olarak eklenir; site telefonun tarayıcısında açılıp tekrar edilir.
 
 - **Dersler** (`index.html`): dersler gün gün; her ders kelimeler → kalıplar → diyalog → test.
-- **Kelimeler** (`words.html`): Anki benzeri desteler (her ders bir deste; yeni / öğrenme / tekrar sayıları, Yeniden-Zor-İyi-Kolay ile aralıklı tekrar) ve bütün kelimelerin listesi: Türkçe anlam, Türkçe harflerle okunuş, sesli telaffuz, arama ve konu filtresi.
+- **Kelimeler** (`words.html`): Türkçe → İngilizce söylenen cümle kartları ve Anki benzeri kelime desteleri (her ders bir deste; yeni / öğrenme / tekrar sayıları, Yeniden-Zor-İyi-Kolay ile aralıklı tekrar) ve bütün kelimelerin listesi: Türkçe anlam, Türkçe harflerle okunuş, sesli telaffuz, arama ve konu filtresi.
 - **Tekrar** (`review.html`): karışık ve planlı tekrar testleri.
 - Ders sayfasında **Okuma** sekmesi: kısa paragraf; önce dinle, oku ve dinle, doğru/yanlış, boşluk doldur, kendi paragrafını yaz.
 - **Ekranda alıştırma** (`practice.html?id=<ders-id>`): eşleştir, cümle sırala, kelimeyi yaz, kendi cümlelerin.

@@ -15,6 +15,7 @@
   const lessonById = new Map(index.map(l => [l.id, l]));
   const cap = s => s.charAt(0).toLocaleUpperCase('tr-TR') + s.slice(1);
   let timer = null;
+  const sentences = SRS.sentenceIndex(lessons);
 
   // ---------- yönlendirme ----------
   function route() {
@@ -91,6 +92,11 @@
       h('p', { class: 'muted' }, dueAll ? `${dueAll} kartın sırası geldi.` : 'Bugün için sırası gelen kart yok. 🎉'),
       h('div', { class: 'legend small' },
         h('span', { class: 'c-new' }, '● Yeni'), h('span', { class: 'c-learn' }, '● Öğrenme'), h('span', { class: 'c-rev' }, '● Tekrar')),
+      set.dir === 'en' ? h('div', { class: 'note small' },
+        h('div', {}, h('strong', {}, 'Öneri: '), 'Kelime kartların şu an İngilizce yüzüyle geliyor; bu sadece tanımayı çalıştırır. Konuşurken kelime aklına gelsin istiyorsan Türkçe yüzüyle çalış.'),
+        h('div', { class: 'row', style: 'margin:6px 0 0' },
+          h('button', { class: 'chip', type: 'button', onclick: () => { SRS.setSetting('dir', 'tr'); deckList(); } }, 'Türkçe → İngilizce yap'),
+          h('button', { class: 'chip', type: 'button', onclick: () => { SRS.setSetting('dir', 'both'); deckList(); } }, 'İkisi de'))) : null,
       list.length ? rows : h('p', { class: 'muted' }, 'Henüz deste yok.'),
       h('p', { class: 'small muted' }, `Bugün ${t.n} kart, ${Math.round(t.ms / 60000)} dakikada çalışıldı (${secs} sn/kart).`),
       h('details', { class: 'card' },
@@ -151,10 +157,11 @@
     }
 
     const id = nx.id;
-    const w = words.map.get(SRS.wordOf(id));
     const dir = SRS.dirOf(id);
     const prev = s.srs.cards[id];
     const shownAt = Date.now();
+    if (dir === 's') return sentenceCard();
+    const w = words.map.get(SRS.wordOf(id));
     const front = dir === 'en'
       ? h('div', { class: 'face' }, h('div', { class: 'big-word' }, w.en), listenBtn(w.en))
       : h('div', { class: 'face' }, h('div', { class: 'big-word' }, w.tr));
@@ -191,6 +198,38 @@
         front, back),
       bar);
     if (dir === 'en') App.speak(w.en);
+
+    // Cümle kartı: Türkçe cümle → İngilizcesini yüksek sesle söyle → cevabı aç
+    function sentenceCard() {
+      const x = sentences.get(SRS.wordOf(id));
+      const back = h('div', { class: 'back', hidden: true },
+        h('hr'),
+        h('div', { class: 'face' }, h('div', { class: 'big-sentence' }, x.en), listenBtn(x.en)),
+        h('p', { class: 'small muted' }, 'Söylediğin bununla aynı mıydı? Küçük farklar sorun değil; anlam ve kalıp doğruysa İyi de.'),
+        prev?.leech ? h('p', { class: 'small bad-msg' }, 'Bu cümlede çok takıldın. Dinle ve 3 kez yüksek sesle tekrar et.') : null,
+        h('p', { class: 'small muted' }, `Ders ${x.lesson.number}`));
+      const bar = h('div', { class: 'answer-bar' });
+      const reveal = h('button', { class: 'primary wide', type: 'button' }, 'Cevabı göster');
+      reveal.addEventListener('click', () => {
+        back.hidden = false;
+        App.speak(x.en);
+        const btn = (ease, text, cls) => h('button', { class: 'ans ' + cls, type: 'button', onclick: () => {
+          SRS.answer(id, ease, Date.now() - shownAt, nx.leaf);
+          study(deckId);
+        } }, h('span', { class: 'ivl' }, SRS.label(prev, ease)), h('span', {}, text));
+        App.fill(bar, btn(1, 'Yeniden', 'again'), btn(2, 'Zor', 'hard'), btn(3, 'İyi', 'good'), btn(4, 'Kolay', 'easy'));
+      });
+      bar.append(reveal);
+      App.fill(main, top,
+        h('p', { class: 'small muted', style: 'margin:6px 0 0' }, title),
+        qCounts,
+        h('div', { class: 'card study-card' },
+          nx.q === 'new' ? h('span', { class: 'tag' }, 'Yeni cümle') : null,
+          h('p', { class: 'small muted' }, 'İngilizcesini aklında ara ve yüksek sesle söyle. Bulamazsan da dene; sonra cevabı aç.'),
+          h('div', { class: 'face' }, h('div', { class: 'big-sentence' }, x.tr)),
+          back),
+        bar);
+    }
   }
 
   // ---------- bütün kelimeler ----------

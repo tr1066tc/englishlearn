@@ -576,7 +576,44 @@
     ],
     "rewrite": {
       "prompt": "Metni kendi ağzından, kendi bilgilerinle yeniden yaz: He is → I am, he has → I have, his → my, Ali lives → I live.",
-      "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I live in Ankara with my wife and my daughter."
+      "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I live in Ankara with my wife and my daughter.",
+      "frames": [
+        {
+          "text": "My name is ___.",
+          "hint": "adın",
+          "model": "My name is Ali."
+        },
+        {
+          "text": "I am ___ years old.",
+          "hint": "yaşın, yazıyla (ör. forty-one)",
+          "model": "I am forty-one years old."
+        },
+        {
+          "text": "I am married and I have ___.",
+          "hint": "çocukların (ör. a daughter, a son, two children)",
+          "model": "I am married and I have a daughter."
+        },
+        {
+          "text": "I have ___ and ___.",
+          "hint": "kardeşlerin (ör. one brother · one sister)",
+          "model": "I have one brother and one sister."
+        },
+        {
+          "text": "My brother is ___ than me.",
+          "hint": "older (büyük) ya da younger (küçük)",
+          "model": "My brother is older than me."
+        },
+        {
+          "text": "My mother lives in ___.",
+          "hint": "şehir",
+          "model": "My mother lives in Ankara."
+        },
+        {
+          "text": "I live in ___ with ___.",
+          "hint": "şehir · kimlerle (ör. my wife and my daughter)",
+          "model": "I live in Ankara with my wife and my daughter."
+        }
+      ]
     }
   },
   "tests": {

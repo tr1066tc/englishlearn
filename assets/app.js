@@ -359,13 +359,13 @@ const App = (() => {
         h('div', { class: 'line-text' }, h('span', { class: 'en' }, it.a), listenBtn(it.a)),
         it.aTr ? h('div', { class: 'tr plain' }, it.aTr) : null);
       const foot = h('div', { class: 'row' });
-      const reveal = h('button', { class: 'primary', type: 'button' }, 'Cevabı göster');
+      const reveal = h('button', { class: 'primary', type: 'button' }, opts?.revealLabel || 'Cevabı göster');
       reveal.addEventListener('click', () => {
         answerBox.hidden = false;
         speak(it.a);
         fill(foot,
-          h('button', { class: 'good', type: 'button', onclick: () => grade(true) }, '✓ Bildim'),
-          h('button', { class: 'bad', type: 'button', onclick: () => grade(false) }, '✗ Bilemedim'));
+          h('button', { class: 'good', type: 'button', onclick: () => grade(true) }, opts?.yesLabel || '✓ Bildim'),
+          h('button', { class: 'bad', type: 'button', onclick: () => grade(false) }, opts?.noLabel || '✗ Bilemedim'));
       });
       foot.append(reveal);
       function grade(ok) {
@@ -426,7 +426,7 @@ const App = (() => {
 
   // ---------- Test adları (ana sayfa ve ilerleme için) ----------
   const TEST_NAMES = {
-    warmup: 'Isınma', words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi',
+    warmup: 'Isınma', answer: 'Sen cevapla', words: 'Kelime testi', dialogue: 'Diyalog testi', phrases: 'Cümle testi',
     tf: 'Okuma: doğru/yanlış', cloze: 'Okuma: boşluk', match: 'Eşleştir', order: 'Cümle sırala', spell: 'Yaz',
   };
   const testLabel = n => TEST_NAMES[n] || n;
@@ -475,8 +475,61 @@ const App = (() => {
       h('p', { class: 'small muted' }, "Yazdığın bu telefonda saklanır. Kopyalayıp bir sonraki derste Claude'a yapıştır, birlikte düzeltelim."));
   }
 
+  // Kalıp kutusu: boş sayfa yerine yarım cümleler. Öğrenci yalnızca boşlukları kendi bilgisiyle doldurur;
+  // "Cümlelerimi göster" ile kendi cümlelerini örnekle yan yana görür, dinler, Claude'a kopyalar.
+  // frames: [{ text: "I wake up at ___.", hint: "saat", model: "I wake up at six o'clock." }]
+  function frameBox(key, frames, { writeKey, copyTitle }) {
+    const saved = readState().frames?.[key] || [];
+    const rows = frames.map((f, i) => {
+      const parts = f.text.split('___');
+      const inputs = parts.slice(1).map((_, j) => {
+        const inp = h('input', { class: 'frame-in', type: 'text', autocomplete: 'off', autocapitalize: 'none', autocorrect: 'off', spellcheck: 'false', 'aria-label': f.hint || 'boşluk' });
+        inp.value = saved[i]?.[j] || '';
+        return inp;
+      });
+      const out = h('div', { class: 'frame-out', hidden: true });
+      const line = h('div', { class: 'frame-line' }, parts.flatMap((p, j) => j < inputs.length ? [p, inputs[j]] : [p]));
+      return { f, parts, inputs, out, el: h('div', { class: 'frame' },
+        f.hint ? h('div', { class: 'small muted' }, `${i + 1}. ${f.hint}`) : null, line, out) };
+    });
+    const filled = r => r.inputs.every(x => x.value.trim());
+    const sentence = r => r.parts.reduce((acc, p, j) => acc + (j ? r.inputs[j - 1].value.trim() : '') + p, '').replace(/\s+/g, ' ').trim();
+    const mine = () => rows.filter(filled).map(sentence);
+    let t = null;
+    const store = () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        updateState(s => { s.frames ||= {}; s.frames[key] = rows.map(r => r.inputs.map(x => x.value)); });
+        if (writeKey) setWriting(writeKey, mine().join(' '));
+      }, 300);
+    };
+    rows.forEach(r => r.inputs.forEach(x => x.addEventListener('input', store)));
+    const fb = h('div');
+    const show = h('button', { class: 'primary', type: 'button' }, 'Cümlelerimi göster');
+    show.addEventListener('click', () => {
+      store();
+      for (const r of rows) {
+        r.out.hidden = false;
+        fill(r.out, filled(r)
+          ? h('div', { class: 'line-text' }, h('span', { class: 'en', style: 'flex:1' }, sentence(r)), listenBtn(sentence(r)))
+          : h('div', { class: 'small bad-msg' }, 'Boş kaldı. Takıldığın yere Türkçe kelime de yazabilirsin.'),
+          r.f.model ? h('div', { class: 'small muted' }, 'Örnek: ', r.f.model) : null);
+      }
+      const copy = h('button', { type: 'button' }, "Claude'a kopyala");
+      copy.addEventListener('click', () => copyText(`${copyTitle}:\n${mine().join('\n')}`, copy));
+      fill(fb, h('div', { class: 'row' },
+        h('button', { type: 'button', onclick: () => speakQueue(mine().map(text => ({ text }))) }, '🔊 Cümlelerimi sesli oku'),
+        copy),
+        h('p', { class: 'small muted' }, 'Şimdi cümlelerini kâğıda bakmadan yüksek sesle söylemeyi dene.'));
+    });
+    return h('div', {},
+      h('p', { class: 'small' }, 'Boş sayfa yok: sadece boşlukları kendi bilginle doldur. Kelime aklına gelmezse Türkçe yaz; bir sonraki derste İngilizcesini veririm.'),
+      rows.map(r => r.el),
+      h('div', { class: 'row' }, show), fb);
+  }
+
   return {
-    TEST_NAMES, testLabel, getWriting, setWriting, copyText, writingBox,
+    TEST_NAMES, testLabel, getWriting, setWriting, copyText, writingBox, frameBox,
     esc, fmt, h, fill, shuffle, param, formatDate,
     loadLessonIndex, loadLesson, loadReviewIndex, loadReview, loadWords,
     readState, writeState, updateState, markVisit, setCompleted, saveTest,

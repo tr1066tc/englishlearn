@@ -92,7 +92,31 @@ const SRS = (() => {
     if (phrasalSubs.length) {
       lessonDecks.push({ id: 'phrasal', name: 'Phrasal verbs', subs: phrasalSubs, ids: phrasalSubs.flatMap(sd => sd.ids) });
     }
+    // Cümle kartları: dersin kalıp cümleleri, Türkçe → İngilizce söyleme (kimlik "s:<cümle>").
+    // Öğrencinin asıl zorluğu üretmek (aklında arayıp bulmak); bu deste en üstte durur.
+    const sentHome = sentenceIndex(sorted);
+    const sentSubs = sorted.map(l => ({
+      id: `sentences/${l.id}`, name: `Ders ${l.number}`, lesson: l,
+      ids: [...sentHome].filter(([, x]) => x.lesson === l).map(([k]) => `s:${k}`),
+    })).filter(sd => sd.ids.length);
+    if (sentSubs.length) {
+      lessonDecks.unshift({ id: 'sentences', name: 'Cümleler: Türkçe → İngilizce söyle', subs: sentSubs, ids: sentSubs.flatMap(sd => sd.ids) });
+    }
     return lessonDecks;
+  }
+  // Kalıp cümleleri: küçük harfli İngilizce → { en, tr, lesson } (ilk geçtiği ders)
+  function sentenceIndex(lessons) {
+    const map = new Map();
+    const sorted = lessons.slice().sort((a, b) => a.date.localeCompare(b.date) || a.number - b.number);
+    for (const l of sorted) {
+      for (const g of l.patterns?.groups || []) {
+        for (const it of g.items) {
+          const k = it.en.toLowerCase();
+          if (!map.has(k)) map.set(k, { en: it.en, tr: it.tr, lesson: l });
+        }
+      }
+    }
+    return map;
   }
   const wordOf = id => id.slice(id.indexOf(':') + 1);
   const dirOf = id => id.slice(0, id.indexOf(':'));
@@ -294,5 +318,5 @@ const SRS = (() => {
     };
   }
 
-  return { CFG, day, load, todayStats, newLeft, limitHit, buildDecks, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
+  return { CFG, day, load, todayStats, newLeft, limitHit, buildDecks, sentenceIndex, wordOf, dirOf, counts, next, nextLearnDue, dueTomorrow, schedule, label, answer, canUndo, undo, setSetting, toggleCollapsed, reset, summary };
 })();
