@@ -577,43 +577,172 @@
       "model": "I wake up at six o'clock. I have breakfast at half past six. I leave home at seven and drive to the construction site. I start work at eight. I check the site every day. I have lunch at twelve o'clock. I finish work at six and come home at seven. I have dinner with my family. At half past eight I study English. I go to bed at ten. Sunday is my day off.",
       "frames": [
         {
-          "text": "I wake up at ___.",
-          "hint": "saat (ör. six o'clock)",
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "uyanmak",
+              "answer": "wake up"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I wake up at six o'clock."
         },
         {
-          "text": "I have breakfast at ___.",
-          "hint": "saat (ör. half past six)",
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "kahvaltı yapmak",
+              "answer": "have breakfast"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I have breakfast at half past six."
         },
         {
-          "text": "I leave home at ___.",
-          "hint": "saat (ör. seven)",
+          "text": "I have breakfast at ___ past six.",
+          "blanks": [
+            {
+              "hint": "buçuk",
+              "answer": "half"
+            }
+          ],
+          "model": "I have breakfast at half past six."
+        },
+        {
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "evden çıkmak",
+              "answer": "leave home"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I leave home at seven."
         },
         {
-          "text": "I ___ to work.",
-          "hint": "nasıl gidiyorsun (ör. drive)",
-          "model": "I drive to work."
+          "text": "I ___ to the construction site.",
+          "blanks": [
+            {
+              "hint": "arabayla gitmek",
+              "answer": "drive"
+            }
+          ],
+          "model": "I drive to the construction site."
         },
         {
-          "text": "I come home at ___.",
-          "hint": "saat (ör. seven)",
+          "text": "I ___ the site every day.",
+          "blanks": [
+            {
+              "hint": "kontrol etmek",
+              "answer": "check"
+            }
+          ],
+          "model": "I check the site every day."
+        },
+        {
+          "text": "I ___ at twelve ___.",
+          "blanks": [
+            {
+              "hint": "öğle yemeği yemek",
+              "answer": "have lunch"
+            },
+            {
+              "hint": "saat (tam saat)",
+              "answer": "o'clock"
+            }
+          ],
+          "model": "I have lunch at twelve o'clock."
+        },
+        {
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "eve gelmek",
+              "answer": "come home"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I come home at seven."
         },
         {
-          "text": "I study English at ___.",
-          "hint": "saat (ör. half past eight)",
+          "text": "I ___ with my family.",
+          "blanks": [
+            {
+              "hint": "akşam yemeği yemek",
+              "answer": "have dinner"
+            }
+          ],
+          "model": "I have dinner with my family."
+        },
+        {
+          "text": "I ___ English at ___.",
+          "blanks": [
+            {
+              "hint": "ders çalışmak",
+              "answer": "study"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I study English at half past eight."
         },
         {
-          "text": "I go to bed at ___.",
-          "hint": "saat (ör. ten)",
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "yatmak",
+              "answer": "go to bed"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
           "model": "I go to bed at ten."
         },
         {
-          "text": "___ is my day off.",
-          "hint": "gün (ör. Sunday)",
+          "text": "I sleep at ___.",
+          "blanks": [
+            {
+              "hint": "gece",
+              "answer": "night"
+            }
+          ],
+          "model": "I sleep at night."
+        },
+        {
+          "text": "I work from ___ to ___.",
+          "blanks": [
+            {
+              "hint": "pazartesi",
+              "answer": "Monday"
+            },
+            {
+              "hint": "cumartesi",
+              "answer": "Saturday"
+            }
+          ],
+          "model": "I work from Monday to Saturday."
+        },
+        {
+          "text": "___ is my day ___.",
+          "blanks": [
+            {
+              "hint": "gün"
+            },
+            {
+              "hint": "izin (day …)",
+              "answer": "off"
+            }
+          ],
           "model": "Sunday is my day off."
         }
       ]

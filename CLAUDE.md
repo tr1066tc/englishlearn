@@ -150,7 +150,9 @@ Kimlik: `YYYY-MM-DD-ders-NN` (NN = iki haneli ders numarası). `index.json`'a ay
                "truefalse": [ { "en", "tr", "answer": true|false, "fix": "yanlışsa metindeki doğrusu" } ],
                "blanks": ["works", "starts"],
                "rewrite": { "prompt", "model",
-                            "frames": [ { "text": "I wake up at ___.", "hint": "saat (ör. six o'clock)", "model": "I wake up at six o'clock." } ] } },
+                            "frames": [ { "text": "I ___ at ___.",
+                                          "blanks": [ { "hint": "uyanmak", "answer": "wake up" }, { "hint": "saat" } ],
+                                          "model": "I wake up at six o'clock." } ] } },
   "tests": { "words": [ { "q": "babaanne", "options": ["grandmother", "aunt", "niece", "cousin"] } ],
              "dialogue": "auto" },
   "corrections": { "intro", "original", "items": [ { "wrong", "right", "note" } ], "corrected" },  // isteğe bağlı
@@ -178,7 +180,7 @@ Kelime soruları ve yanlış şıklar sayfada otomatik üretilir (aynı konudan)
 1. **Kelimeler:** gruplu liste, her satırda dinle; "Türkçeyi gizle" (bulanık yazıya dokununca açılır); tümünü dinle.
 2. **Kalıplar:** kısa dilbilgisi notları, gerekirse tablo, kullanılabilir cümleler (İngilizce, Türkçe, dinle).
 3. **Diyalog:** *Oku ve dinle* (satır satır, tümünü dinle), *Tekrar et* (öğrencinin satırları tek tek, 3 kez "Söyledim" → sonraki) ve *Sen cevapla* (John'un sorusu gelir, öğrenci **kendi bilgisiyle** yüksek sesle cevaplar, sonra örnek cevaba bakar → Söyleyebildim / Takıldım; test adı `answer`).
-4. **Okuma** (öğrenci onayıyla eklendi; `reading` yoksa sekme görünmez): 1) önce dinle (metin gizli, `gist` sorusu cevaplanınca açılır), 2) oku ve dinle (okunan cümle vurgulanır, cümleye dokununca Türkçesi), 3) doğru/yanlış, 4) boşluk doldur (kelime kutucukları), 5) kendi paragrafın: **kalıp kutusu** (`reading.rewrite.frames`: yarım cümleler, öğrenci sadece boşluğu doldurur; "Cümlelerimi göster" ile kendi cümlelerini örnekle karşılaştırır, sesli dinler, Claude'a kopyalar). Boş yazı kutusu yalnızca "Serbest yaz (istersen)" olarak.
+4. **Okuma** (öğrenci onayıyla eklendi; `reading` yoksa sekme görünmez): 1) önce dinle (metin gizli, `gist` sorusu cevaplanınca açılır), 2) oku ve dinle (okunan cümle vurgulanır, cümleye dokununca Türkçesi), 3) doğru/yanlış, 4) boşluk doldur (kelime kutucukları), 5) kendi paragrafın: **kalıp kutusu** (`reading.rewrite.frames`, 12–14 yarım cümle). İki tür boşluk: **öğrenilecek kelime/kalıp** (`answer` var; kesik çizgili kutu; kontrol edilir, yanlışsa doğrusu gösterilir ve `missed`'e işlenir; öğrencinin isteği: *wake up* fiili de *half past six* de önemli) ve **kişisel bilgi** (`answer` yok; saat, sayı, yer; serbest). İpucu Türkçe, kutunun içinde (placeholder). "Kontrol et ve cümlelerimi göster" → kendi cümleleri örnekle yan yana, sesli dinleme, Claude'a kopyalama; puan `frames` testi. Boş yazı kutusu yalnızca "Serbest yaz (istersen)" olarak.
 5. **Test:** kelime testi (4 şık, anında doğru/yanlış, sonunda sadece yanlışlar) ve diyalog testi (cevabı göster → Bildim / Bilemedim, sonunda bilemedikler). Altında "Ekranda alıştırma çöz" bağlantısı.
 6. **Notlar** (isteğe bağlı): düzeltmeler ve sohbetteki dersin sonuçları.
 

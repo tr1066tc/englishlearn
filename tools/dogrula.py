@@ -119,6 +119,13 @@ for entry in index:
         for n, f in enumerate((r.get("rewrite") or {}).get("frames", [])):
             if "___" not in f.get("text", "") or not f.get("model"):
                 errors.append(f"{lid}: kalıp kutusu {n + 1}: '___' ya da 'model' eksik")
+            if "blanks" in f and len(f["blanks"]) != f.get("text", "").count("___"):
+                errors.append(f"{lid}: kalıp kutusu {n + 1}: boşluk sayısı ile 'blanks' sayısı tutmuyor")
+        fr = (r.get("rewrite") or {}).get("frames", [])
+        if fr and len(fr) < 10:
+            warnings.append(f"{lid}: kalıp kutusunda {len(fr)} cümle var (en az 12 olmalı)")
+        if fr and not any(b.get("answer") for f in fr for b in f.get("blanks", [])):
+            warnings.append(f"{lid}: kalıp kutusunda kontrol edilen kelime boşluğu (answer) yok")
         if r.get("rewrite") and not r["rewrite"].get("frames"):
             warnings.append(f"{lid}: okuma 'rewrite.frames' (kalıp kutusu) yok; öğrenci boş sayfaya yazamıyor")
         g = r.get("gist")

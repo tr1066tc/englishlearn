@@ -532,39 +532,167 @@
       "model": "I am forty-one years old. I am an occupational health and safety specialist. I work for a big company on a construction site. I work six days a week. I start at eight and finish at six. In the evening I am tired, but I study English. I live in Ankara with my wife and my daughter. I want to work in a big company with a safety culture.",
       "frames": [
         {
-          "text": "I am an ___.",
-          "hint": "mesleğin",
+          "text": "I am an occupational ___ and ___ specialist.",
+          "blanks": [
+            {
+              "hint": "sağlık",
+              "answer": "health"
+            },
+            {
+              "hint": "güvenlik",
+              "answer": "safety"
+            }
+          ],
           "model": "I am an occupational health and safety specialist."
         },
         {
-          "text": "I work for ___.",
-          "hint": "nasıl bir şirket (ör. a big company)",
+          "text": "I ___ for a ___ company.",
+          "blanks": [
+            {
+              "hint": "çalışmak",
+              "answer": "work"
+            },
+            {
+              "hint": "büyük / küçük"
+            }
+          ],
           "model": "I work for a big company."
         },
         {
-          "text": "I work on ___.",
-          "hint": "nerede (ör. a construction site)",
+          "text": "I work on a construction ___.",
+          "blanks": [
+            {
+              "hint": "saha",
+              "answer": "site"
+            }
+          ],
           "model": "I work on a construction site."
         },
         {
-          "text": "I work ___ days a week.",
-          "hint": "kaç gün (ör. six)",
+          "text": "I work ___ days a ___.",
+          "blanks": [
+            {
+              "hint": "kaç gün (yazıyla)"
+            },
+            {
+              "hint": "hafta",
+              "answer": "week"
+            }
+          ],
           "model": "I work six days a week."
         },
         {
-          "text": "I start at ___ and finish at ___.",
-          "hint": "saatler (ör. eight · six)",
-          "model": "I start at eight and finish at six."
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "başlamak",
+              "answer": "start"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
+          "model": "I start at eight."
+        },
+        {
+          "text": "I ___ at ___.",
+          "blanks": [
+            {
+              "hint": "bitirmek",
+              "answer": "finish"
+            },
+            {
+              "hint": "saat"
+            }
+          ],
+          "model": "I finish at six."
+        },
+        {
+          "text": "My job is ___.",
+          "blanks": [
+            {
+              "hint": "önemli",
+              "answer": "important"
+            }
+          ],
+          "model": "My job is important."
+        },
+        {
+          "text": "___ with people is ___.",
+          "blanks": [
+            {
+              "hint": "uğraşmak",
+              "answer": "dealing"
+            },
+            {
+              "hint": "zor",
+              "answer": "difficult"
+            }
+          ],
+          "model": "Dealing with people is difficult."
+        },
+        {
+          "text": "Some ___ are difficult.",
+          "blanks": [
+            {
+              "hint": "insanlar",
+              "answer": "people"
+            }
+          ],
+          "model": "Some people are difficult."
+        },
+        {
+          "text": "I have a lot of legal ___.",
+          "blanks": [
+            {
+              "hint": "sorumluluk",
+              "answer": "responsibility"
+            }
+          ],
+          "model": "I have a lot of legal responsibility."
+        },
+        {
+          "text": "Workers and managers ___ the ___.",
+          "blanks": [
+            {
+              "hint": "uymak",
+              "answer": "follow"
+            },
+            {
+              "hint": "kurallar",
+              "answer": "rules"
+            }
+          ],
+          "model": "Workers and managers follow the rules."
+        },
+        {
+          "text": "In a big company, there is a safety ___.",
+          "blanks": [
+            {
+              "hint": "kültür",
+              "answer": "culture"
+            }
+          ],
+          "model": "In a big company, there is a safety culture."
+        },
+        {
+          "text": "I ___ to work in a big company.",
+          "blanks": [
+            {
+              "hint": "istemek",
+              "answer": "want"
+            }
+          ],
+          "model": "I want to work in a big company."
         },
         {
           "text": "In the evening I am ___.",
-          "hint": "nasılsın (ör. tired, happy)",
+          "blanks": [
+            {
+              "hint": "nasılsın (ör. yorgun)"
+            }
+          ],
           "model": "In the evening I am tired."
-        },
-        {
-          "text": "I want to work in ___.",
-          "hint": "nerede çalışmak istiyorsun (ör. a big company)",
-          "model": "I want to work in a big company."
         }
       ]
     }

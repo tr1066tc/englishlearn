@@ -195,7 +195,7 @@
     card('C. Kelimeyi yaz', spellRoot),
     card('D. Kendi cümlelerin', lesson.reading?.rewrite?.frames?.length
       ? h('div', {},
-          App.frameBox(`${lesson.id}:cerceve`, lesson.reading.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi cümlelerim` }),
+          App.frameBox(`${lesson.id}:kalip`, lesson.reading.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi cümlelerim`, testKey: key, testTitle: title }),
           h('details', {}, h('summary', { class: 'small' }, 'Serbest yaz (istersen)'),
             App.writingBox(`${lesson.id}:cumleler`, { prompt: 'İstersen kendi cümlelerini serbestçe yaz.', models, copyTitle: `Ders ${lesson.number}: serbest cümlelerim` })))
       : App.writingBox(`${lesson.id}:cumleler`, {

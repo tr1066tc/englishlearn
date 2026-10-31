@@ -477,38 +477,160 @@
       "frames": [
         {
           "text": "I work on a ___ construction site.",
-          "hint": "big ya da small",
+          "blanks": [
+            {
+              "hint": "büyük / küçük"
+            }
+          ],
           "model": "I work on a big construction site."
         },
         {
-          "text": "There is ___ near the gate.",
-          "hint": "bir yer (ör. an office)",
+          "text": "There ___ an ___ near the gate.",
+          "blanks": [
+            {
+              "hint": "var (tek)",
+              "answer": "is"
+            },
+            {
+              "hint": "ofis",
+              "answer": "office"
+            }
+          ],
           "model": "There is an office near the gate."
         },
         {
-          "text": "There is ___ next to the office.",
-          "hint": "bir yer (ör. a canteen)",
+          "text": "There is a ___ next ___ the office.",
+          "blanks": [
+            {
+              "hint": "yemekhane",
+              "answer": "canteen"
+            },
+            {
+              "hint": "yanında: next …",
+              "answer": "to"
+            }
+          ],
           "model": "There is a canteen next to the office."
         },
         {
-          "text": "There are ___ cranes.",
-          "hint": "sayı (ör. two)",
+          "text": "The office is ___ the gate.",
+          "blanks": [
+            {
+              "hint": "yakınında",
+              "answer": "near"
+            }
+          ],
+          "model": "The office is near the gate."
+        },
+        {
+          "text": "The parking area is ___ the office.",
+          "blanks": [
+            {
+              "hint": "arkasında",
+              "answer": "behind"
+            }
+          ],
+          "model": "The parking area is behind the office."
+        },
+        {
+          "text": "The gate is ___ the office.",
+          "blanks": [
+            {
+              "hint": "önünde (3 kelime)",
+              "answer": "in front of"
+            }
+          ],
+          "model": "The gate is in front of the office."
+        },
+        {
+          "text": "There ___ ___ cranes.",
+          "blanks": [
+            {
+              "hint": "var (çok)",
+              "answer": "are"
+            },
+            {
+              "hint": "sayı"
+            }
+          ],
           "model": "There are two cranes."
         },
         {
-          "text": "There are ___ workers.",
-          "hint": "sayı (ör. two hundred)",
+          "text": "There are ___ ___.",
+          "blanks": [
+            {
+              "hint": "sayı"
+            },
+            {
+              "hint": "işçiler",
+              "answer": "workers"
+            }
+          ],
           "model": "There are two hundred workers."
         },
         {
-          "text": "I check ___ every day.",
-          "hint": "neyi kontrol ediyorsun (ör. the site, the tunnel)",
-          "model": "I check the site every day."
+          "text": "There are five ___.",
+          "blanks": [
+            {
+              "hint": "mühendisler",
+              "answer": "engineers"
+            }
+          ],
+          "model": "There are five engineers."
         },
         {
-          "text": "___ is dangerous.",
-          "hint": "şantiyede ne tehlikeli (ör. The tunnel)",
+          "text": "The ___ checks the workers.",
+          "blanks": [
+            {
+              "hint": "formen",
+              "answer": "foreman"
+            }
+          ],
+          "model": "The foreman checks the workers."
+        },
+        {
+          "text": "I check the ___ and the ___ every day.",
+          "blanks": [
+            {
+              "hint": "tünel",
+              "answer": "tunnel"
+            },
+            {
+              "hint": "köprü",
+              "answer": "bridge"
+            }
+          ],
+          "model": "I check the tunnel and the bridge every day."
+        },
+        {
+          "text": "The tunnel is ___.",
+          "blanks": [
+            {
+              "hint": "tehlikeli",
+              "answer": "dangerous"
+            }
+          ],
           "model": "The tunnel is dangerous."
+        },
+        {
+          "text": "___ there a canteen?",
+          "blanks": [
+            {
+              "hint": "var mı? (tek)",
+              "answer": "is"
+            }
+          ],
+          "model": "Is there a canteen?"
+        },
+        {
+          "text": "How ___ workers are there?",
+          "blanks": [
+            {
+              "hint": "kaç",
+              "answer": "many"
+            }
+          ],
+          "model": "How many workers are there?"
         }
       ]
     }

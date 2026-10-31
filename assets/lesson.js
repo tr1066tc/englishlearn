@@ -359,7 +359,7 @@
       r.blanks?.length ? card(`${step1 ? 4 : 3}. Boşlukları doldur`, clozeRoot) : null,
       r.rewrite ? card(`${step1 ? 5 : 4}. Kendi paragrafın`, r.rewrite.frames?.length
         ? h('div', {},
-            App.frameBox(`${lesson.id}:cerceve`, r.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi paragrafım` }),
+            App.frameBox(`${lesson.id}:kalip`, r.rewrite.frames, { writeKey: `${lesson.id}:okuma`, copyTitle: `Ders ${lesson.number}: kendi paragrafım`, testKey: key, testTitle: title }),
             h('details', {}, h('summary', { class: 'small' }, 'Örnek paragrafı göster'),
               h('div', { class: 'line-text' }, h('p', { style: 'flex:1' }, r.rewrite.model), listenBtn(r.rewrite.model))))
         : App.writingBox(`${lesson.id}:okuma`, {

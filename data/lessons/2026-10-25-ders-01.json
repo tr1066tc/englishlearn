@@ -579,39 +579,166 @@
       "model": "My name is Ali. I am forty-one years old. I am married and I have a daughter. Her name is Ela. She is eleven years old. I have one brother and one sister. My brother is older than me. My sister is younger. My sister has a son and a daughter. So I have a nephew and a niece. My mother lives in Ankara. My father passed away. I live in Ankara with my wife and my daughter.",
       "frames": [
         {
-          "text": "My name is ___.",
-          "hint": "adın",
+          "text": "My ___ is ___.",
+          "blanks": [
+            {
+              "hint": "ad, isim",
+              "answer": "name"
+            },
+            {
+              "hint": "senin adın"
+            }
+          ],
           "model": "My name is Ali."
         },
         {
-          "text": "I am ___ years old.",
-          "hint": "yaşın, yazıyla (ör. forty-one)",
+          "text": "I am ___ years ___.",
+          "blanks": [
+            {
+              "hint": "yaşın (yazıyla)"
+            },
+            {
+              "hint": "yaşında",
+              "answer": "old"
+            }
+          ],
           "model": "I am forty-one years old."
         },
         {
-          "text": "I am married and I have ___.",
-          "hint": "çocukların (ör. a daughter, a son, two children)",
-          "model": "I am married and I have a daughter."
+          "text": "I am ___.",
+          "blanks": [
+            {
+              "hint": "evli",
+              "answer": "married"
+            }
+          ],
+          "model": "I am married."
         },
         {
-          "text": "I have ___ and ___.",
-          "hint": "kardeşlerin (ör. one brother · one sister)",
+          "text": "I have a ___.",
+          "blanks": [
+            {
+              "hint": "kız evlat",
+              "answer": "daughter"
+            }
+          ],
+          "model": "I have a daughter."
+        },
+        {
+          "text": "Her ___ is ___.",
+          "blanks": [
+            {
+              "hint": "adı",
+              "answer": "name"
+            },
+            {
+              "hint": "kızının adı"
+            }
+          ],
+          "model": "Her name is Ela."
+        },
+        {
+          "text": "She is ___ years old.",
+          "blanks": [
+            {
+              "hint": "kızının yaşı (yazıyla)"
+            }
+          ],
+          "model": "She is eleven years old."
+        },
+        {
+          "text": "I have one ___ and one ___.",
+          "blanks": [
+            {
+              "hint": "erkek kardeş",
+              "answer": "brother"
+            },
+            {
+              "hint": "kız kardeş",
+              "answer": "sister"
+            }
+          ],
           "model": "I have one brother and one sister."
         },
         {
           "text": "My brother is ___ than me.",
-          "hint": "older (büyük) ya da younger (küçük)",
+          "blanks": [
+            {
+              "hint": "daha büyük",
+              "answer": "older"
+            }
+          ],
           "model": "My brother is older than me."
         },
         {
-          "text": "My mother lives in ___.",
-          "hint": "şehir",
+          "text": "My sister is ___ than me.",
+          "blanks": [
+            {
+              "hint": "daha küçük",
+              "answer": "younger"
+            }
+          ],
+          "model": "My sister is younger than me."
+        },
+        {
+          "text": "I have a ___ and a ___.",
+          "blanks": [
+            {
+              "hint": "erkek yeğen",
+              "answer": "nephew"
+            },
+            {
+              "hint": "kız yeğen",
+              "answer": "niece"
+            }
+          ],
+          "model": "I have a nephew and a niece."
+        },
+        {
+          "text": "My ___ lives in ___.",
+          "blanks": [
+            {
+              "hint": "anne",
+              "answer": "mother"
+            },
+            {
+              "hint": "şehir"
+            }
+          ],
           "model": "My mother lives in Ankara."
         },
         {
-          "text": "I live in ___ with ___.",
-          "hint": "şehir · kimlerle (ör. my wife and my daughter)",
-          "model": "I live in Ankara with my wife and my daughter."
+          "text": "My father ___.",
+          "blanks": [
+            {
+              "hint": "vefat etti",
+              "answer": "passed away"
+            }
+          ],
+          "model": "My father passed away."
+        },
+        {
+          "text": "I ___ in ___.",
+          "blanks": [
+            {
+              "hint": "yaşamak",
+              "answer": "live"
+            },
+            {
+              "hint": "şehir"
+            }
+          ],
+          "model": "I live in Ankara."
+        },
+        {
+          "text": "I have many ___.",
+          "blanks": [
+            {
+              "hint": "kuzenler",
+              "answer": "cousins"
+            }
+          ],
+          "model": "I have many cousins."
         }
       ]
     }
